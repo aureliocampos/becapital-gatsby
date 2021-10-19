@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Image from "gatsby-image"
+// import Image from "gatsby-image"
 import parse from "html-react-parser"
 
 // We're using Gutenberg so we need the block styles
@@ -15,10 +15,10 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const BlogPostTemplate = ({ data: { previous, next, post } }) => {
-  const featuredImage = {
-    fluid: post.featuredImage?.node?.localFile?.childImageSharp?.fluid,
-    alt: post.featuredImage?.node?.alt || ``,
-  }
+  // const featuredImage = {
+  //   fluid: post.featuredImage?.node?.localFile?.childImageSharp?.fluid,
+  //   alt: post.featuredImage?.node?.alt || ``,
+  // }
 
   return (
     <Layout>
@@ -35,13 +35,13 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
           <p>{post.date}</p>
 
           {/* if we have a featured image for this post let's display it */}
-          {featuredImage?.fluid && (
+          {/* {featuredImage?.fluid && (
             <Image
               fluid={featuredImage.fluid}
               alt={featuredImage.alt}
               style={{ marginBottom: 50 }}
             />
-          )}
+          )} */}
         </header>
 
         {!!post.content && (
@@ -99,19 +99,6 @@ export const pageQuery = graphql`
       content
       title
       date(formatString: "MMMM DD, YYYY")
-
-      featuredImage {
-        node {
-          altText
-          localFile {
-            childImageSharp {
-              fluid(maxWidth: 1000, quality: 100) {
-                ...GatsbyImageSharpFluid_tracedSVG
-              }
-            }
-          }
-        }
-      }
     }
 
     # this gets us the previous post by id (if it exists)

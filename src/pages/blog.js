@@ -57,8 +57,9 @@ const BlogIndex = ({ data }) => {
 
               return (
                 <li key={uri} className="posts__item">
-                  <Link to={uri}>
-                    <article className="posts__article">
+                 
+                  <article className="posts__article">
+                    <Link to={uri}>
                       {image && (
                         <GatsbyImage
                           image={image}
@@ -68,11 +69,12 @@ const BlogIndex = ({ data }) => {
                           imgClassName="posts__image"
                         />
                       )}
-                      <h2 className="posts__title">{parse(title)}</h2>
-                      <p className="posts__excerpt">{parse(excerpt)}</p>
-                      <a href={uri} className="button button__primary">LER ARTIGO</a>
-                    </article>
-                  </Link>
+                    </Link>
+                    <h2 className="posts__title">{parse(title)}</h2>
+                    <p className="posts__excerpt">{parse(excerpt)}</p>
+                    <Link to={uri} className="button button__primary">LER ARTIGO</Link>
+                  </article>
+                  
                 </li>
               )
             })}
