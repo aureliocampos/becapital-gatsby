@@ -1,0 +1,50 @@
+body.hidden {
+  overflow: hidden;
+  @include tablet {
+    overflow: auto;
+  }
+}
+.slick-slider {
+  padding: 8em 0 4em 0;
+  @include tablet {
+    margin: 0 auto;
+    .slick-list {
+      overflow: initial;
+    }
+  }
+  @include notebook {
+    overflow: hidden;
+  }
+  .slick-dots {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    height: 0;
+  }
+}
+.slick-dots li {
+  margin: 0 auto;
+}
+.slick-dots li button {
+  border: 0;
+  background: #fff;
+  display: block;
+  height: auto;
+  width: auto;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 100%;
+  border: 2px solid #EA5E45;
+  box-sizing: border-box;
+}
+.slick-dots li button:before {
+  display: none;
+}
+li.slick-active button {
+  background: #EA5E45;
+  padding: 5px;
+}

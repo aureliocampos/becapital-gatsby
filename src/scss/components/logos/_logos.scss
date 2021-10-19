@@ -1,0 +1,60 @@
+
+/* Logos de Consorcio */
+.section__logos {
+  display: none;
+
+  border-radius: 18px;
+  max-width: 545px;
+  margin: 0 auto;
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+}
+.logos {
+  &__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    max-width: auto;
+    padding: 15px 35px;
+    background: rgba(26, 74, 115, 0.15);
+    border-radius: 18px;
+  }
+  &__item {
+    width: 85px;
+    text-align: center;
+  }
+}
+
+
+.section__midia {
+  display: none;
+  margin-top: 120px;
+  @include notebook {
+    display: block;
+  }
+  .section__title {
+    margin-bottom: 74px;
+  }
+  .section__container {
+    background: rgba(108, 108, 108, 0.2);
+    .logos__items {
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 1114px;
+      background: none;
+      padding: 50px;
+      margin: 0 auto;
+      .logos__item {
+        width: 15%;
+      }
+    }
+  }
+}

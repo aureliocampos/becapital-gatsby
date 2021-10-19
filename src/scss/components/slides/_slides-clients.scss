@@ -1,0 +1,142 @@
+
+/* Seção de testemunho de clientes BeCapital */
+.section__testimonies {
+  margin-top: 70px;
+  .button__container {
+    max-width: max-content;
+    margin: 0 auto;
+  }
+  .slick-slider {
+    padding-bottom: 0;
+    .slick-dots {
+      top: 0;
+    }
+  }
+  .slick-list {
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .slick-arrow {
+    display: none;
+    @include tablet {
+      display: block;
+    }
+  }
+  .slick-prev {
+    left: 40px;
+    @include notebook {
+      left: 340px;
+    }
+    @include desktop {
+      left: 600px
+    }
+  }
+  .slick-next {
+    right: 40px;
+    @include notebook {
+      right: 340px;
+    }
+    @include desktop {
+      right: 600px
+    }
+  }
+}
+.testimonies {
+  &__items {
+    position: relative;
+    overflow: hidden;
+    padding: 0 1em;
+
+  }
+  &__card {
+    @include tablet {
+      width: 400px;
+      margin: 0 auto;
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $white;
+    padding: 8px 24px 9px 34px;
+    background: $blue-dark;
+    border-radius: 6.68985px;
+    &--sub {
+      display: flex;
+      align-items: center;
+    }
+    span {
+      margin-left: 1.125em;
+    }
+  }
+  &__figure {
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    @include tablet {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  &__name {
+    font: 700 0.75em $font-primary;
+    color: currentColor;
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+  &__description {
+    font: 300 0.5625em $font-primary;
+    color: currentColor;
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+}
+.testimonies__text--site {
+  width: 180px;
+  font: 600 0.6875em $font-primary;
+  font-style: italic;
+  text-align: justify;
+  line-height: 1rem;
+  margin-top: 1.25rem;
+  margin-left: auto;
+  padding: 7px 12px;
+  background-image: url('../images/chat_becapital_background.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.testimonies__text--client {
+  position: relative;
+  width: 261px;
+  font: 300 0.6875em $font-primary;
+  font-style: italic;
+  line-height: 1rem;
+  text-align: justify;
+  padding: 0.875rem 0.75rem;
+  margin: 2rem 0 2rem 0.875rem;
+  border: 2px solid  $blue-dark;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  @include tablet {
+    width: 391px;
+    font-size: 1.125rem;
+    line-height: 148%;
+    padding: 1.125rem;
+  }
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -14px;
+    width: 14px;
+    height: 13px;
+    background-image: url('../images/slice_chat_1x.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}

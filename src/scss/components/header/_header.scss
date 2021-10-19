@@ -1,0 +1,350 @@
+
+.header.active {
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    background: rgb(0 0 0 / 50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.header {
+  position: sticky;
+  top: 0;
+  background-color: $blue-dark;
+  padding: 12px 18px;
+  border-bottom: 3px solid $orange;
+  z-index: 9;
+  transition: all 0.3s ease-in-out;
+  @include notebook {
+    border: none;
+    padding: 0;
+  }
+
+  .header__logo--mobile {
+    width: 128px;
+    height: auto;
+    @include tablet {
+      display: none !important;
+    }
+  }
+  .header__logo--desktop {
+    display: none !important;
+    @include tablet {
+      display: inline-block !important;
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet {
+      gap: 40px;
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    @include notebook {
+      gap: 140px;
+      max-width: 1114px;
+    }
+  }
+  &__menu {
+    position: fixed;
+    top: 0;
+    right: -50rem;
+    width: 80%;
+    height: 100vh;
+    padding: 0.675rem 0 1rem 2rem;
+    background-color: #1A4A71;
+    z-index: 1;
+    border-right: 9px solid #FF6746;
+    border-radius: 1rem 0px 0px 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+    &:after {
+      content: '';
+      display: block;
+      width: 9px;
+      height: 100vh;
+      box-shadow: 0 0 4px 1px #ff6746;
+      position: absolute;
+      top: 0;
+      right: -9px;
+    }
+    @include tablet {
+      position: initial;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      height: auto;
+      width: 90%;
+      padding: 0;
+      border: none;
+      border-radius: 0;
+      overflow: initial;
+      &:after {
+        display: none;
+      }
+    }
+    &_nav {
+      position: relative;
+      margin: 6.25rem 0 2.625rem 0;
+      @include tablet {
+        margin: 0;
+      }
+    }
+    &_items {
+      @include tablet {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      @include notebook {
+        gap: 0;
+      }
+    }
+    &_item {
+      position: relative;
+      margin: 1.25rem 0;
+      @include tablet {
+        margin: 0;
+      }
+    }
+    &_link {
+      font: 700 26px $font-primary;
+      color: $white;
+      line-height: 40px;
+      @include tablet {
+        font-size: 12px;
+        border-radius: 0px 0px 15px 15px;
+        transition: all 0.4s ease-in-out;
+        padding: 1.5rem 0.7rem 0.7em 0.7rem;
+        margin: 0 0 1.5rem 0;
+        &:hover {
+          background: $orange;
+        }
+      }
+      @include notebook {
+        display: block;
+        font-size: 15px;
+        padding: 1.25rem 2rem 0 2rem;
+        margin: 0 0 1.25rem 0;
+      }
+    }
+    &_link--children {
+      font: 700 26px $font-primary;
+      color: $white;
+      line-height: 40px;
+      svg {
+        display: none;
+        margin: 2px 2px 2px 5px;
+      }
+      @include tablet {
+        font-size: 13px;
+        cursor: pointer;
+        svg {
+          display: initial;
+        }
+      }
+      @include notebook {
+        display: block;
+        font-size: 15px;
+        padding: 1.25rem 2rem 0 2rem;
+        margin: 0 0 1.25rem 0;
+      }
+    }
+    &_link[aria-current="page"] {
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 4px;
+        height: 80%;
+        background: $orange;
+        position: absolute;
+        left: -2rem;
+        top: 3px;
+      }
+      @include tablet {
+        background: $orange;
+        box-shadow: 0px 0px 9px 1px $orange;
+        &:before {
+          display: none;
+        }
+      }
+    }
+    &_link--italic {
+      font-style: italic;
+      font-weight: 100;
+    }
+  }
+  &__menu.active {
+    right: 0;
+  }
+  &__submenu {
+    @include tablet {
+      height: 0;
+      display: none;
+      transition: height 0.3s ease-in-out;
+    }
+    &_items {
+      margin: 15px 0 15px 1.25rem;
+    }
+    &_item {
+      margin: 1.25rem 0;
+    }
+    &_link {
+      font: 400 13px $font-primary;
+      color: $white;
+      line-height: 1.25rem;
+    }
+  }
+  &__submenu.active {
+    @include tablet {
+      position: absolute;
+      display: block;
+      top: 52px;
+      left: -30px;
+      right: 0;
+      bottom: 0;
+      height: max-content;
+      width: max-content;
+      background: $blue-dark;
+      border-top: 3px solid $orange;
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+      .header__submenu_items {
+        margin: 0;
+        padding: 1rem 1.5rem;
+        .header__submenu_item {
+          margin: 0;
+          .header__submenu_link {
+            display: block;
+            padding: 0.5em 0;
+          }
+        }
+      }
+    }
+    @include notebook {
+      top: 80px;
+      left: 0;
+    }
+  }
+  .header__button_cta {
+    .button {      
+      @include tablet {
+        font-size: 0.6em;
+      }
+      @include notebook {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+.burguer__container {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease-in-out;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+
+  @include tablet {
+    display: none;
+  }
+  span {
+    display: block;
+    height: 4px;
+    background-color: $orange;
+    box-shadow: 0px 0px 4px 1px #FF6746;
+    border-radius: 5px;
+    margin: 6px 0 0 auto;
+    &:first-of-type {
+      width: 12px;
+    }
+    &:nth-of-type(2){
+      width: 18px;
+    }
+    &:last-of-type {
+      width: 24px;
+    }
+  }
+}
+.burguer__container.active {
+  position: initial;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+  span {
+    margin: 6px auto 0 0;
+  }
+}
+
+
+.header__menu_item.header__menu_item--children {
+  position: relative;
+  @include tablet {
+    &:focus {
+      .header__submenu {
+        position: absolute;
+        top: 57px;
+        left: -30px;
+        display: block;
+        width: max-content;
+        height: max-content;
+        background: $blue-dark;
+        border-top: 3px solid $orange;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        .header__submenu_items {
+          margin: 0;
+          padding: 1rem 1.5rem;
+          .header__submenu_item {
+            margin: 0;
+            .header__submenu_link {
+              display: block;
+              padding: 0.5em 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include tablet {
+    &:hover {
+      .header__submenu {
+        position: absolute;
+        top: 58px;
+        left: -30px;
+        display: block;
+        width: max-content;
+        height: max-content;
+        background: $blue-dark;
+        border-top: 3px solid $orange;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        @include notebook {
+          top: 80px;
+          left: 0;
+        }
+        .header__submenu_items {
+          margin: 0;
+          padding: 1rem 1.5rem;
+          .header__submenu_item {
+            margin: 0;
+            .header__submenu_link {
+              display: block;
+              padding: 0.5em 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

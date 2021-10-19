@@ -1,0 +1,93 @@
+.section__posts {
+  .section__title {
+    margin-top: 4rem;
+  }
+  .section__subtitle {
+    max-width: 470px;
+    margin: 0 auto 4rem auto;
+    @include notebook {
+      max-width: 670px;
+    }
+  }
+  .button{
+    margin: 0 auto;
+  }
+}
+.posts {
+  &__items {
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    @include tablet-landscape {
+      max-width: 840px;
+    }
+    @include notebook {
+      gap: 68px;
+      max-width: 1114px;
+    }
+  }
+  &__item {
+    padding: 0 2.125em;
+    margin-bottom: 1.625em;
+    @include tablet {
+      padding: 0;
+      margin-bottom: 90px;
+    }
+  }
+  &__figure {
+    margin-bottom: 1.125em;
+    @include tablet {
+      height: auto;
+      margin-bottom: 34px;
+    }
+    @include notebook {
+      height: 250px;
+    }
+  }
+  &__image {
+    border-radius: 0.625rem;
+  }
+  &__title {
+    font: 600 0.875em $font-primary;
+    color: $blue-dark;
+    text-align: center;
+    line-height: 21px;
+    margin-bottom: 0.4375rem;
+    @include tablet {
+      font-size: 29px;
+      line-height: 24px;
+      margin-bottom: 17px;
+    }
+  }
+  &__excerpt {
+    font: 300 0.6875em $font-primary;
+    color: $black;
+    text-align: center;
+    line-height: 16px;
+    margin-bottom: 1.5rem;
+    @include tablet {
+      font-size: 18px;
+      font-style: italic;
+      line-height: 21px;
+    }
+  }
+  .button__primary {
+    margin: auto;
+  }
+}
+.section__posts--more {
+  margin-top: 4em;
+  @include tablet {
+    margin-top: 156px;
+  }
+  .section__title {
+    margin-bottom: 1em;
+    @include tablet {
+      margin-bottom: 105px;
+    }
+  }
+}

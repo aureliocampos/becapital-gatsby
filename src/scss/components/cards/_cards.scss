@@ -1,0 +1,146 @@
+@import "./cards-posts";
+
+/* Cards do diretores */
+.section__directors {
+  margin-top: 75px;
+}
+.directors{
+  &__items {
+    position: relative;
+    overflow: hidden;
+    padding-left: 1.25em;
+    .slick-slider {
+      max-width: 915px;
+      margin: 0 auto;
+      .slick-slide > div {
+        width: 262px;
+        @media screen and (max-width: 330px){ /* Para Iphone 5 e SE*/
+          margin-right: 15px;
+        }
+        .gatsby-image-wrapper.gatsby-image-wrapper-constrained {
+          border-radius: 1em;
+        }
+      }
+    }
+  }
+  &__information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 260px;
+    color: $blue-dark;
+    margin-top: 11px;
+    @media screen and (max-width: 330px){ /* Para Iphone 5 e SE*/
+      width: 100%;
+    }
+  }
+  &__name {
+    font: 700 1.125em $font-secondary;
+    color: currentColor;
+    line-height: 21px;
+    text-align: left;
+  }
+  &__job {
+    font: 300 0.625em $font-secondary;
+    color: currentColor;
+    line-height: 12px;
+    text-align: left;    
+  }
+}
+
+/* Ações que apoiamos*/
+.section__cards-support {
+  margin-top: 65px;
+}
+.card-support__item {
+  position: relative;
+  display: flex;
+  max-width: 345px;
+  margin: 0 auto;
+  padding: 0;
+  height: auto;
+  box-shadow: 0px 0px 29.2347px rgb(26 74 115 / 16%);
+  border-radius: 16px;
+  margin-bottom: 45px;
+  @include tablet {
+    max-width: 700px;
+    border-radius: 46px;
+    margin-bottom: 94px;
+  }
+  @include notebook {
+    max-width: 1000px;
+  }
+  .gatsby-image-wrapper {
+    width: 153px;
+    border-left: 1px solid $white;
+    @include tablet {
+      width: 45%;
+      img {
+        border-top-left-radius: 46px;
+        border-bottom-left-radius: 46px;
+      }
+    }
+  }
+}
+article.card-support__item:before {
+  @include notebook {
+    content: "";
+    height: 189px;
+    width: 55px;
+    position: absolute;
+    top: 110px;
+    left: -60px;
+    background: $orange;
+  }
+}
+article.card-support__item:after{
+  @include notebook {
+    content: "";
+    height: 189px;
+    width: 55px;
+    position: absolute;
+    top: 110px;
+    right: -62px;
+    background: $orange;
+  }
+}
+.card-support__item:first-of-type {
+  margin-top: 45px;
+  @include tablet {
+    margin-top: 81px;
+  }
+}
+.card-support__description {
+  width: 211px;
+  padding: 46px 18px;
+  background-color: $white;
+  border-right: 1px solid $white;
+  z-index: 1;
+  @include tablet {
+    width: 50%;
+    padding: 46px 48px;
+  }
+  .gatsby-image-wrapper {
+    width: 73px;
+    @include tablet {
+      width: 202px;
+    }
+  }
+}
+.card-support__text {
+  width: 174px;
+  font: 400 0.625em $font-primary;
+  line-height: 15px;
+  text-align:justify;
+  margin-top: 31px;
+  @include tablet {
+    width: 100%;
+    font-size: 1.25em;
+    line-height: 148.1%;
+  }
+  @include notebook {
+    width: 100%;
+    font-size: 1.625em;
+    line-height: 148.1%;
+  }
+}

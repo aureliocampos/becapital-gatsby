@@ -1,0 +1,184 @@
+.banner {
+  &__content {
+    position: relative;
+  }
+  &__figure {
+    height: 100vh;
+  }
+  &__image {
+    object-position: 80%;
+  }
+  &__title {
+    font: 700 2.4375em $font-primary;
+    color: $white;
+    line-height: 105.6%;
+    @include tablet {
+      font-size: 56px;
+    }
+  }
+  &__subtitle {
+    width: 75%;
+    font: 600 0.75em $font-primary;
+    color: $white;
+    line-height: 138.5%;
+    margin-bottom: 2rem;
+    @include tablet {
+      width: 100%;
+      font-size: 20px;
+      font-weight: 300;
+      text-align: justify;
+    }
+  }
+
+  &__primary {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: right center;
+    background-position-x: 80%;
+    background-repeat: no-repeat;
+   
+    .banner__content {
+      margin: 0 auto;
+      @include notebook {
+        width: 1114px;
+      }
+      .banner__title {
+        margin-top: 0;
+      }
+    }
+    
+    &-description {
+      padding: 0 2.5rem;
+      @media screen and (max-width: 330px){ /* Para Iphone 5 e SE*/
+        padding: 0 1.5rem;
+      }
+      @include notebook {
+        width: 400px;
+        padding: 0;
+      }
+    }
+  }
+}
+.banner--blog {
+  .banner__figure {
+    height: auto;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+/* Página Somos BeCapital */
+.banner--somos {
+  .banner__content {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+  }
+  .banner__figure {
+    height: 220px;
+    @include tablet {
+      width: 904px;
+      height: auto;
+    }
+  }
+  .banner__text {
+    padding: 0 1.25em;
+    @include tablet {
+      width: 440px;
+      margin-left: 21px;
+    }
+  }
+  .section__title {
+    margin-top: 3.125rem;
+    margin-bottom: 0;
+    @include tablet {
+      text-align: left;
+    }
+  }
+  .section__subtitle {
+    text-align: justify;
+    margin: 1em 0;
+    padding: 0;
+    strong {
+      color: $orange;
+    }
+  }
+}
+/*Página de Carreiras*/
+.banner--carreiras {
+  margin-top: 3.25em;
+  padding: 0 1.25rem;
+  .banner__content {
+    .section__title mark {
+      &:after {
+        font-weight: 100;
+      }
+    }
+    @include tablet {
+      display: flex;
+      align-items: center;
+      gap: 74px;
+    }
+    @include notebook {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1221px;
+      margin: 0 auto;
+    }
+  }
+  .banner__figure {
+    height: auto;
+    @include tablet {
+      width: 80%;
+    }
+    @include notebook {
+      width: auto;
+    }
+  }
+  .banner__text {
+   @include notebook {
+    width: 45%;
+   }
+  }
+  .section__title {
+    font-size: 3rem;
+    text-align: left;
+    line-height: 1;
+    @media screen and (max-width: 330px){ /* Para Iphone 5 e SE*/
+      font-size: 2.75rem;
+    }
+    mark {
+      background-color: transparent;
+      color: $orange;
+      font-weight: 400;
+    }
+    @include notebook {
+      font-size: 4.3125rem;
+    }
+  }
+  .section__subtitle {
+    text-align: left;
+    padding: 0;
+    strong{
+      color: $orange;
+    }
+    @include notebook {
+      font-size: 1.375rem;
+      margin: 0;
+    }
+  }
+  .banner__figure {
+    display: none;
+    @include notebook {
+      display: block;
+      width: 715px;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.button {
+  display: block;
+  width: max-content;
+  height: auto;
+  font: 700 1em $font-secondary;
+  text-transform: uppercase;
+  padding: 7px 22px;
+  border-radius: 7px; 
+  cursor: pointer;
+}
+.button__primary {
+  background-color: transparent;
+  color: $orange;
+  border: 1px solid $orange;
+}
+
+.button__secondary {
+  background-color: $orange;
+  color: $white;
+  border: 1px solid $orange;
+  box-shadow: 0px 0px 4px 1px $orange;
+}
+
+.button__tertiary {
+  background-color: transparent;
+  color: $blue-dark;
+  border: 1px solid $blue-dark;
+}

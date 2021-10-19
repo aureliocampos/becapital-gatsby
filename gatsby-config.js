@@ -1,12 +1,20 @@
-/**
- * 👋 Hey there!
- * This file is the starting point for your new WordPress/Gatsby site! 🚀
- * For more information about what this file is and does, see
- * https://www.gatsbyjs.com/docs/gatsby-config/
- *
- */
+const path = require(`path`)
+
+siteMetadata = {
+  title: "BeCapital",
+  description: "Uma nova maneira de pensar e agir no mercado de capitais. Acreditamos que investir é para todos.",
+  siteUrl: "https://www.be.capital/", 
+  siteLanguage: "pt-BR",
+  siteLocale: "pt_br",
+  authorName: "Aurélio Campos - Team BeCapital",
+  twitterUsername: "@BeResearch_",
+  favicon: "./src/images/favicon.png",
+  backgroundColor: `#1A4A73`,
+  themeColor: `#FF6746` 
+}
 
 module.exports = {
+  siteMetadata: siteMetadata,
   plugins: [
     {
       resolve: `gatsby-source-wordpress`,
@@ -17,12 +25,14 @@ module.exports = {
           `http://20.201.13.131/graphql`,
       },
     },
+    "gatsby-plugin-sitemap",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `assets`,
-        path: `${__dirname}/content/assets`,
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
       },
+      __key: "images",
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -30,20 +40,24 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter WordPress Blog`,
-        short_name: `GatsbyJS & WP`,
+        name: `BeCapital`,
+        short_name: `BeCapital`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        background_color:siteMetadata.backgroundColor,
+        theme_color: siteMetadata.themeColor,
+        display: `standalone`,
+        icon: siteMetadata.favicon
       },
     },
+    "gatsby-plugin-sass",
+    "gatsby-plugin-image",
     `gatsby-plugin-react-helmet`,
-    /**
-     * this (optional) plugin enables Progressive Web App + Offline functionality
-     * To learn more, visit: https://gatsby.dev/offline
-     */
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-5X24M96',
+      },
+    },
   ],
 }

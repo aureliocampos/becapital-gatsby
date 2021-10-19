@@ -1,0 +1,134 @@
+
+/*Footer*/
+.footer {
+  background-color: $blue-dark;
+  margin-top: 77px;
+  &__title {
+    font: 700 1em $font-primary;
+    line-height: 19px;
+    text-align: left;
+    color: $white;
+    margin: 1em 0 0.8em 0;
+  }
+  &__link {
+    display: block;
+    font: 600 0.875em $font-primary;
+    line-height: 21px;
+    text-align: left;
+    color: $white;
+    text-decoration: underline;
+  }
+  &__text {
+    font: 400 0.75em $font-primary;
+    line-height: 206.19%;
+    color: $white;
+    margin: 0;
+    a {
+      color: $white;
+    }
+  }
+  &__logo {
+    width: 120px;
+  }
+}
+.footer__section {
+  border-bottom: 2px solid #4A6379;
+}
+.footer__section--container {
+  max-width: 1085px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+.footer--andress {
+  margin: 3em 0;
+}
+.footer__section--column {
+  margin-bottom: 2rem;
+}
+.footer__menu {
+  padding-left: 1.25rem;
+  .menu__item {
+    margin: 0.8em 0;
+    .menu__link {
+      font: 400 0.75em $font-primary;
+      line-height: 206.19%;
+      color: $white;
+    }
+  }
+}
+.footer__social{
+  display: flex;
+  gap: 1.25rem;
+}
+.qrcode {
+  width: 149px;
+  height: auto;
+}
+.footer__end {
+  text-align: center;
+  padding: 2.75rem 1.5em;
+  border: none;
+  .footer__title {
+    display: block;
+    font-size: 70%;
+    text-align: center;
+    strong {
+      color: $orange;
+    }
+  }
+  .footer__text {
+    font-size: 60%;
+    line-height: 148%;
+    @include notebook {
+      display: block;
+      max-width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
+.footer__section--header {
+  .footer__section--container {
+    @include notebook {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     }
+  }
+}
+.footer__section--main {
+  .footer__section--container {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include notebook {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 150px;
+     }
+  }
+}
+.footer__section--footer {
+  .footer__section--container {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include notebook {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 150px;
+      .footer__title {
+        width: 130%;
+      }
+      .footer__text {
+        width: 130%;
+      }
+     }
+  }
+}
+.width200 {
+  @include notebook {
+    width: 200%;
+  }
+}

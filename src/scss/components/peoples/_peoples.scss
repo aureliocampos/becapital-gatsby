@@ -1,0 +1,164 @@
+.section__peoples {
+  margin: 70px 0;
+  @include notebook {
+    margin: 150px 0 200px 0;
+  }
+  .section__title {
+    margin: 47px 0;
+  }
+  .icon-quote {
+    width: 31px;
+    height: auto;
+    @include notebook {
+      width: 48px;
+    }
+  }
+}
+.peoples {
+  &__grid {
+    padding: 0 1.25em;
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+    @include notebook {
+      gap: 72px;
+      max-width: 1189px;
+      margin: 0 auto;
+    }
+  }
+  &__card--primary {
+    box-shadow: 0px 0px 67.1579px rgb(26 74 115 / 20%);
+    border-radius: 27.3606px;
+    @include tablet {
+      max-width: 513px;
+      height: max-content;
+    }
+    .peoples__image--card-primary{
+      border-top-right-radius:28px;
+      border-top-left-radius:28px;
+      z-index: -1;
+      @include notebook {
+        border-top-right-radius: 44px;
+        border-top-left-radius: 44px;
+      }
+    }
+    .peoples__description {
+      background: #FFFFFF;
+      border-radius: 27.3606px;
+      padding: 25px 28px;
+      margin-top: -40px;
+      @include notebook {
+        border-radius: 44px;
+        padding: 40px 48px 72px 48px;
+        margin-top: -60px;
+      }
+    }
+    .peoples__paragraph {
+      font: 300 10px $font-primary;
+      font-style: italic;
+      line-height: 139.6%;
+      text-align: justify;
+      color: $black;
+      margin: 1em 0 1.5em 0;
+      @include tablet {
+        font-size: 14px;
+      }
+      @include notebook {
+        font-size: 16px;
+      }
+    }
+    .peoples__name {
+      font: 300 10px $font-primary;
+      line-height: 139.6%;
+      color: $black;
+      @include tablet {
+        font-size: 14px;
+      }
+      @include notebook {
+        font-size: 16px;
+      }
+      strong {
+        font-weight: 700;
+      }
+    }
+  }
+  &__card--secondary {
+    margin-bottom: 44px;
+    .peoples__description {
+      position: relative;
+      background: #F5F5F5;
+      border-radius: 13.4305px;
+      padding: 1em 1.5em;
+      @include notebook {   
+        border-radius: 24px;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 32px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #F5F5F5;
+        @include notebook {
+          bottom: -20px;
+          left: 35px;
+          border-left: 35px solid transparent;
+          border-right: 35px solid transparent;
+          border-top: 35px solid #F5F5F5;
+        }
+      }
+    }
+    .peoples__paragraph {
+      font: 300 9px $font-primary;
+      font-style: italic;
+      line-height: 118.1%;
+      text-align: justify;
+      color: $black;
+      margin: 1em 0;
+      @include tablet {
+        font-size: 12px;
+      }
+      @include notebook {
+        font-size: 16px;
+      }
+    }
+    .peoples__author {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 24px;
+      margin: 1em 1.25em;
+      @include notebook {
+        margin: 2em 1.5em;
+      }
+      .gatsby-image-wrapper {
+        width: 55px;
+        height: auto;
+        @include notebook {
+          width: 110px;
+          height: auto;
+        }
+      }
+      .peoples__name {
+        width: 70%;
+        font: 400 10px $font-primary;
+        font-size: 8.95364px;
+        line-height: 107.1%;
+        color: $black;
+        @include tablet {
+          font-size: 14px;
+        }
+        @include notebook {
+          font-size: 16px;
+        }
+        strong {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+}

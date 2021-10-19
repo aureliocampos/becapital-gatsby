@@ -1,0 +1,204 @@
+.single-service {
+  .section__title {
+    margin-top: 52px;
+    @include tablet {
+      margin: 85px 0;
+    }
+  }
+  &__header {
+    figure {
+      height: 197px;
+      @include tablet {
+        height: 350px;
+      }
+      @include notebook {
+        height: 506px;
+      }
+    }
+  }
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    @include notebook {
+      max-width: 1114px;
+      margin: 0 auto;
+    }
+    figure {
+      display: none;
+      @include tablet {
+        display: block;
+        width: 50%;
+      }
+    }
+    .description__text {
+      width: 100%;
+      font: 200 27.9024px $font-primary;
+      font-style: italic;
+      text-align: center;
+      padding: 0 1.5em;
+      line-height: 33px;
+      color: $blue-dark;
+      @include tablet {
+        width: 50%;
+        text-align: left;
+      }
+      @include notebook {
+        width: 45%;
+        font-size: 73px;
+        line-height: 96.1%;
+      }
+    }
+  }
+  &__content {
+    max-width: 640px;
+    padding: 0 1.5em;
+    margin: 42px auto;
+    font-family: Trasandina;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: justify;
+    color: #1A4A71;
+    @include notebook {
+      max-width: 970px;
+      font-size: 26px;
+      line-height: 150.1%;
+      margin-top: 98px;
+      margin-bottom: 98px;
+    }
+  }
+  .button__container {
+    display: flex;
+    justify-content: center;
+    .button {
+      font-size: 14px;
+      @media screen and (max-width: 330px){ /* Para Iphone 5 e SE*/
+        font-size: 12px;
+      }
+    }
+  }
+  &__partner {
+    margin: 42px 0;
+    @include tablet {
+      margin: 98px 0;
+    }
+    &-title {
+      font: 700 12px $font-primary;
+      text-align: center;
+      line-height: 150.1%;
+      letter-spacing: 0.185em;
+      color: rgba(26, 74, 115, 0.5);
+      @include tablet {
+        font-size: 18px;
+      }
+      @include notebook {
+        font-size: 22px;
+      }
+    }
+    &-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2em;
+      padding: 2em;
+      background: rgba(26, 74, 115, 0.15);
+      padding: 2em;
+      margin-top: 10px;
+      @include tablet {
+        justify-content: center;
+        gap: 4em;
+        padding: 4em;
+        margin-top: 21px;
+      }
+      @include notebook {
+        justify-content: center;
+        gap: 6em;
+        padding: 2em;
+      }
+    }
+    &-item {
+      width: 25%;
+      text-align: center;
+      @include tablet {
+        width: auto;
+      }
+    }
+  }
+}
+.section__form {
+  .section__title {
+    @include notebook {
+      margin: 185px 0 74px 0;
+    }
+  }
+  .form__container {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    @include notebook {
+      max-width: 1143px;
+      justify-content: space-around;
+    }
+  }
+  .form__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      width: 50%;
+    }
+    @include notebook {
+      width: 518px;
+    }
+    &-text {
+      width: 208px;
+      @include tablet {
+        width: 100%;
+      }
+      .form__description-paragraph {
+        font: 400 13px $font-primary;
+        font-style: italic;
+        line-height: 19px;
+        color: $blue-dark;
+        margin: 1em 0;
+        @include tablet {
+          font-size: 19px;
+          line-height: 130.6%;
+        }
+        @include notebook {
+          font-size: 34px;
+        }
+      }
+    }
+    &-figure {
+      width: 65px;
+      @include tablet {
+        width: 120px;
+      }
+      @include notebook {
+        width: 170px;
+      }
+    }
+  }
+  .form__embed {
+    margin-top: 64px;
+    @include tablet {
+      width: 80%;
+    }
+    @include notebook {
+      width: 479px;
+    }
+  }
+}

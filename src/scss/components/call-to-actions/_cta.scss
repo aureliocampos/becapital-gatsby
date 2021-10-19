@@ -1,0 +1,42 @@
+
+/* Cta contato*/
+.cta-contact {
+  padding: 0 1.25em;
+  margin-top: 52px;
+  .gatsby-image-wrapper {
+    width: 100px;
+    height: auto;
+  }
+  .section__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 360px;
+    font: 400 0.875em $font-primary;
+    line-height: 15px;
+    text-align: left;
+    margin: 0 auto;
+    color: $blue-dark;
+    .a {
+      width: 215px;
+      margin-left: 22px;
+    }
+    .b {
+      font-size: 0.875em;
+      font-weight: 600;
+    }
+    .c {
+      display: block;
+      font-weight: 500;
+      color: $blue-dark;
+      margin: 1em 0;
+    }
+    .d {
+      font: 300 0.75em $font-secondary;
+      font-style: italic;
+      line-height: 15px;
+      text-align: left;
+    }
+  }
+}
+

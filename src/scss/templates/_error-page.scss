@@ -1,0 +1,144 @@
+.header--error {
+  @include tablet {
+    height: 200px;
+    margin: 91px auto 1em auto;
+  }
+  @include notebook {
+    height: 200px;
+    margin: 91px auto 1em auto;
+    max-width: 1140px;
+  }
+}
+.section__title.not-page__title {
+  position: relative;
+  width: 210px;
+  margin-top: 42px;
+  margin-left: 30px;
+
+  font: 700 39px $font-primary;
+  text-align: left;
+  line-height: 29px;
+  letter-spacing: 0.015em;
+  color: $blue-dark;
+  @include tablet {
+    width: 600px;
+    font-size: 48px;
+    line-height: 51px;
+  }
+  @include notebook {
+    width: 800px;
+    font-size: 60.1364px;
+    margin-left: auto;
+  }
+  &:after {
+    content: '404';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font: 700 174px $font-primary;
+    line-height: 146px;
+    letter-spacing: 0.015em;
+    color: rgba(26, 74, 115, 0.1);
+    @include tablet {
+      font-size: 254.89px;
+      line-height: 214px;
+      left: 230px;
+      top: -50px;
+    }
+    @include notebook {
+      left: 24rem;
+    }
+  }
+}
+.section__error-page {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto 120px auto;
+    gap: 40px;
+  }
+  @include notebook {
+    max-width: 1060px;
+    gap: 139px;
+  }
+  .error-page__figure {
+    position: relative;
+    width: 250px;
+    margin: 45px auto;
+    @include tablet {
+      width: 50%;
+      margin: 30px 0;
+    }
+    .error-page__image {
+      width: 100%;
+      height: auto;
+    }
+    .adesivo-top {
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      width: 77px;
+      @include notebook {
+        top: -40px;
+        left: -40px;
+        width: 145px;
+        height: auto;
+      }
+    }
+    .adesivo-bottom {
+      position: absolute;
+      bottom: -20px;
+      right: -30px;
+      width: 77px;
+      @include notebook {
+        bottom: -40px;
+        right: -50px;
+        width: 102px;
+        height: auto;
+      }
+    }
+  }
+}
+.error-page__info {
+  margin-top: 20px;
+  text-align: center;
+  @include tablet {
+    width: 50%;
+    text-align: left;
+  }
+  .paragraph {
+    font: 300 19px $font-primary;
+    line-height: 148.1%;
+    letter-spacing: 0.015em;
+    color: $blue-dark;
+    @include notebook {
+      font-size: 25.4562px;
+    }
+  }
+  .title {
+    font: 700 19px $font-primary;
+    line-height: 148.1%;
+    letter-spacing: 0.015em;
+    color: $blue-dark;
+    margin-top: 2em;
+    @include notebook {
+      font-size: 25.4562px;
+    }
+  }
+  .social__items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1em;
+    @include tablet {
+      justify-content: flex-start;
+    }
+    .social__item {
+      svg {
+        width: 33px;
+        height: 33px;
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.section__advantage {
+  margin-top: 4rem;
+  .section__title mark {
+    background: transparent;
+    color: $orange;
+    margin-bottom: 3rem;
+  }
+}
+.advantage {
+  &__items {
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 1221px;
+      margin: 0 auto;
+    }
+  }
+  &__item {
+    position: relative;
+    width: 224px;
+    box-shadow: 0px 0px 28.174px rgb(26 74 115 / 15%);
+    border-radius: 17.2494px;
+    padding: 27px;
+    margin: 0 auto 44px auto;
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 0;
+    }
+    @include notebook {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      width: 391px;
+      padding: 47px;
+    }
+    .gatsby-image-wrapper {
+      margin-bottom: 30px;
+    }
+    &:first-of-type {
+      .gatsby-image-wrapper {
+        width: 50px;
+        @include notebook {
+          width: auto;
+        }
+      }
+      @include notebook {
+        &:hover {
+          .advantage__slide-custom {
+            display: block;
+            position: absolute;
+          }
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      .gatsby-image-wrapper {
+        width: 105px;
+        @include notebook {
+          width: auto;
+        }
+      }
+    }
+    &:last-of-type {
+      .gatsby-image-wrapper {
+        width: 27px;
+        @include notebook {
+          width: auto;
+        }
+      }
+      @include notebook {
+        &:hover {
+          .advantage__slide-custom {
+            display: block ;
+          }
+        }
+      }
+    }
+  }
+  &__button {
+    text-align: center;
+  }
+  &__title {
+    font: 400 1em $font-primary;
+    line-height: 110.6%;
+    text-align: center;
+    color: #3F3F3F;
+    @include notebook {
+      font-size: 28.2894px;
+    }
+  }
+}
+
+.advantage__slide-custom {
+  display: none;
+  .slick-slider {
+    position: relative;
+    padding: 0;
+    .slick-prev {
+      left: 0px;
+      z-index: 5;
+      top: 210px;
+      &:before {
+        content: '';
+      }
+    }
+    .slick-next{
+      right: 23px;
+      z-index: 5;
+      top: 210px;
+      &:before {
+        content: '';
+      }
+    }
+  }
+
+}
+
+#float1 {
+  position: absolute;
+  bottom: 40px;
+  left: -50px;
+  height: auto;
+  width: 250px;
+  z-index: 4;
+}
+#float2 {
+  position: absolute;
+  right: -50px;
+  bottom: -250px;
+  height: auto;
+  width: 250px;
+  z-index: 4;
+}

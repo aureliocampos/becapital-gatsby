@@ -1,0 +1,122 @@
+/* Slide de Serviços */
+.section__slide-services {
+  overflow: hidden;
+  @include notebook {
+    position: relative;
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    &:before {
+      content: '';
+      display: block;
+      background: white;
+      width: 60px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -1px;
+      z-index: 1;
+    }
+    &:after {
+      content: '';
+      display: block;
+      background: white;
+      width: 60px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: -1px;
+    }
+  }
+}
+.slide-services {
+  &__article {
+    padding: 44px 27px;
+    box-shadow: 0px 0px 21.6476px rgba(0, 0, 0, 0.14);
+    border-radius: 24px;
+    height: 480px;
+    cursor: pointer;
+    @media screen and (max-width: 330px){ /* Para Iphone 5 e SE*/
+      height: 530px;
+    }
+  }
+  &__title {
+    font: 700 0.9375em $font-primary;
+    line-height: 154.19%;
+    color: $blue-dark;
+    margin: 1.25rem 0;
+  }
+  &__text {
+    font: 400 0.725em $font-secondary;
+    line-height: 148.1%;
+    text-align: justify;
+  }
+  &__link {
+    display: block;
+    font: 400 0.625em $font-secondary;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: $blue-medium;
+    margin-top: 2rem;
+  }
+  .slick-slide {
+    filter: blur(2px);
+    transform: scale(0.9);
+    transition: 300ms;
+    opacity: 0.5;
+  }
+  .slick-slide>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 0 0.5em;
+  }
+  .slick-slide.slick-active.slick-center.slick-current {
+    transform: scale(1.125);
+    filter: blur(0);
+    opacity: 1;
+  }
+  .slick-prev, .slick-next {
+    display: none !important;
+  }
+  .slick-prev {
+    @include notebook {
+      display: block !important;
+      top: 290px;
+      left: -301px;
+      z-index: 1;
+    }
+  }
+  .slick-next {
+    @include notebook {
+      display: block !important;
+      top: 290px;
+      right: -290px;
+      z-index: 1;
+    }
+  }
+}
+.section__slide-services {
+  .slick-slider {
+    .slick-list {
+      padding: 50px;
+      overflow: initial;
+    }
+    @include tablet {
+      max-width: 400px;
+      margin: 0 auto;
+
+    }
+    @include notebook {
+      overflow: initial;
+    }
+  }
+}
+
+.slick-slide.slick-active.slick-center.slick-current {
+  .section__logos {
+    margin-top: 50px;
+    opacity: 1;
+  }
+}

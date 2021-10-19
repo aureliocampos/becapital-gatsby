@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Trasandina';
+    src: url('TrasandinaBlack-Italic.woff2') format('woff2'),
+        url('TrasandinaBlack-Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina';
+    src: url('TrasandinaBold.woff2') format('woff2'),
+        url('TrasandinaBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina';
+    src: url('TrasandinaBlack.woff2') format('woff2'),
+        url('TrasandinaBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina Book';
+    src: url('TrasandinaBook.woff2') format('woff2'),
+        url('TrasandinaBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina';
+    src: url('TrasandinaBold-Italic.woff2') format('woff2'),
+        url('TrasandinaBold-Italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina';
+    src: url('TrasandinaExtraLight.woff2') format('woff2'),
+        url('TrasandinaExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina Book';
+    src: url('TrasandinaBook-Italic.woff2') format('woff2'),
+        url('TrasandinaBook-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina';
+    src: url('TrasandinaExtraLight-Italic.woff2') format('woff2'),
+        url('TrasandinaExtraLight-Italic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina';
+    src: url('TrasandinaLight.woff2') format('woff2'),
+        url('TrasandinaLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina';
+    src: url('TrasandinaLight-Italic.woff2') format('woff2'),
+        url('TrasandinaLight-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina';
+    src: url('TrasandinaMedium.woff2') format('woff2'),
+        url('TrasandinaMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina';
+    src: url('TrasandinaMedium-Italic.woff2') format('woff2'),
+        url('TrasandinaMedium-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina';
+    src: url('TrasandinaRegular.woff2') format('woff2'),
+        url('TrasandinaRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina Regular';
+    src: url('TrasandinaRegular-Italic.woff2') format('woff2'),
+        url('TrasandinaRegular-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina';
+    src: url('TrasandinaThin.woff2') format('woff2'),
+        url('TrasandinaThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina';
+    src: url('TrasandinaThin-Italic.woff2') format('woff2'),
+        url('TrasandinaThin-Italic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina Ultra';
+    src: url('TrasandinaUltra.woff2') format('woff2'),
+        url('TrasandinaUltra.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trasandina Ultra';
+    src: url('TrasandinaUltra-Italic.woff2') format('woff2'),
+        url('TrasandinaUltra-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
