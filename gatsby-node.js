@@ -31,6 +31,7 @@ exports.createPages = async gatsbyUtilities => {
  * This function creates all the individual blog pages in this site
  */
 const createIndividualBlogPostPages = async ({ posts, gatsbyUtilities }) =>
+
   Promise.all(
     posts.map(({ previous, post, next }) =>
       // createPage is an action passed to createPages

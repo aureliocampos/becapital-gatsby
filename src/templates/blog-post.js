@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-// import Image from "gatsby-image"
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import parse from "html-react-parser"
 
 // We're using Gutenberg so we need the block styles
@@ -15,70 +15,85 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const BlogPostTemplate = ({ data: { previous, next, post } }) => {
-  // const featuredImage = {
-  //   fluid: post.featuredImage?.node?.localFile?.childImageSharp?.fluid,
-  //   alt: post.featuredImage?.node?.alt || ``,
-  // }
+
+  const image = getImage(post.featuredImage.node.localFile)
+
 
   return (
     <Layout>
       <Seo title={post.title} description={post.excerpt} />
 
       <article
-        className="blog-post"
+        className="post__single single-article"
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
-          <h1 itemProp="headline">{parse(post.title)}</h1>
-
-          <p>{post.date}</p>
-
-          {/* if we have a featured image for this post let's display it */}
-          {/* {featuredImage?.fluid && (
-            <Image
-              fluid={featuredImage.fluid}
-              alt={featuredImage.alt}
-              style={{ marginBottom: 50 }}
+        <header className="single-article__header">
+          <GatsbyImage 
+              image={image}
+              alt={post.title}
+              as="figure"
+              className="single-article__figure"
+              imgClassName="single-article__image" 
             />
-          )} */}
         </header>
 
         {!!post.content && (
-          <section itemProp="articleBody">{parse(post.content)}</section>
+          <section className="single-article__main">
+            <h1 className="single-article__title" itemProp="headline" >{parse(post.title)}</h1>
+            <p className="single-article__excerpt">{parse(post.excerpt)}</p>
+            {/* <time className="single-article__time-read" time={`00:0${readingTimeEstimated}`}>leitura de {readingTimeEstimated} min</time> */}
+            <div className="single-article__content editor__style--default"  itemProp="articleBody">
+              {parse(post.content)}
+            </div>
+          </section>
         )}
-
-        <hr />
-
       </article>
-
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.uri} rel="prev">
-                ← {parse(previous.title)}
-              </Link>
-            )}
-          </li>
-
-          <li>
-            {next && (
-              <Link to={next.uri} rel="next">
-                {parse(next.title)} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+      <section className="section more-articles">
+        <div className="section__content more-articles__grid">
+          <h2 className="section__title">Leia mais artigos</h2>
+          <ul className="more-articles__items">
+            {
+              previous && (
+                <li className="more-articles__item more-articles__item--previous">
+                  <Link to={`${previous.uri}`}>
+                    <article className="more-articles__article">
+                      <GatsbyImage 
+                        image={getImage(previous.featuredImage.node.localFile)}
+                        alt={previous.title}
+                        as="figure"
+                        className="more-articles__figure"
+                        imgClassName="more-articles__image" 
+                      />
+                      <h2 className="more-articles__title">{previous.title}</h2>
+                      <p className="more-articles__excerpt">{previous.excerpt}</p>
+                    </article>
+                  </Link>
+                </li>
+              )
+            }
+            {
+              next && (
+                <li className="more-articles__item more-articles__item--next">
+                  <Link to={`${next.uri}`}>
+                    <article className="more-articles__article">
+                      <GatsbyImage 
+                        image={getImage(next.featuredImage.node.localFile)}
+                        alt={next.title}
+                        as="figure"
+                        className="more-articles__figure"
+                        imgClassName="more-articles__image" 
+                      />
+                      <h2 className="more-articles__title">{next.title}</h2>
+                      <p className="more-articles__excerpt">{parse(next.excerpt)}</p>
+                    </article>
+                  </Link>
+                </li>
+              )
+            }
+          </ul>
+        </div>
+      </section>
     </Layout>
   )
 }
@@ -99,18 +114,47 @@ export const pageQuery = graphql`
       content
       title
       date(formatString: "MMMM DD, YYYY")
+      featuredImage {
+        node {
+          localFile {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
     }
 
     # this gets us the previous post by id (if it exists)
     previous: wpPost(id: { eq: $previousPostId }) {
       uri
       title
+      excerpt
+      featuredImage {
+        node {
+          localFile {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
     }
 
     # this gets us the next post by id (if it exists)
     next: wpPost(id: { eq: $nextPostId }) {
       uri
       title
+      excerpt
+      featuredImage {
+        node {
+          localFile {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
     }
   }
 `
