@@ -65,8 +65,8 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
                         className="more-articles__figure"
                         imgClassName="more-articles__image" 
                       />
-                      <h2 className="more-articles__title">{previous.title}</h2>
-                      <p className="more-articles__excerpt">{previous.excerpt}</p>
+                      <h2 className="more-articles__title">{parse(previous.title)}</h2>
+                      <p className="more-articles__excerpt">{parse(previous.excerpt)}</p>
                     </article>
                   </Link>
                 </li>
@@ -84,7 +84,7 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
                         className="more-articles__figure"
                         imgClassName="more-articles__image" 
                       />
-                      <h2 className="more-articles__title">{next.title}</h2>
+                      <h2 className="more-articles__title">{parse(next.title)}</h2>
                       <p className="more-articles__excerpt">{parse(next.excerpt)}</p>
                     </article>
                   </Link>
