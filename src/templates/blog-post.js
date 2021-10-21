@@ -56,7 +56,7 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
             {
               previous && (
                 <li className="more-articles__item more-articles__item--previous">
-                  <Link to={`${previous.uri}`}>
+                  <Link to={previous.uri}>
                     <article className="more-articles__article">
                       <GatsbyImage 
                         image={getImage(previous.featuredImage.node.localFile)}
@@ -75,7 +75,7 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
             {
               next && (
                 <li className="more-articles__item more-articles__item--next">
-                  <Link to={`${next.uri}`}>
+                  <Link to={next.uri}>
                     <article className="more-articles__article">
                       <GatsbyImage 
                         image={getImage(next.featuredImage.node.localFile)}
