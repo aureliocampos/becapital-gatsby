@@ -14,6 +14,7 @@ const chunk = require(`lodash/chunk`)
 exports.createPages = async gatsbyUtilities => {
   // Query our posts from the GraphQL server
   const posts = await getPosts(gatsbyUtilities)
+  const services = await getServices(gatsbyUtilities)
 
   // If there are no posts in WordPress, don't do anything
   if (!posts.length) {
@@ -25,6 +26,8 @@ exports.createPages = async gatsbyUtilities => {
 
   // And a paginated archive
   await createBlogPostArchive({ posts, gatsbyUtilities })
+
+  await createIndividualServicesPages({ services, gatsbyUtilities })
 }
 
 /**
@@ -133,15 +136,11 @@ async function createBlogPostArchive({ posts, gatsbyUtilities }) {
 async function getPosts({ graphql, reporter }) {
   const graphqlResult = await graphql(/* GraphQL */ `
     query WpPosts {
-      # Query all WordPress blog posts sorted by date
       allWpPost(sort: { fields: [date], order: DESC }) {
         edges {
           previous {
             id
           }
-
-          # note: this is a GraphQL alias. It renames "node" to "post" for this query
-          # We're doing this because this "node" is a post! It makes our code more readable further down the line.
           post: node {
             id
             uri
@@ -164,4 +163,48 @@ async function getPosts({ graphql, reporter }) {
   }
 
   return graphqlResult.data.allWpPost.edges
+}
+
+
+/**
+ * This function creates all the individual blog pages in this site
+ */
+const createIndividualServicesPages = async ({ services, gatsbyUtilities }) =>
+
+ Promise.all(
+   services.map(({ service }) =>
+     gatsbyUtilities.actions.createPage({
+       path: service.slug,
+       component: path.resolve(`./src/templates/service-post.js`),
+       context: {
+         id: service.id,
+       },
+     })
+   )
+ )
+
+
+async function getServices({ graphql, reporter }) {
+  const graphqlResult = await graphql(/* GraphQL */ `
+    query WpServices {
+      allWpServico(sort: { fields: [date], order: DESC }) {
+        edges {
+          service: node {
+            id
+            slug
+          }
+        }
+      }
+    }
+  `)
+
+  if (graphqlResult.errors) {
+    reporter.panicOnBuild(
+      `There was an error loading your services posts`,
+      graphqlResult.errors
+    )
+    return
+  }
+
+  return graphqlResult.data.allWpServico.edges
 }

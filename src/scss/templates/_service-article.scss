@@ -8,6 +8,7 @@
   &__header {
     figure {
       height: 197px;
+      width: 100%;
       @include tablet {
         height: 350px;
       }
