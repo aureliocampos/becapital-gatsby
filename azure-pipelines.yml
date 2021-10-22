@@ -26,6 +26,6 @@ steps:
 
 - script: |
     npm install
-    npm install gatsby
+    npm install gatsby -g
     gatsby build
   displayName: 'npm install and gatsby build'
