@@ -5,7 +5,7 @@ import SectionMidia from "../components/SectionMidia";
 import CardBlog from "../components/Cards/CardBlog";
 import SlideTestimony from "../components/Slides/SlideTestimony";
 import Seo from "../components/seo";
-import ImageBackground from "../images/banner-home.jpg";
+import ImageBackground from "../images/banner-home_1.webp";
 
 const styleBackgroundImage = {
   backgroundImage: `url(${ImageBackground})`,
