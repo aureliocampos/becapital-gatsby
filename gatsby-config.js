@@ -17,6 +17,12 @@ module.exports = {
   siteMetadata: siteMetadata,
   plugins: [
     {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'pt-BR'
+      }
+    },
+    {
       resolve: `gatsby-source-wordpress`,
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
