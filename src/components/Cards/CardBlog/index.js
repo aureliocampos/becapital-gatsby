@@ -28,7 +28,7 @@ export default function CardBlog() {
       `}
       render={data => (
         <section className="section section__posts--more">
-          <21 className="section__title">Blog</h2>
+          <h2 className="section__title">Blog</h2>
           <div className="section__content posts posts--grid">
             <ul className="posts__items">
               {data.allWpPost.nodes.map( article => {
