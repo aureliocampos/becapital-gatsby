@@ -40,7 +40,7 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout>
-      <Seo title="Blog" />
+      <Seo title="Blog |" />
 
       <section className="section section__posts">
         <h1 className="section__title">Blog</h1>

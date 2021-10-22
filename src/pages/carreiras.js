@@ -12,7 +12,7 @@ const Carreiras = () => {
   return(
     <Layout>
       <Seo
-        title="Carreiras "
+        title="Carreiras |"
         description="Uma nova maneira de pensar e agir no mercado de capitais. Acreditamos que investir é para todos."
       />
       <section className="banner banner__secondary banner--carreiras">

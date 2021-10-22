@@ -23,7 +23,7 @@ const ServicesPostTemplate = ({ data: { service } }) => {
 
   return (
     <Layout>
-      <Seo title={service.title} description={service.seo.metaDesc} />
+      <Seo title={`${service.title} |`} description={service.seo.metaDesc} />
       <article className="single-service single-service__article">
         <header className="single-service__header">
           <GatsbyImage 

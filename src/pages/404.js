@@ -10,7 +10,7 @@ const NotFoundPage = () => {
   return (
     <Layout>
       <Seo
-        title="404 Not Found "
+        title="404 Not Found |"
       />
       <div className="header--error">
         <h1 className="section__title not-page__title">Parece que a gente não esperava por essa...</h1>

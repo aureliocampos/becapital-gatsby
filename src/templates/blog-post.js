@@ -21,7 +21,7 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
 
   return (
     <Layout>
-      <Seo title={post.title} description={post.excerpt} />
+      <Seo title={`${post.title} |`} description={post.excerpt} />
 
       <article
         className="post__single single-article"

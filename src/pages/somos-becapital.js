@@ -9,7 +9,7 @@ const Somos = () => {
   return(
     <Layout>
       <Seo
-        title="Somos BeCapital "
+        title="Somos BeCapital |"
         description="Uma nova maneira de pensar e agir no mercado de capitais. Acreditamos que investir é para todos."
       />
       <section className="banner banner__secondary banner--somos">
