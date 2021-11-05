@@ -21,12 +21,12 @@ steps:
   - task: Npm@1
     inputs:
       command: 'install'
-      workingDir: '/app'
+      workingDir: ''
     displayName: 'Npm Install'
   - task: Npm@1
     inputs:
       command: 'custom'
-      workingDir: '/'
+      workingDir: ''
       customCommand: 'run build'
     displayName: 'Gatsby Build'
   - task: AzureStaticWebApp@0
