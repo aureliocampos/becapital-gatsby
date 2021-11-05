@@ -25,7 +25,8 @@ steps:
     displayName: 'Npm Install'
     
   - script: |
-      npx gatsby build
+      npm install
+      npm gatsby build
     displayName: 'gatsby build'
   - task: Npm@1
     inputs:
