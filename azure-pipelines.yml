@@ -1,3 +1,11 @@
+schedules:
+  - cron: "0 0 * * *"
+    displayName: Daily midnight build
+    branches:
+      include:
+      - master
+    always: true
+
 trigger:
   - master
 
@@ -7,6 +15,15 @@ pool:
 steps:
   - checkout: self
     submodules: true
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '14.x'
+  - task: CmdLine@2
+    inputs:
+      script: |
+        npm i
+
+        npm build
   - task: AzureStaticWebApp@0
     inputs:
       app_location: '/public'
