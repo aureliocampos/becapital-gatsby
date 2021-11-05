@@ -23,7 +23,7 @@ steps:
       script: |
         npm i
 
-        npm build
+        npm run build
   - task: AzureStaticWebApp@0
     inputs:
       app_location: '/public'
