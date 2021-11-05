@@ -23,12 +23,9 @@ steps:
       command: 'install'
       workingDir: ''
     displayName: 'Npm Install'
-  - task: Npm@1
+  - task: CmdLine@2
     inputs:
-      command: 'custom'
-      workingDir: ''
-      customCommand: 'run build'
-    displayName: 'Gatsby Build'
+      script: 'gatsby build'
   - task: AzureStaticWebApp@0
     inputs:
       app_location: '/public'
