@@ -1,19 +1,5 @@
-# Node.js with React
-# Build a Node.js project that uses React.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
-
-schedules:
-- cron: "0 0 * * *"
-  displayName: Daily midnight build
-  branches:
-    include:
-    - master
-  always: true
-
 trigger:
-- master
+  - master
 
 pool:
   vmImage: ubuntu-latest
@@ -21,19 +7,9 @@ pool:
 steps:
   - checkout: self
     submodules: true
-  - task: NodeTool@0
-    inputs:
-      versionSpec: '14.x'
-  - task: CmdLine@2
-    inputs:
-      script: |
-        npm i
-      
-        npm build
   - task: AzureStaticWebApp@0
     inputs:
       app_location: '/public'
       api_location: 'api'
       output_location: '/public'
-    env:
-      azure_static_web_apps_api_token: $(deployment_token)
+      azure_static_web_apps_api_token: $(token)
