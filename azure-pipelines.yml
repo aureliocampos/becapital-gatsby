@@ -26,7 +26,10 @@ steps:
       versionSpec: '14.x'
   - task: CmdLine@2
     inputs:
-      script: 'gatsby build'
+      script: |
+        npm i
+      
+        gatsby build
   - task: AzureStaticWebApp@0
     inputs:
       app_location: '/public'
