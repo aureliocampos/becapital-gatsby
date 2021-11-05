@@ -4,7 +4,7 @@ const preferDefault = m => (m && m.default) || m
 
 
 exports.components = {
-  "component---cache-dev-404-page-js": preferDefault(require("/home/joao/dev/microservices/BeCapital - Web Front/.cache/dev-404-page.js")),
+  "component---cache-caches-gatsby-plugin-offline-app-shell-js": preferDefault(require("/home/joao/dev/microservices/BeCapital - Web Front/.cache/caches/gatsby-plugin-offline/app-shell.js")),
   "component---src-pages-404-js": preferDefault(require("/home/joao/dev/microservices/BeCapital - Web Front/src/pages/404.js")),
   "component---src-pages-blog-js": preferDefault(require("/home/joao/dev/microservices/BeCapital - Web Front/src/pages/blog.js")),
   "component---src-pages-carreiras-js": preferDefault(require("/home/joao/dev/microservices/BeCapital - Web Front/src/pages/carreiras.js")),
