@@ -1,30 +1,30 @@
 var plugins = [{
       name: 'gatsby-plugin-html-attributes',
-      plugin: require('/home/joao/dev/becapital-wp-integrado/becapital-gatsby/node_modules/gatsby-plugin-html-attributes/gatsby-ssr'),
+      plugin: require('/home/joao/dev/microservices/BeCapital - Web Front/node_modules/gatsby-plugin-html-attributes/gatsby-ssr'),
       options: {"plugins":[],"lang":"pt-BR"},
     },{
       name: 'gatsby-plugin-sitemap',
-      plugin: require('/home/joao/dev/becapital-wp-integrado/becapital-gatsby/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      plugin: require('/home/joao/dev/microservices/BeCapital - Web Front/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
       options: {"plugins":[],"output":"/sitemap","createLinkInHead":true,"entryLimit":45000,"query":"{ site { siteMetadata { siteUrl } } allSitePage { nodes { path } } }","excludes":[]},
     },{
       name: 'gatsby-plugin-manifest',
-      plugin: require('/home/joao/dev/becapital-wp-integrado/becapital-gatsby/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/home/joao/dev/microservices/BeCapital - Web Front/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"BeCapital","short_name":"BeCapital","start_url":"/","background_color":"#1A4A73","theme_color":"#FF6746","display":"standalone","icon":"./src/images/favicon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"320e85f03b4650d36c4a6f775ce9daf6"},
     },{
       name: 'gatsby-plugin-image',
-      plugin: require('/home/joao/dev/becapital-wp-integrado/becapital-gatsby/node_modules/gatsby-plugin-image/gatsby-ssr'),
+      plugin: require('/home/joao/dev/microservices/BeCapital - Web Front/node_modules/gatsby-plugin-image/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-react-helmet',
-      plugin: require('/home/joao/dev/becapital-wp-integrado/becapital-gatsby/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/home/joao/dev/microservices/BeCapital - Web Front/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-offline',
-      plugin: require('/home/joao/dev/becapital-wp-integrado/becapital-gatsby/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      plugin: require('/home/joao/dev/microservices/BeCapital - Web Front/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-google-tagmanager',
-      plugin: require('/home/joao/dev/becapital-wp-integrado/becapital-gatsby/node_modules/gatsby-plugin-google-tagmanager/gatsby-ssr'),
+      plugin: require('/home/joao/dev/microservices/BeCapital - Web Front/node_modules/gatsby-plugin-google-tagmanager/gatsby-ssr'),
       options: {"plugins":[],"id":"GTM-5X24M96","includeInDevelopment":false,"defaultDataLayer":null,"routeChangeEventName":"gatsby-route-change","enableWebVitalsTracking":false,"selfHostedOrigin":"https://www.googletagmanager.com"},
     }]
 /* global plugins */

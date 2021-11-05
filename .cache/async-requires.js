@@ -2,7 +2,7 @@
 const preferDefault = m => (m && m.default) || m
 
 exports.components = {
-  "component---cache-caches-gatsby-plugin-offline-app-shell-js": () => import("./../../caches/gatsby-plugin-offline/app-shell.js" /* webpackChunkName: "component---cache-caches-gatsby-plugin-offline-app-shell-js" */),
+  "component---cache-dev-404-page-js": () => import("./../../dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
   "component---src-pages-404-js": () => import("./../../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-blog-js": () => import("./../../../src/pages/blog.js" /* webpackChunkName: "component---src-pages-blog-js" */),
   "component---src-pages-carreiras-js": () => import("./../../../src/pages/carreiras.js" /* webpackChunkName: "component---src-pages-carreiras-js" */),
