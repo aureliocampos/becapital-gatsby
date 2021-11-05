@@ -23,10 +23,11 @@ steps:
       command: 'install'
       workingDir: ''
     displayName: 'Npm Install'
-    
   - script: |
       npm install
-      npm gatsby build
+    displayName: 'npm install'
+  - script: |
+      npx gatsby build
     displayName: 'gatsby build'
   - task: Npm@1
     inputs:
