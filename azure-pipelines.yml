@@ -18,12 +18,17 @@ steps:
   - task: NodeTool@0
     inputs:
       versionSpec: '14.x'
-  - task: CmdLine@2
+  - task: Npm@1
     inputs:
-      script: |
-        npm i
-
-        npm run build
+      command: 'install'
+      workingDir: '/'
+    displayName: 'Npm Install'
+  - task: Npm@1
+    inputs:
+      command: 'custom'
+      workingDir: '/'
+      customCommand: 'run build'
+    displayName: 'Gatsby Build'
   - task: AzureStaticWebApp@0
     inputs:
       app_location: '/public'
