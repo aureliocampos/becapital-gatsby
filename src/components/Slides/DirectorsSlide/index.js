@@ -42,11 +42,11 @@ export default class DirectorsSlide extends Component {
         }
       ]
     };
-    return(
+    return (
       <section className="section section__directors">
         <div className="section__container">
-         <h2 className="section__title">Somos BeCapital</h2>
-         <p className="section__subtitle--b">A BeCapital é resultado de uma nova maneira de pensar e agir no mercado de capitais como um todo.           </p>
+          <h2 className="section__title">Somos BeCapital</h2>
+          <p className="section__subtitle--b">A BeCapital é resultado de uma nova maneira de pensar e agir no mercado de capitais como um todo.           </p>
           <div className="directors__items">
             <Slider {...settings}>
               <article className="directors__item">
@@ -62,20 +62,8 @@ export default class DirectorsSlide extends Component {
                 </footer>
               </article>
               <article className="directors__item">
-                <StaticImage src="../../../images/dir_tom_santos_2x.png" alt="Foto de Tom Santos, Diretor de Marketing da BeCapital" />
-                <footer className="directors__information">
-                  <div className="directors__description">
-                    <h2 className="directors__name">Tom Santos</h2>
-                    <p className="directors__job">CMO, Diretor de Marketing</p>
-                  </div>
-                  <a href="https://www.linkedin.com/in/washingtonsantos/" target="_blank" rel="noopener noreferrer" className="directors__social">
-                    <StaticImage src="../../../images/logo_linkedin.png" alt="logo do linkedin" />
-                  </a>
-                </footer>
-              </article>
-              <article className="directors__item">
- 
-              <StaticImage src="../../../images/dir_calebe_vieira_2x.png" alt="Foto de Calebe Vieira, Diretor Comercial da BeCapital" />
+
+                <StaticImage src="../../../images/dir_calebe_vieira_2x.png" alt="Foto de Calebe Vieira, Diretor Comercial da BeCapital" />
                 <footer className="directors__information">
                   <div className="directors__description">
                     <h2 className="directors__name">Calebe Vieira</h2>

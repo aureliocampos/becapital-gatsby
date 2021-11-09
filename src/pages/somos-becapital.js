@@ -22,7 +22,7 @@ const Somos = () => {
           </div>
         </div>
       </section>
-      <DirectorsSlide/>
+      {/* <DirectorsSlide/> */}
       <CardSupport />
       <section className="section cta-contact">
         <div className="section__container">

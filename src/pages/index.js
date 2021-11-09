@@ -11,7 +11,7 @@ const styleBackgroundImage = {
   backgroundImage: `url(${ImageBackground})`,
 }
 const Home = () => {
-  return(
+  return (
     <Layout>
       <Seo
         title=" "
@@ -23,7 +23,7 @@ const Home = () => {
             <h1 className="banner__title">Faça seu planejamento financeiro agora</h1>
             <p className="banner__subtitle">Nosso orientador financeiro te ajudará a encontrar o título mais adequado para você atingir seu objetivo. </p>
             <div className="button__container">
-              <a href="https://conteudo.be.capital/quero-investir-becapital"  target="_blank" rel="noopener noreferrer" className="button button__secondary">Simule seu investimento</a>
+              <a href="https://api.whatsapp.com/send?phone=5521965431886" target="_blank" rel="noopener noreferrer" className="button button__secondary">fale com um de nossos especialistas!</a>
             </div>
           </div>
         </div>
