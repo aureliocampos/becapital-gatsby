@@ -9,11 +9,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
     max-width: 600px;
     margin: 4em auto;
     padding: 0;
     gap: 3em 1.5em;
+    @media (min-width: 768px){ /* Para Iphone 5 e SE*/
+      flex-direction: row;
+    }
     .slick-slider {
       max-width: 915px;
       margin: 0 auto;
