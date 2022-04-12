@@ -11,27 +11,40 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 import LogoItau from "../images/logo_itau.webp";
+import LogoPorto from "../images/logo_porto_seguro_1x.png";
+import LogoCaixa from "../images/logo_caixa_1x.png";
 
 import LogoAmil from "../images/logo_amil.webp";
-import LogoBradesco from "../images/logo_bradesco-saude.webp"
+import LogoBradesco from "../images/logo_bradesco-saude.webp";
 import LogoGolden from "../images/logo_goldencross.webp";
 import LogoNotredame from "../images/logo_notredame.webp";
 import LogoSulAmerica from "../images/logo_sulamerica_saude.webp";
 
+import LogoAdvanced from "../images/logo_advanced.png";
+import LogoDaycoval from "../images/logo_banco_daycoval.png";
+
+import LogoIcatu from "../images/logo_icatu.png";
+import LogoMapfre from "../images/logo_mapfre.png";
+import LogoCentauro from "../images/logo_centauro-on.png";
+import LogoMetlife from "../images/logo_metlife.png";
+import LogoAegon from "../images/logo_mongeral_aegon.png";
+import LogoOmint from "../images/logo_omint.png";
+import LogoPrudential from "../images/logo_prudential.png";
+
 const clientsData = [
   {
-    id:"consórcios",
+    id:"consorcios",
     logos: [
       {
         src: LogoItau, 
         alt:"Logo Itaú Consorcio" 
       },
       {
-        src:"../images/logo_porto_seguro_1x.png", 
+        src:LogoPorto, 
         alt:"Logo Porto Seguro"
       },
       {
-        src:"../../../images/logo_caixa_1x.png", 
+        src:LogoCaixa, 
         alt:"Logo Caixa"
       }
     ]
@@ -40,24 +53,10 @@ const clientsData = [
     id: "cambio",
     logos: [
       {
-        src:"../images/logo_advanced.png", alt:"Logo Advanced"
+        src:LogoAdvanced, alt:"Logo Advanced"
       },
       {
-        src:"../images/logo_banco_daycoval.png", alt:"Logo Banco Daycoval"
-      }
-    ]
-  },
-  {
-    id: "planejamento-financeiro",
-    logos: [
-      {
-        src:"../images/logo_itau_consorcio_1x.png", alt:"Logo Itaú Consorcio"
-      },
-      {
-        src:"../images/logo_porto_seguro_1x.png", alt:"Logo Porto Seguro"
-      },
-      {
-        src:"../images/logo_caixa_1x.png", alt:"Logo Caixa"
+        src:LogoDaycoval, alt:"Logo Banco Daycoval"
       }
     ]
   },
@@ -85,25 +84,25 @@ const clientsData = [
     id: "seguro-de-vida",
     logos: [
       {
-        src:"../images/logo_icatu.png", alt:"Logo Icatu"
+        src:LogoIcatu, alt:"Logo Icatu"
       },
       {
-        src:"../images/logo_mapfre.png", alt:"Logo Mapfre"
+        src:LogoMapfre, alt:"Logo Mapfre"
       },
       {
-        src:"../images/logo_centauro-on.png", alt:"Logo Centauro on"
+        src:LogoCentauro, alt:"Logo Centauro on"
       },
       {
-        src:"../images/logo_metlife.png", alt:"Logo Metlife"
+        src:LogoMetlife, alt:"Logo Metlife"
       },
       {
-        src:"../images/logo_mongeral_aegon.png", alt:"Logo Mogeral aegon"
+        src:LogoAegon, alt:"Logo Mogeral aegon"
       },
       {
-        src:"../images/logo_omint.png", alt:"Logo Omint" 
+        src:LogoOmint, alt:"Logo Omint" 
       },
       {
-        src:"../images/logo_prudential.png", alt:"Logo Prudential"
+        src:LogoPrudential, alt:"Logo Prudential"
       }
     ]
   }

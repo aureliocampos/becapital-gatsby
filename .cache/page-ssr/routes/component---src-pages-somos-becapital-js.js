@@ -1,11 +1,8 @@
-exports.id = "component---src-pages-somos-becapital-js";
-exports.ids = ["component---src-pages-somos-becapital-js"];
+exports.id = 539;
+exports.ids = [539];
 exports.modules = {
 
-/***/ "./node_modules/camelcase/index.js":
-/*!*****************************************!*\
-  !*** ./node_modules/camelcase/index.js ***!
-  \*****************************************/
+/***/ 3204:
 /***/ ((module) => {
 
 "use strict";
@@ -89,10 +86,7 @@ module.exports["default"] = camelCase;
 
 /***/ }),
 
-/***/ "./node_modules/classnames/index.js":
-/*!******************************************!*\
-  !*** ./node_modules/classnames/index.js ***!
-  \******************************************/
+/***/ 4184:
 /***/ ((module, exports) => {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -156,14 +150,11 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
-/***/ "./node_modules/enquire.js/src/MediaQuery.js":
-/*!***************************************************!*\
-  !*** ./node_modules/enquire.js/src/MediaQuery.js ***!
-  \***************************************************/
+/***/ 2988:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var QueryHandler = __webpack_require__(/*! ./QueryHandler */ "./node_modules/enquire.js/src/QueryHandler.js");
-var each = (__webpack_require__(/*! ./Util */ "./node_modules/enquire.js/src/Util.js").each);
+var QueryHandler = __webpack_require__(1755);
+var each = (__webpack_require__(6665).each);
 
 /**
  * Represents a single media query, manages it's state and registered handlers for this query
@@ -259,14 +250,11 @@ module.exports = MediaQuery;
 
 /***/ }),
 
-/***/ "./node_modules/enquire.js/src/MediaQueryDispatch.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/enquire.js/src/MediaQueryDispatch.js ***!
-  \***********************************************************/
+/***/ 8177:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var MediaQuery = __webpack_require__(/*! ./MediaQuery */ "./node_modules/enquire.js/src/MediaQuery.js");
-var Util = __webpack_require__(/*! ./Util */ "./node_modules/enquire.js/src/Util.js");
+var MediaQuery = __webpack_require__(2988);
+var Util = __webpack_require__(6665);
 var each = Util.each;
 var isFunction = Util.isFunction;
 var isArray = Util.isArray;
@@ -354,10 +342,7 @@ module.exports = MediaQueryDispatch;
 
 /***/ }),
 
-/***/ "./node_modules/enquire.js/src/QueryHandler.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/enquire.js/src/QueryHandler.js ***!
-  \*****************************************************/
+/***/ 1755:
 /***/ ((module) => {
 
 /**
@@ -438,10 +423,7 @@ module.exports = QueryHandler;
 
 /***/ }),
 
-/***/ "./node_modules/enquire.js/src/Util.js":
-/*!*********************************************!*\
-  !*** ./node_modules/enquire.js/src/Util.js ***!
-  \*********************************************/
+/***/ 6665:
 /***/ ((module) => {
 
 /**
@@ -492,1576 +474,124 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/enquire.js/src/index.js":
-/*!**********************************************!*\
-  !*** ./node_modules/enquire.js/src/index.js ***!
-  \**********************************************/
+/***/ 4974:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var MediaQueryDispatch = __webpack_require__(/*! ./MediaQueryDispatch */ "./node_modules/enquire.js/src/MediaQueryDispatch.js");
+var MediaQueryDispatch = __webpack_require__(8177);
 module.exports = new MediaQueryDispatch();
 
 
 /***/ }),
 
-/***/ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js ***!
-  \**********************************************************************/
+/***/ 3040:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "GatsbyImage": () => (/* binding */ Y),
-/* harmony export */   "MainImage": () => (/* binding */ q),
-/* harmony export */   "Placeholder": () => (/* binding */ C),
-/* harmony export */   "StaticImage": () => (/* binding */ J),
-/* harmony export */   "generateImageData": () => (/* binding */ y),
-/* harmony export */   "getImage": () => (/* binding */ R),
-/* harmony export */   "getImageData": () => (/* binding */ W),
-/* harmony export */   "getLowResolutionImageURL": () => (/* binding */ w),
-/* harmony export */   "getSrc": () => (/* binding */ x),
-/* harmony export */   "getSrcSet": () => (/* binding */ I),
-/* harmony export */   "withArtDirection": () => (/* binding */ j)
+/* harmony export */   "HN": () => (/* binding */ Y),
+/* harmony export */   "Jv": () => (/* binding */ J),
+/* harmony export */   "gJ": () => (/* binding */ R)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* unused harmony exports MainImage, Placeholder, generateImageData, getImageData, getLowResolutionImageURL, getSrc, getSrcSet, withArtDirection */
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1051);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var common_tags__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! common-tags */ "./node_modules/common-tags/es/index.js");
-/* harmony import */ var camelcase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! camelcase */ "./node_modules/camelcase/index.js");
+/* harmony import */ var common_tags__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5863);
+/* harmony import */ var camelcase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3204);
 /* harmony import */ var camelcase__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(camelcase__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5697);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+function s(){return s=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var a=arguments[t];for(var i in a)Object.prototype.hasOwnProperty.call(a,i)&&(e[i]=a[i]);}return e;},s.apply(this,arguments);}function l(e,t){if(null==e)return{};var a,i,r={},n=Object.keys(e);for(i=0;i<n.length;i++)t.indexOf(a=n[i])>=0||(r[a]=e[a]);return r;}var d,u=(/* unused pure expression or super */ null && ([.25,.5,1,2])),c=(/* unused pure expression or super */ null && ([750,1080,1366,1920])),h=(/* unused pure expression or super */ null && ([320,654,768,1024,1366,1600,1920,2048,2560,3440,3840,4096])),g=function(e){return console.warn(e);},p=function(e,t){return e-t;},m=function(e){return e.map(function(e){return e.src+" "+e.width+"w";}).join(",\n");};function f(e){var t=e.lastIndexOf(".");if(-1!==t){var a=e.slice(t+1);if("jpeg"===a)return"jpg";if(3===a.length||4===a.length)return a;}}function v(e){var t=e.layout,a=void 0===t?"constrained":t,i=e.width,n=e.height,o=e.sourceMetadata,l=e.breakpoints,d=e.aspectRatio,u=e.formats,c=void 0===u?["auto","webp"]:u;return c=c.map(function(e){return e.toLowerCase();}),a=r(a),i&&n?s({},e,{formats:c,layout:a,aspectRatio:i/n}):(o.width&&o.height&&!d&&(d=o.width/o.height),"fullWidth"===a?(i=i||o.width||l[l.length-1],n=n||Math.round(i/(d||1.3333333333333333))):(i||(i=n&&d?n*d:o.width?o.width:n?Math.round(n/1.3333333333333333):800),d&&!n?n=Math.round(i/d):d||(d=i/n)),s({},e,{width:i,height:n,aspectRatio:d,layout:a,formats:c}));}function w(e,t){var a;return void 0===t&&(t=20),null==(a=(0,(e=v(e)).generateImageSource)(e.filename,t,Math.round(t/e.aspectRatio),e.sourceMetadata.format||"jpg",e.fit,e.options))?void 0:a.src;}function y(e){var t,a=(e=v(e)).pluginName,r=e.sourceMetadata,n=e.generateImageSource,o=e.layout,l=e.fit,h=e.options,p=e.width,w=e.height,y=e.filename,M=e.reporter,S=void 0===M?{warn:g}:M,N=e.backgroundColor,R=e.placeholderURL;if(a||S.warn('[gatsby-plugin-image] "generateImageData" was not passed a plugin name'),"function"!=typeof n)throw new Error("generateImageSource must be a function");r&&(r.width||r.height)?r.format||(r.format=f(y)):r={width:p,height:w,format:(null==(t=r)?void 0:t.format)||f(y)||"auto"};var x=new Set(e.formats);(0===x.size||x.has("auto")||x.has(""))&&(x.delete("auto"),x.delete(""),x.add(r.format)),x.has("jpg")&&x.has("png")&&(S.warn("["+a+"] Specifying both 'jpg' and 'png' formats is not supported. Using 'auto' instead"),x.delete("jpg"===r.format?"png":"jpg"));var I=function(e){var t=e.filename,a=e.layout,r=void 0===a?"constrained":a,n=e.sourceMetadata,o=e.reporter,l=void 0===o?{warn:g}:o,h=e.breakpoints,p=void 0===h?c:h,m=Object.entries({width:e.width,height:e.height}).filter(function(e){var t=e[1];return"number"==typeof t&&t<1;});if(m.length)throw new Error("Specified dimensions for images must be positive numbers (> 0). Problem dimensions you have are "+m.map(function(e){return e.join(": ");}).join(", "));return"fixed"===r?function(e){var t=e.filename,a=e.sourceMetadata,r=e.width,n=e.height,o=e.fit,s=void 0===o?"cover":o,l=e.outputPixelDensities,c=e.reporter,h=void 0===c?{warn:g}:c,p=a.width/a.height,m=b(void 0===l?u:l);if(r&&n){var f=k(a,{width:r,height:n,fit:s});r=f.width,n=f.height,p=f.aspectRatio;}r?n||(n=Math.round(r/p)):r=n?Math.round(n*p):800;var v,w,y=r;if(a.width<r||a.height<n){var E=a.width<r?"width":"height";h.warn(i(d||(v=["\n    The requested ",' "','px" for the image '," was larger than the actual image "," of ","px. If possible, replace the current image with a larger one."],w||(w=v.slice(0)),v.raw=w,d=v),E,"width"===E?r:n,t,E,a[E])),"width"===E?(r=a.width,n=Math.round(r/p)):r=(n=a.height)*p;}return{sizes:m.filter(function(e){return e>=1;}).map(function(e){return Math.round(e*r);}).filter(function(e){return e<=a.width;}),aspectRatio:p,presentationWidth:y,presentationHeight:Math.round(y/p),unscaledWidth:r};}(e):"constrained"===r?E(e):"fullWidth"===r?E(s({breakpoints:p},e)):(l.warn("No valid layout was provided for the image at "+t+". Valid image layouts are fixed, fullWidth, and constrained. Found "+r),{sizes:[n.width],presentationWidth:n.width,presentationHeight:n.height,aspectRatio:n.width/n.height,unscaledWidth:n.width});}(s({},e,{sourceMetadata:r})),W={sources:[]},j=e.sizes;j||(j=function(e,t){switch(t){case"constrained":return"(min-width: "+e+"px) "+e+"px, 100vw";case"fixed":return e+"px";case"fullWidth":return"100vw";default:return;}}(I.presentationWidth,o)),x.forEach(function(e){var t=I.sizes.map(function(t){var i=n(y,t,Math.round(t/I.aspectRatio),e,l,h);if(null!=i&&i.width&&i.height&&i.src&&i.format)return i;S.warn("["+a+"] The resolver for image "+y+" returned an invalid value.");}).filter(Boolean);if("jpg"===e||"png"===e||"auto"===e){var i=t.find(function(e){return e.width===I.unscaledWidth;})||t[0];i&&(W.fallback={src:i.src,srcSet:m(t),sizes:j});}else{var r;null==(r=W.sources)||r.push({srcSet:m(t),sizes:j,type:"image/"+e});}});var _={images:W,layout:o,backgroundColor:N};switch(R&&(_.placeholder={fallback:R}),o){case"fixed":_.width=I.presentationWidth,_.height=I.presentationHeight;break;case"fullWidth":_.width=1,_.height=1/I.aspectRatio;break;case"constrained":_.width=e.width||I.presentationWidth||1,_.height=(_.width||1)/I.aspectRatio;}return _;}var b=function(e){return Array.from(new Set([1].concat(e))).sort(p);};function E(e){var t,a=e.sourceMetadata,i=e.width,r=e.height,n=e.fit,o=void 0===n?"cover":n,s=e.outputPixelDensities,l=e.breakpoints,d=e.layout,c=a.width/a.height,h=b(void 0===s?u:s);if(i&&r){var g=k(a,{width:i,height:r,fit:o});i=g.width,r=g.height,c=g.aspectRatio;}i=i&&Math.min(i,a.width),r=r&&Math.min(r,a.height),i||r||(r=(i=Math.min(800,a.width))/c),i||(i=r*c);var m=i;return(a.width<i||a.height<r)&&(i=a.width,r=a.height),i=Math.round(i),(null==l?void 0:l.length)>0?(t=l.filter(function(e){return e<=a.width;})).length<l.length&&!t.includes(a.width)&&t.push(a.width):t=(t=h.map(function(e){return Math.round(e*i);})).filter(function(e){return e<=a.width;}),"constrained"!==d||t.includes(i)||t.push(i),{sizes:t=t.sort(p),aspectRatio:c,presentationWidth:m,presentationHeight:Math.round(m/c),unscaledWidth:i};}function k(e,t){var a=e.width/e.height,i=t.width,r=t.height;switch(t.fit){case"fill":i=t.width?t.width:e.width,r=t.height?t.height:e.height;break;case"inside":var n=t.width?t.width:Number.MAX_SAFE_INTEGER,o=t.height?t.height:Number.MAX_SAFE_INTEGER;i=Math.min(n,Math.round(o*a)),r=Math.min(o,Math.round(n/a));break;case"outside":var s=t.width?t.width:0,l=t.height?t.height:0;i=Math.max(s,Math.round(l*a)),r=Math.max(l,Math.round(s/a));break;default:t.width&&!t.height&&(i=t.width,r=Math.round(t.width/a)),t.height&&!t.width&&(i=Math.round(t.height*a),r=t.height);}return{width:i,height:r,aspectRatio:i/r};}var M=(/* unused pure expression or super */ null && (["baseUrl","urlBuilder","sourceWidth","sourceHeight","pluginName","formats","breakpoints","options"])),S=(/* unused pure expression or super */ null && (["images","placeholder"]));function N(){return true&&true;}new Set();var R=function(e){var t;return function(e){var t,a;return Boolean(null==e||null==(t=e.images)||null==(a=t.fallback)?void 0:a.src);}(e)?e:function(e){return Boolean(null==e?void 0:e.gatsbyImageData);}(e)?e.gatsbyImageData:null==e||null==(t=e.childImageSharp)?void 0:t.gatsbyImageData;},x=function(e){var t,a,i;return null==(t=R(e))||null==(a=t.images)||null==(i=a.fallback)?void 0:i.src;},I=function(e){var t,a,i;return null==(t=R(e))||null==(a=t.images)||null==(i=a.fallback)?void 0:i.srcSet;};function W(e){var t,a=e.baseUrl,i=e.urlBuilder,r=e.sourceWidth,n=e.sourceHeight,o=e.pluginName,d=void 0===o?"getImageData":o,u=e.formats,c=void 0===u?["auto"]:u,g=e.breakpoints,p=e.options,m=l(e,M);return null!=(t=g)&&t.length||"fullWidth"!==m.layout&&"FULL_WIDTH"!==m.layout||(g=h),y(s({},m,{pluginName:d,generateImageSource:function(e,t,a,r){return{width:t,height:a,format:r,src:i({baseUrl:e,width:t,height:a,options:p,format:r})};},filename:a,formats:c,breakpoints:g,sourceMetadata:{width:r,height:n,format:"auto"}}));}function j(e,t){var a,i,r,n=e.images,o=e.placeholder,d=s({},l(e,S),{images:s({},n,{sources:[]}),placeholder:o&&s({},o,{sources:[]})});return t.forEach(function(t){var a,i=t.media,r=t.image;i?(r.layout!==e.layout&&"development"==="production"&&0,(a=d.images.sources).push.apply(a,r.images.sources.map(function(e){return s({},e,{media:i});}).concat([{media:i,srcSet:r.images.fallback.srcSet}])),d.placeholder&&d.placeholder.sources.push({media:i,srcSet:r.placeholder.fallback})): false&&0;}),(a=d.images.sources).push.apply(a,n.sources),null!=o&&o.sources&&(null==(i=d.placeholder)||(r=i.sources).push.apply(r,o.sources)),d;}var _,T=["src","srcSet","loading","alt","shouldLoad","innerRef"],A=["fallback","sources","shouldLoad"],O=function(t){var a=t.src,i=t.srcSet,r=t.loading,n=t.alt,o=void 0===n?"":n,d=t.shouldLoad,u=t.innerRef,c=l(t,T);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img",s({},c,{decoding:"async",loading:r,src:d?a:void 0,"data-src":d?void 0:a,srcSet:d?i:void 0,"data-srcset":d?void 0:i,alt:o,ref:u}));},z=/*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function(t,a){var i=t.fallback,r=t.sources,n=void 0===r?[]:r,o=t.shouldLoad,d=void 0===o||o,u=l(t,A),c=u.sizes||(null==i?void 0:i.sizes),h=/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(O,s({},u,i,{sizes:c,shouldLoad:d,innerRef:a}));return n.length?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("picture",null,n.map(function(t){var a=t.media,i=t.srcSet,r=t.type;return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("source",{key:a+"-"+r+"-"+i,type:r,media:a,srcSet:d?i:void 0,"data-srcset":d?void 0:i,sizes:c});}),h):h;});O.propTypes={src:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,alt:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,sizes:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,srcSet:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,shouldLoad:prop_types__WEBPACK_IMPORTED_MODULE_3__.bool},z.displayName="Picture",z.propTypes={alt:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,shouldLoad:prop_types__WEBPACK_IMPORTED_MODULE_3__.bool,fallback:prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({src:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,srcSet:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,sizes:prop_types__WEBPACK_IMPORTED_MODULE_3__.string}),sources:prop_types__WEBPACK_IMPORTED_MODULE_3__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_3__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({media:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,type:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,sizes:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,srcSet:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired}),prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({media:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,type:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,sizes:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,srcSet:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired})]))};var L=["fallback"],C=function(t){var a=t.fallback,i=l(t,L);return a?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z,s({},i,{fallback:{src:a},"aria-hidden":!0,alt:""})):/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div",s({},i));};C.displayName="Placeholder",C.propTypes={fallback:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,sources:null==(_=z.propTypes)?void 0:_.sources,alt:function(e,t,a){return e[t]?new Error("Invalid prop `"+t+"` supplied to `"+a+"`. Validation failed."):null;}};var q=/*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function(t,a){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment),null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z,s({ref:a},t)),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z,s({},t,{shouldLoad:!0}))));});q.displayName="MainImage",q.propTypes=z.propTypes;var D=["children"],P=function(){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("script",{type:"module",dangerouslySetInnerHTML:{__html:'const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}'}});},H=function(t){var a=t.layout,i=t.width,r=t.height;return"fullWidth"===a?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div",{"aria-hidden":!0,style:{paddingTop:r/i*100+"%"}}):"constrained"===a?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div",{style:{maxWidth:i,display:"block"}},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img",{alt:"",role:"presentation","aria-hidden":"true",src:"data:image/svg+xml;charset=utf-8,%3Csvg height='"+r+"' width='"+i+"' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",style:{maxWidth:"100%",display:"block",position:"static"}})):null;},F=function(t){var i=t.children,r=l(t,D);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment,null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(H,s({},r)),i,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(P,null));},B=["as","children"],G=["as","className","class","style","image","loading","imgClassName","imgStyle","backgroundColor","objectFit","objectPosition"],V=["style","className"],U=function(e){return e.replace(/\n/g,"");},X=function(t){var a=t.as,i=void 0===a?"div":a,r=t.children,n=l(t,B);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(i,s({},n),r);},Y=function(t){var a=t.as,i=t.className,r=t.class,n=t.style,o=t.image,d=t.loading,u=void 0===d?"lazy":d,c=t.imgClassName,h=t.imgStyle,g=t.backgroundColor,p=t.objectFit,m=t.objectPosition,f=l(t,G);if(!o)return console.warn("[gatsby-plugin-image] Missing image prop"),null;r&&(i=r),h=s({objectFit:p,objectPosition:m,backgroundColor:g},h);var v=o.width,w=o.height,y=o.layout,b=o.images,E=o.placeholder,k=o.backgroundColor,M=function(e,t,a){var i={},r="gatsby-image-wrapper";return N()||(i.position="relative",i.overflow="hidden"),"fixed"===a?(i.width=e,i.height=t):"constrained"===a&&(N()||(i.display="inline-block",i.verticalAlign="top"),r="gatsby-image-wrapper gatsby-image-wrapper-constrained"),{className:r,"data-gatsby-image-wrapper":"",style:i};}(v,w,y),S=M.style,R=M.className,x=l(M,V),I={fallback:void 0,sources:[]};return b.fallback&&(I.fallback=s({},b.fallback,{srcSet:b.fallback.srcSet?U(b.fallback.srcSet):void 0})),b.sources&&(I.sources=b.sources.map(function(e){return s({},e,{srcSet:U(e.srcSet)});})),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(X,s({},x,{as:a,style:s({},S,n,{backgroundColor:g}),className:R+(i?" "+i:"")}),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(F,{layout:y,width:v,height:w},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(C,s({},function(e,t,a,i,r,n,o,l){var d={};n&&(d.backgroundColor=n,"fixed"===a?(d.width=i,d.height=r,d.backgroundColor=n,d.position="relative"):("constrained"===a||"fullWidth"===a)&&(d.position="absolute",d.top=0,d.left=0,d.bottom=0,d.right=0)),o&&(d.objectFit=o),l&&(d.objectPosition=l);var u=s({},e,{"aria-hidden":!0,"data-placeholder-image":"",style:s({opacity:1,transition:"opacity 500ms linear"},d)});return N()||(u.style={height:"100%",left:0,position:"absolute",top:0,width:"100%"}),u;}(E,0,y,v,w,k,p,m))),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(q,s({"data-gatsby-image-ssr":"",className:c},f,function(e,t,a,i,r,n,o,l){return void 0===l&&(l={}),N()||(l=s({height:"100%",left:0,position:"absolute",top:0,transform:"translateZ(0)",transition:"opacity 250ms linear",width:"100%",willChange:"opacity"},l)),s({},a,{loading:i,shouldLoad:e,"data-main-image":"",style:s({},l,{opacity:0}),onLoad:function(e){var t=e.currentTarget,a=new Image();a.src=t.currentSrc,a.decode?a.decode().catch(function(){}).then(function(){r(!0);}):r(!0);},ref:void 0});}("eager"===u,0,I,u,void 0,0,0,h)))));},Z=["src","__imageData","__error","width","height","aspectRatio","tracedSVGOptions","placeholder","formats","quality","transformOptions","jpgOptions","pngOptions","webpOptions","avifOptions","blurredOptions"],J=function(t){return function(a){var i=a.src,r=a.__imageData,n=a.__error,o=l(a,Z);return n&&console.warn(n),r?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(t,s({image:r},o)):(console.warn("Image not loaded",i),n||"development"!=="production"||0,null);};}(Y),K=function(e,t){return"fullWidth"!==e.layout||"width"!==t&&"height"!==t||!e[t]?prop_types__WEBPACK_IMPORTED_MODULE_3___default().number.apply((prop_types__WEBPACK_IMPORTED_MODULE_3___default()),[e,t].concat([].slice.call(arguments,2))):new Error('"'+t+'" '+e[t]+" may not be passed when layout is fullWidth.");},Q=new Set(["fixed","fullWidth","constrained"]),$={src:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired),alt:function(e,t,a){return e.alt||""===e.alt?prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.apply((prop_types__WEBPACK_IMPORTED_MODULE_3___default()),[e,t,a].concat([].slice.call(arguments,3))):new Error('The "alt" prop is required in '+a+'. If the image is purely presentational then pass an empty string: e.g. alt="". Learn more: https://a11y-style-guide.com/style-guide/section-media.html');},width:K,height:K,sizes:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),layout:function(e){if(void 0!==e.layout&&!Q.has(e.layout))return new Error("Invalid value "+e.layout+'" provided for prop "layout". Defaulting to "constrained". Valid values are "fixed", "fullWidth" or "constrained".');}};J.displayName="StaticImage",J.propTypes=$;
 
+/***/ }),
 
+/***/ 1158:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 
-
-
-function s() {
-  return s = Object.assign || function (e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var a = arguments[t];
-
-      for (var i in a) Object.prototype.hasOwnProperty.call(a, i) && (e[i] = a[i]);
-    }
-
-    return e;
-  }, s.apply(this, arguments);
-}
-
-function l(e, t) {
-  if (null == e) return {};
-  var a,
-      i,
-      r = {},
-      n = Object.keys(e);
-
-  for (i = 0; i < n.length; i++) t.indexOf(a = n[i]) >= 0 || (r[a] = e[a]);
-
-  return r;
-}
-
-var d,
-    u = [.25, .5, 1, 2],
-    c = [750, 1080, 1366, 1920],
-    h = [320, 654, 768, 1024, 1366, 1600, 1920, 2048, 2560, 3440, 3840, 4096],
-    g = function (e) {
-  return console.warn(e);
-},
-    p = function (e, t) {
-  return e - t;
-},
-    m = function (e) {
-  return e.map(function (e) {
-    return e.src + " " + e.width + "w";
-  }).join(",\n");
-};
-
-function f(e) {
-  var t = e.lastIndexOf(".");
-
-  if (-1 !== t) {
-    var a = e.slice(t + 1);
-    if ("jpeg" === a) return "jpg";
-    if (3 === a.length || 4 === a.length) return a;
-  }
-}
-
-function v(e) {
-  var t = e.layout,
-      a = void 0 === t ? "constrained" : t,
-      i = e.width,
-      n = e.height,
-      o = e.sourceMetadata,
-      l = e.breakpoints,
-      d = e.aspectRatio,
-      u = e.formats,
-      c = void 0 === u ? ["auto", "webp"] : u;
-  return c = c.map(function (e) {
-    return e.toLowerCase();
-  }), a = camelcase__WEBPACK_IMPORTED_MODULE_2___default()(a), i && n ? s({}, e, {
-    formats: c,
-    layout: a,
-    aspectRatio: i / n
-  }) : (o.width && o.height && !d && (d = o.width / o.height), "fullWidth" === a ? (i = i || o.width || l[l.length - 1], n = n || Math.round(i / (d || 1.3333333333333333))) : (i || (i = n && d ? n * d : o.width ? o.width : n ? Math.round(n / 1.3333333333333333) : 800), d && !n ? n = Math.round(i / d) : d || (d = i / n)), s({}, e, {
-    width: i,
-    height: n,
-    aspectRatio: d,
-    layout: a,
-    formats: c
-  }));
-}
-
-function w(e, t) {
-  var a;
-  return void 0 === t && (t = 20), null == (a = (0, (e = v(e)).generateImageSource)(e.filename, t, Math.round(t / e.aspectRatio), e.sourceMetadata.format || "jpg", e.fit, e.options)) ? void 0 : a.src;
-}
-
-function y(e) {
-  var t,
-      a = (e = v(e)).pluginName,
-      r = e.sourceMetadata,
-      n = e.generateImageSource,
-      o = e.layout,
-      l = e.fit,
-      h = e.options,
-      p = e.width,
-      w = e.height,
-      y = e.filename,
-      M = e.reporter,
-      S = void 0 === M ? {
-    warn: g
-  } : M,
-      N = e.backgroundColor,
-      R = e.placeholderURL;
-  if (a || S.warn('[gatsby-plugin-image] "generateImageData" was not passed a plugin name'), "function" != typeof n) throw new Error("generateImageSource must be a function");
-  r && (r.width || r.height) ? r.format || (r.format = f(y)) : r = {
-    width: p,
-    height: w,
-    format: (null == (t = r) ? void 0 : t.format) || f(y) || "auto"
-  };
-  var x = new Set(e.formats);
-  (0 === x.size || x.has("auto") || x.has("")) && (x.delete("auto"), x.delete(""), x.add(r.format)), x.has("jpg") && x.has("png") && (S.warn("[" + a + "] Specifying both 'jpg' and 'png' formats is not supported. Using 'auto' instead"), x.delete("jpg" === r.format ? "png" : "jpg"));
-
-  var I = function (e) {
-    var t = e.filename,
-        a = e.layout,
-        r = void 0 === a ? "constrained" : a,
-        n = e.sourceMetadata,
-        o = e.reporter,
-        l = void 0 === o ? {
-      warn: g
-    } : o,
-        h = e.breakpoints,
-        p = void 0 === h ? c : h,
-        m = Object.entries({
-      width: e.width,
-      height: e.height
-    }).filter(function (e) {
-      var t = e[1];
-      return "number" == typeof t && t < 1;
-    });
-    if (m.length) throw new Error("Specified dimensions for images must be positive numbers (> 0). Problem dimensions you have are " + m.map(function (e) {
-      return e.join(": ");
-    }).join(", "));
-    return "fixed" === r ? function (e) {
-      var t = e.filename,
-          a = e.sourceMetadata,
-          r = e.width,
-          n = e.height,
-          o = e.fit,
-          s = void 0 === o ? "cover" : o,
-          l = e.outputPixelDensities,
-          c = e.reporter,
-          h = void 0 === c ? {
-        warn: g
-      } : c,
-          p = a.width / a.height,
-          m = b(void 0 === l ? u : l);
-
-      if (r && n) {
-        var f = k(a, {
-          width: r,
-          height: n,
-          fit: s
-        });
-        r = f.width, n = f.height, p = f.aspectRatio;
-      }
-
-      r ? n || (n = Math.round(r / p)) : r = n ? Math.round(n * p) : 800;
-      var v,
-          w,
-          y = r;
-
-      if (a.width < r || a.height < n) {
-        var E = a.width < r ? "width" : "height";
-        h.warn((0,common_tags__WEBPACK_IMPORTED_MODULE_1__.stripIndent)(d || (v = ["\n    The requested ", ' "', 'px" for the image ', " was larger than the actual image ", " of ", "px. If possible, replace the current image with a larger one."], w || (w = v.slice(0)), v.raw = w, d = v), E, "width" === E ? r : n, t, E, a[E])), "width" === E ? (r = a.width, n = Math.round(r / p)) : r = (n = a.height) * p;
-      }
-
-      return {
-        sizes: m.filter(function (e) {
-          return e >= 1;
-        }).map(function (e) {
-          return Math.round(e * r);
-        }).filter(function (e) {
-          return e <= a.width;
-        }),
-        aspectRatio: p,
-        presentationWidth: y,
-        presentationHeight: Math.round(y / p),
-        unscaledWidth: r
-      };
-    }(e) : "constrained" === r ? E(e) : "fullWidth" === r ? E(s({
-      breakpoints: p
-    }, e)) : (l.warn("No valid layout was provided for the image at " + t + ". Valid image layouts are fixed, fullWidth, and constrained. Found " + r), {
-      sizes: [n.width],
-      presentationWidth: n.width,
-      presentationHeight: n.height,
-      aspectRatio: n.width / n.height,
-      unscaledWidth: n.width
-    });
-  }(s({}, e, {
-    sourceMetadata: r
-  })),
-      W = {
-    sources: []
-  },
-      j = e.sizes;
-
-  j || (j = function (e, t) {
-    switch (t) {
-      case "constrained":
-        return "(min-width: " + e + "px) " + e + "px, 100vw";
-
-      case "fixed":
-        return e + "px";
-
-      case "fullWidth":
-        return "100vw";
-
-      default:
-        return;
-    }
-  }(I.presentationWidth, o)), x.forEach(function (e) {
-    var t = I.sizes.map(function (t) {
-      var i = n(y, t, Math.round(t / I.aspectRatio), e, l, h);
-      if (null != i && i.width && i.height && i.src && i.format) return i;
-      S.warn("[" + a + "] The resolver for image " + y + " returned an invalid value.");
-    }).filter(Boolean);
-
-    if ("jpg" === e || "png" === e || "auto" === e) {
-      var i = t.find(function (e) {
-        return e.width === I.unscaledWidth;
-      }) || t[0];
-      i && (W.fallback = {
-        src: i.src,
-        srcSet: m(t),
-        sizes: j
-      });
-    } else {
-      var r;
-      null == (r = W.sources) || r.push({
-        srcSet: m(t),
-        sizes: j,
-        type: "image/" + e
-      });
-    }
-  });
-  var _ = {
-    images: W,
-    layout: o,
-    backgroundColor: N
-  };
-
-  switch (R && (_.placeholder = {
-    fallback: R
-  }), o) {
-    case "fixed":
-      _.width = I.presentationWidth, _.height = I.presentationHeight;
-      break;
-
-    case "fullWidth":
-      _.width = 1, _.height = 1 / I.aspectRatio;
-      break;
-
-    case "constrained":
-      _.width = e.width || I.presentationWidth || 1, _.height = (_.width || 1) / I.aspectRatio;
-  }
-
-  return _;
-}
-
-var b = function (e) {
-  return Array.from(new Set([1].concat(e))).sort(p);
-};
-
-function E(e) {
-  var t,
-      a = e.sourceMetadata,
-      i = e.width,
-      r = e.height,
-      n = e.fit,
-      o = void 0 === n ? "cover" : n,
-      s = e.outputPixelDensities,
-      l = e.breakpoints,
-      d = e.layout,
-      c = a.width / a.height,
-      h = b(void 0 === s ? u : s);
-
-  if (i && r) {
-    var g = k(a, {
-      width: i,
-      height: r,
-      fit: o
-    });
-    i = g.width, r = g.height, c = g.aspectRatio;
-  }
-
-  i = i && Math.min(i, a.width), r = r && Math.min(r, a.height), i || r || (r = (i = Math.min(800, a.width)) / c), i || (i = r * c);
-  var m = i;
-  return (a.width < i || a.height < r) && (i = a.width, r = a.height), i = Math.round(i), (null == l ? void 0 : l.length) > 0 ? (t = l.filter(function (e) {
-    return e <= a.width;
-  })).length < l.length && !t.includes(a.width) && t.push(a.width) : t = (t = h.map(function (e) {
-    return Math.round(e * i);
-  })).filter(function (e) {
-    return e <= a.width;
-  }), "constrained" !== d || t.includes(i) || t.push(i), {
-    sizes: t = t.sort(p),
-    aspectRatio: c,
-    presentationWidth: m,
-    presentationHeight: Math.round(m / c),
-    unscaledWidth: i
-  };
-}
-
-function k(e, t) {
-  var a = e.width / e.height,
-      i = t.width,
-      r = t.height;
-
-  switch (t.fit) {
-    case "fill":
-      i = t.width ? t.width : e.width, r = t.height ? t.height : e.height;
-      break;
-
-    case "inside":
-      var n = t.width ? t.width : Number.MAX_SAFE_INTEGER,
-          o = t.height ? t.height : Number.MAX_SAFE_INTEGER;
-      i = Math.min(n, Math.round(o * a)), r = Math.min(o, Math.round(n / a));
-      break;
-
-    case "outside":
-      var s = t.width ? t.width : 0,
-          l = t.height ? t.height : 0;
-      i = Math.max(s, Math.round(l * a)), r = Math.max(l, Math.round(s / a));
-      break;
-
-    default:
-      t.width && !t.height && (i = t.width, r = Math.round(t.width / a)), t.height && !t.width && (i = Math.round(t.height * a), r = t.height);
-  }
-
-  return {
-    width: i,
-    height: r,
-    aspectRatio: i / r
-  };
-}
-
-var M = ["baseUrl", "urlBuilder", "sourceWidth", "sourceHeight", "pluginName", "formats", "breakpoints", "options"],
-    S = ["images", "placeholder"];
-
-function N() {
-  return "undefined" != typeof GATSBY___IMAGE && GATSBY___IMAGE;
-}
-
-new Set();
-
-var R = function (e) {
-  var t;
-  return function (e) {
-    var t, a;
-    return Boolean(null == e || null == (t = e.images) || null == (a = t.fallback) ? void 0 : a.src);
-  }(e) ? e : function (e) {
-    return Boolean(null == e ? void 0 : e.gatsbyImageData);
-  }(e) ? e.gatsbyImageData : null == e || null == (t = e.childImageSharp) ? void 0 : t.gatsbyImageData;
-},
-    x = function (e) {
-  var t, a, i;
-  return null == (t = R(e)) || null == (a = t.images) || null == (i = a.fallback) ? void 0 : i.src;
-},
-    I = function (e) {
-  var t, a, i;
-  return null == (t = R(e)) || null == (a = t.images) || null == (i = a.fallback) ? void 0 : i.srcSet;
-};
-
-function W(e) {
-  var t,
-      a = e.baseUrl,
-      i = e.urlBuilder,
-      r = e.sourceWidth,
-      n = e.sourceHeight,
-      o = e.pluginName,
-      d = void 0 === o ? "getImageData" : o,
-      u = e.formats,
-      c = void 0 === u ? ["auto"] : u,
-      g = e.breakpoints,
-      p = e.options,
-      m = l(e, M);
-  return null != (t = g) && t.length || "fullWidth" !== m.layout && "FULL_WIDTH" !== m.layout || (g = h), y(s({}, m, {
-    pluginName: d,
-    generateImageSource: function (e, t, a, r) {
-      return {
-        width: t,
-        height: a,
-        format: r,
-        src: i({
-          baseUrl: e,
-          width: t,
-          height: a,
-          options: p,
-          format: r
-        })
-      };
-    },
-    filename: a,
-    formats: c,
-    breakpoints: g,
-    sourceMetadata: {
-      width: r,
-      height: n,
-      format: "auto"
-    }
-  }));
-}
-
-function j(e, t) {
-  var a,
-      i,
-      r,
-      n = e.images,
-      o = e.placeholder,
-      d = s({}, l(e, S), {
-    images: s({}, n, {
-      sources: []
-    }),
-    placeholder: o && s({}, o, {
-      sources: []
-    })
-  });
-  return t.forEach(function (t) {
-    var a,
-        i = t.media,
-        r = t.image;
-    i ? (r.layout !== e.layout && "development" === "development" && console.warn('[gatsby-plugin-image] Mismatched image layout: expected "' + e.layout + '" but received "' + r.layout + '". All art-directed images use the same layout as the default image'), (a = d.images.sources).push.apply(a, r.images.sources.map(function (e) {
-      return s({}, e, {
-        media: i
-      });
-    }).concat([{
-      media: i,
-      srcSet: r.images.fallback.srcSet
-    }])), d.placeholder && d.placeholder.sources.push({
-      media: i,
-      srcSet: r.placeholder.fallback
-    })) :  true && console.warn("[gatsby-plugin-image] All art-directed images passed to must have a value set for `media`. Skipping.");
-  }), (a = d.images.sources).push.apply(a, n.sources), null != o && o.sources && (null == (i = d.placeholder) || (r = i.sources).push.apply(r, o.sources)), d;
-}
-
-var _,
-    T = ["src", "srcSet", "loading", "alt", "shouldLoad", "innerRef"],
-    A = ["fallback", "sources", "shouldLoad"],
-    O = function (t) {
-  var a = t.src,
-      i = t.srcSet,
-      r = t.loading,
-      n = t.alt,
-      o = void 0 === n ? "" : n,
-      d = t.shouldLoad,
-      u = t.innerRef,
-      c = l(t, T);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", s({}, c, {
-    decoding: "async",
-    loading: r,
-    src: d ? a : void 0,
-    "data-src": d ? void 0 : a,
-    srcSet: d ? i : void 0,
-    "data-srcset": d ? void 0 : i,
-    alt: o,
-    ref: u
-  }));
-},
-    z = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function (t, a) {
-  var i = t.fallback,
-      r = t.sources,
-      n = void 0 === r ? [] : r,
-      o = t.shouldLoad,
-      d = void 0 === o || o,
-      u = l(t, A),
-      c = u.sizes || (null == i ? void 0 : i.sizes),
-      h = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(O, s({}, u, i, {
-    sizes: c,
-    shouldLoad: d,
-    innerRef: a
-  }));
-  return n.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("picture", null, n.map(function (t) {
-    var a = t.media,
-        i = t.srcSet,
-        r = t.type;
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("source", {
-      key: a + "-" + r + "-" + i,
-      type: r,
-      media: a,
-      srcSet: d ? i : void 0,
-      "data-srcset": d ? void 0 : i,
-      sizes: c
-    });
-  }), h) : h;
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": () => (/* binding */ Layout)
 });
 
-O.propTypes = {
-  src: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
-  alt: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
-  sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-  srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-  shouldLoad: prop_types__WEBPACK_IMPORTED_MODULE_3__.bool
-}, z.displayName = "Picture", z.propTypes = {
-  alt: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
-  shouldLoad: prop_types__WEBPACK_IMPORTED_MODULE_3__.bool,
-  fallback: prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({
-    src: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
-    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-    sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__.string
-  }),
-  sources: prop_types__WEBPACK_IMPORTED_MODULE_3__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_3__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({
-    media: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
-    type: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-    sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired
-  }), prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({
-    media: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-    type: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
-    sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired
-  })]))
-};
-
-var L = ["fallback"],
-    C = function (t) {
-  var a = t.fallback,
-      i = l(t, L);
-  return a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z, s({}, i, {
-    fallback: {
-      src: a
-    },
-    "aria-hidden": !0,
-    alt: ""
-  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", s({}, i));
-};
-
-C.displayName = "Placeholder", C.propTypes = {
-  fallback: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-  sources: null == (_ = z.propTypes) ? void 0 : _.sources,
-  alt: function (e, t, a) {
-    return e[t] ? new Error("Invalid prop `" + t + "` supplied to `" + a + "`. Validation failed.") : null;
-  }
-};
-var q = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function (t, a) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z, s({
-    ref: a
-  }, t)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z, s({}, t, {
-    shouldLoad: !0
-  }))));
-});
-q.displayName = "MainImage", q.propTypes = z.propTypes;
-
-var D = ["children"],
-    P = function () {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("script", {
-    type: "module",
-    dangerouslySetInnerHTML: {
-      __html: 'const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}'
-    }
-  });
-},
-    H = function (t) {
-  var a = t.layout,
-      i = t.width,
-      r = t.height;
-  return "fullWidth" === a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    "aria-hidden": !0,
-    style: {
-      paddingTop: r / i * 100 + "%"
-    }
-  }) : "constrained" === a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      maxWidth: i,
-      display: "block"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    alt: "",
-    role: "presentation",
-    "aria-hidden": "true",
-    src: "data:image/svg+xml;charset=utf-8,%3Csvg height='" + r + "' width='" + i + "' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    style: {
-      maxWidth: "100%",
-      display: "block",
-      position: "static"
-    }
-  })) : null;
-},
-    F = function (t) {
-  var i = t.children,
-      r = l(t, D);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(H, s({}, r)), i, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(P, null));
-},
-    B = ["as", "children"],
-    G = ["as", "className", "class", "style", "image", "loading", "imgClassName", "imgStyle", "backgroundColor", "objectFit", "objectPosition"],
-    V = ["style", "className"],
-    U = function (e) {
-  return e.replace(/\n/g, "");
-},
-    X = function (t) {
-  var a = t.as,
-      i = void 0 === a ? "div" : a,
-      r = t.children,
-      n = l(t, B);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(i, s({}, n), r);
-},
-    Y = function (t) {
-  var a = t.as,
-      i = t.className,
-      r = t.class,
-      n = t.style,
-      o = t.image,
-      d = t.loading,
-      u = void 0 === d ? "lazy" : d,
-      c = t.imgClassName,
-      h = t.imgStyle,
-      g = t.backgroundColor,
-      p = t.objectFit,
-      m = t.objectPosition,
-      f = l(t, G);
-  if (!o) return console.warn("[gatsby-plugin-image] Missing image prop"), null;
-  r && (i = r), h = s({
-    objectFit: p,
-    objectPosition: m,
-    backgroundColor: g
-  }, h);
-
-  var v = o.width,
-      w = o.height,
-      y = o.layout,
-      b = o.images,
-      E = o.placeholder,
-      k = o.backgroundColor,
-      M = function (e, t, a) {
-    var i = {},
-        r = "gatsby-image-wrapper";
-    return N() || (i.position = "relative", i.overflow = "hidden"), "fixed" === a ? (i.width = e, i.height = t) : "constrained" === a && (N() || (i.display = "inline-block", i.verticalAlign = "top"), r = "gatsby-image-wrapper gatsby-image-wrapper-constrained"), {
-      className: r,
-      "data-gatsby-image-wrapper": "",
-      style: i
-    };
-  }(v, w, y),
-      S = M.style,
-      R = M.className,
-      x = l(M, V),
-      I = {
-    fallback: void 0,
-    sources: []
-  };
-
-  return b.fallback && (I.fallback = s({}, b.fallback, {
-    srcSet: b.fallback.srcSet ? U(b.fallback.srcSet) : void 0
-  })), b.sources && (I.sources = b.sources.map(function (e) {
-    return s({}, e, {
-      srcSet: U(e.srcSet)
-    });
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(X, s({}, x, {
-    as: a,
-    style: s({}, S, n, {
-      backgroundColor: g
-    }),
-    className: R + (i ? " " + i : "")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(F, {
-    layout: y,
-    width: v,
-    height: w
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(C, s({}, function (e, t, a, i, r, n, o, l) {
-    var d = {};
-    n && (d.backgroundColor = n, "fixed" === a ? (d.width = i, d.height = r, d.backgroundColor = n, d.position = "relative") : ("constrained" === a || "fullWidth" === a) && (d.position = "absolute", d.top = 0, d.left = 0, d.bottom = 0, d.right = 0)), o && (d.objectFit = o), l && (d.objectPosition = l);
-    var u = s({}, e, {
-      "aria-hidden": !0,
-      "data-placeholder-image": "",
-      style: s({
-        opacity: 1,
-        transition: "opacity 500ms linear"
-      }, d)
-    });
-    return N() || (u.style = {
-      height: "100%",
-      left: 0,
-      position: "absolute",
-      top: 0,
-      width: "100%"
-    }), u;
-  }(E, 0, y, v, w, k, p, m))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(q, s({
-    "data-gatsby-image-ssr": "",
-    className: c
-  }, f, function (e, t, a, i, r, n, o, l) {
-    return void 0 === l && (l = {}), N() || (l = s({
-      height: "100%",
-      left: 0,
-      position: "absolute",
-      top: 0,
-      transform: "translateZ(0)",
-      transition: "opacity 250ms linear",
-      width: "100%",
-      willChange: "opacity"
-    }, l)), s({}, a, {
-      loading: i,
-      shouldLoad: e,
-      "data-main-image": "",
-      style: s({}, l, {
-        opacity: 0
-      }),
-      onLoad: function (e) {
-        var t = e.currentTarget,
-            a = new Image();
-        a.src = t.currentSrc, a.decode ? a.decode().catch(function () {}).then(function () {
-          r(!0);
-        }) : r(!0);
-      },
-      ref: void 0
-    });
-  }("eager" === u, 0, I, u, void 0, 0, 0, h)))));
-},
-    Z = ["src", "__imageData", "__error", "width", "height", "aspectRatio", "tracedSVGOptions", "placeholder", "formats", "quality", "transformOptions", "jpgOptions", "pngOptions", "webpOptions", "avifOptions", "blurredOptions"],
-    J = function (t) {
-  return function (a) {
-    var i = a.src,
-        r = a.__imageData,
-        n = a.__error,
-        o = l(a, Z);
-    return n && console.warn(n), r ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(t, s({
-      image: r
-    }, o)) : (console.warn("Image not loaded", i), n || "development" !== "development" || console.warn('Please ensure that "gatsby-plugin-image" is included in the plugins array in gatsby-config.js, and that your version of gatsby is at least 2.24.78'), null);
-  };
-}(Y),
-    K = function (e, t) {
-  return "fullWidth" !== e.layout || "width" !== t && "height" !== t || !e[t] ? prop_types__WEBPACK_IMPORTED_MODULE_3___default().number.apply((prop_types__WEBPACK_IMPORTED_MODULE_3___default()), [e, t].concat([].slice.call(arguments, 2))) : new Error('"' + t + '" ' + e[t] + " may not be passed when layout is fullWidth.");
-},
-    Q = new Set(["fixed", "fullWidth", "constrained"]),
-    $ = {
-  src: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired),
-  alt: function (e, t, a) {
-    return e.alt || "" === e.alt ? prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.apply((prop_types__WEBPACK_IMPORTED_MODULE_3___default()), [e, t, a].concat([].slice.call(arguments, 3))) : new Error('The "alt" prop is required in ' + a + '. If the image is purely presentational then pass an empty string: e.g. alt="". Learn more: https://a11y-style-guide.com/style-guide/section-media.html');
-  },
-  width: K,
-  height: K,
-  sizes: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
-  layout: function (e) {
-    if (void 0 !== e.layout && !Q.has(e.layout)) return new Error("Invalid value " + e.layout + '" provided for prop "layout". Defaulting to "constrained". Valid values are "fixed", "fullWidth" or "constrained".');
-  }
-};
-
-J.displayName = "StaticImage", J.propTypes = $;
-
+// EXTERNAL MODULE: external "C:\\Users\\home\\Desktop\\WORKSPACE\\FREELANCER\\BeCapital\\becapital\\node_modules\\react\\index.js"
+var external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_ = __webpack_require__(1051);
+var external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default = /*#__PURE__*/__webpack_require__.n(external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_);
+// EXTERNAL MODULE: ./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js
+var gatsby_image_module = __webpack_require__(3040);
+// EXTERNAL MODULE: ./.cache/gatsby-browser-entry.js + 4 modules
+var gatsby_browser_entry = __webpack_require__(7533);
+;// CONCATENATED MODULE: ./src/components/Header/SubMenu/index.js
+const isCurrent=({current})=>{return current?{className:"header__menu_link_current"}:{};};const SubMenu=()=>/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.StaticQuery,{query:"956638909",render:data=>/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"header__submenu_items"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__submenu_item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://maquinadossonhos.be.capital/",target:"_blank",rel:"noopener noreferrer",className:"header__submenu_link"},"Planejamento Financeiro")),data.allWpServico.edges.map(page=>/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__submenu_item",key:page.node.id},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:`/${page.node.slug}`,className:"header__submenu_link",getProps:isCurrent},page.node.title))))});/* harmony default export */ const Header_SubMenu = (SubMenu);
+;// CONCATENATED MODULE: ./src/components/Header/Header.js
+const Header=()=>{const{0:isActive,1:setActive}=(0,external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_.useState)(false);const toggleClass=()=>{setActive(!isActive);document.querySelector('.header').classList.toggle('active');};const isCurrent=({current})=>{return current?{className:"header__menu_link_current"}:{};};return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement((external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default()).Fragment,null,/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("header",{className:"header"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"header__content"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/logo_becapital_2x.png",alt:"logo BeCapital",className:"header__logo header__logo--mobile",__imageData:__webpack_require__(4539)}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/logo_2_becapital_1x.png",alt:"logo BeCapital",className:"header__logo header__logo--desktop",__imageData:__webpack_require__(7766)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("button",{className:"burguer__container",onClick:toggleClass,onKeyDown:toggleClass},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",null)),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:isActive?'header__menu active':'header__menu'},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("button",{className:isActive?'burguer__container active':'burguer__container',onClick:toggleClass,onKeyDown:toggleClass},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",null)),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("nav",{className:"header__menu_nav"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"header__menu_items"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__menu_item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/",className:"header__menu_link",getProps:isCurrent},"Home")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__menu_item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/somos-becapital/",className:"header__menu_link",getProps:isCurrent},"Somos BeCapital")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__menu_item header__menu_item--children"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",{className:"header__menu_link--children"},"Seja BeCapital ",/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("svg",{width:"6",height:"5",viewBox:"0 0 6 5",fill:"none",xmlns:"http://www.w3.org/2000/svg"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M3 5L0.401925 0.5L5.59808 0.5L3 5Z",fill:"#EA5E45"}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("nav",{className:"header__submenu"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(Header_SubMenu,null))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__menu_item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/blog/",className:"header__menu_link",getProps:isCurrent},"Blog")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__menu_item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/carreiras/",className:"header__menu_link",getProps:isCurrent},"Carreiras")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__menu_item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://becapitalresearch.com/",target:"_blank",rel:"noopener noreferrer",className:"header__menu_link header__menu_link--italic"},"Research")))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"button__container header__button_cta"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://app.be.capital/#/auth",target:"_blank",rel:"noopener noreferrer",className:"button button__primary"},"Login"))))));};/* harmony default export */ const Header_Header = (Header);
+;// CONCATENATED MODULE: ./src/components/Footer/InvestimentosMenu/index.js
+const InvestimentosMenu_SubMenu=()=>/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.StaticQuery,{query:"956638909",render:data=>/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"footer__menu"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://maquinadossonhos.be.capital/",className:"menu__link"},"Planejamento Financeiro")),data.allWpServico.edges.map(page=>/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item",key:page.node.id},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:`/${page.node.slug}`,className:"menu__link"},page.node.title))))});/* harmony default export */ const InvestimentosMenu = (InvestimentosMenu_SubMenu);
+;// CONCATENATED MODULE: ./src/components/Footer/index.js
+const Footer=()=>{return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement((external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default()).Fragment,null,/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("footer",{className:"footer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"footer__section footer__section--header"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/logo_becapital_2x.png",alt:"logo BeCapital",className:"footer__logo",__imageData:__webpack_require__(4539)}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"footer__title footer--andress"},"Av. Rio Branco, 108 | 8\xBA andar - Centro - Rio de Janeiro - RJ"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"mailto:imprensa@be.capital",className:"footer__link"},"imprensa@be.capital"))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"footer__section footer__section--main"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h3",{className:"footer__title"},"Investimentos"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(InvestimentosMenu,null)),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h3",{className:"footer__title"},"Conte\xFAdos"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"footer__menu"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://www.youtube.com/channel/UCLImIm6777cZiGmjaRuFcwQ?view_as=subscriber",className:"menu__link",target:"_blank",rel:"noopener noreferrer"},"Canal no Youtube")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://t.me/becapitalresearch",className:"menu__link",target:"_blank",rel:"noopener noreferrer"},"Grupo no Telegram")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/blog/",className:"menu__link"},"Blog")))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h3",{className:"footer__title"},"Nossa Empresa"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"footer__menu"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/somos-becapital/",className:"menu__link"},"A BeCapital")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item width200"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://api.whatsapp.com/send?phone=5521965431886&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20planejamento%20financeiro.%20O%20que%20devo%20fazer%3F%20Poderia%20me%20ajudar%3F",className:"menu__link"}," Fale com a Beca - Atendimento da BeCapital ")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/carreiras/",className:"menu__link"},"P\xE1gina de Carreiras")))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/qrcode_3x.png",alt:"QRCode BeCapital",className:"qrcode",__imageData:__webpack_require__(3701)})))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"footer__section footer__section--footer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h3",{className:"footer__title"},"Siga a BeCapital"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"footer__social social__menu"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"social__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://www.instagram.com/becapital.oficial/",className:"social__link",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/icon_instagram_orange.png",alt:"Logo Instagram",__imageData:__webpack_require__(642)}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"social__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://www.youtube.com/channel/UCLImIm6777cZiGmjaRuFcwQ?view_as=subscriber",className:"social__link",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/icon_youtube_orange.png",alt:"Logo Youtube",__imageData:__webpack_require__(1088)}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"social__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://www.linkedin.com/company/71399542/",className:"social__link",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/icon_linkedin_orange.png",alt:"Logo Linkedin",__imageData:__webpack_require__(936)}))))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h3",{className:"footer__title"},"Hor\xE1rio de atendimento"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"footer__text"},"Segunda a Sexta de 9h \xE0s 18h")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h3",{className:"footer__title"},"Contato para atendimento"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"footer__text"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"tel:+552139939670"},"(21) 3993 - 9670"))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://www2.susep.gov.br/safe/Corretores/pesquisa",className:"social__link",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/logo_susep_1x.png",alt:"Logo SUSEP",__imageData:__webpack_require__(1734)}))))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"footer__section footer__end"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("small",{className:"footer__title"},"BeCapital ",/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("strong",null,"\xAE")," Todos os direitos reservados - CNPJ: 36.664.223/0001-09"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("small",{className:"footer__text"},"A BeCapital Live Corretora de Seguros LTDA  (CNPJ 29.761.563/0001-84) est\xE1 registrada na Susep com o c\xF3digo 212113018, estando autorizada a comercializar produtos como: micro-seguros, plano de capitaliza\xE7\xE3o, seguro de pessoas, plano de previd\xEAncia complementar e seguro de danos.")))));};/* harmony default export */ const components_Footer = (Footer);
+;// CONCATENATED MODULE: ./src/components/layout.js
+function Layout({children}){return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement((external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default()).Fragment,null,/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(Header_Header,null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("main",null,children),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(components_Footer,null));}
 
 /***/ }),
 
-/***/ "./src/components/Cards/CardSupport/index.js":
-/*!***************************************************!*\
-  !*** ./src/components/Cards/CardSupport/index.js ***!
-  \***************************************************/
+/***/ 9357:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ CardSupportCause)
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1051);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
-
-
-function CardSupportCause() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "section section__cards-support"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "section__container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "section__title"
-  }, "Causas que apoiamos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-support__items"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
-    className: "card-support__item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_1__.StaticImage, {
-    src: "../../../images/image_quadro_de_colaboradores_2x.jpg",
-    alt: "imagem sobre a plataforma de ensino que forma refugiados e imigrantes da BeCapital",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1210744357.json */ "./.cache/caches/gatsby-plugin-image/1210744357.json")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-support__description"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://totidiversidade.com.br/",
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_1__.StaticImage, {
-    src: "../../../images/logo_toti.png",
-    alt: "Logo Toti",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/615666664.json */ "./.cache/caches/gatsby-plugin-image/615666664.json")
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "card-support__text"
-  }, "Em nosso quadro de colaboradores, temos profissionais oriundos de uma ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "plataforma de ensino"), " que forma ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "refugiados"), " e ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "imigrantes"), "."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
-    className: "card-support__item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_1__.StaticImage, {
-    src: "../../../images/image_pratocinadores_hamburguer_2x.jpg",
-    alt: "imagem Patrocinadores do Dia Mundial do Hamb\xFArguer da BeCapital",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2622269618.json */ "./.cache/caches/gatsby-plugin-image/2622269618.json")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card-support__description"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://osdm.org.br/",
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_1__.StaticImage, {
-    src: "../../../images/logo_dona_meca.png",
-    alt: "Logo Dona Meca ",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/404333013.json */ "./.cache/caches/gatsby-plugin-image/404333013.json")
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "card-support__text"
-  }, "Patrocinadores do ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Dia Mundial do Hamb\xFArguer"), ": A BeCapital viabilizou a entrega de hamb\xFArgueres na Obra Social Dona Meca, que acolhe ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "crian\xE7as"), " e ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "jovens especiais"), " em vulnerabilidade social."))))));
-}
-
-/***/ }),
-
-/***/ "./src/components/Footer/InvestimentosMenu/index.js":
-/*!**********************************************************!*\
-  !*** ./src/components/Footer/InvestimentosMenu/index.js ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_956638909_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../public/page-data/sq/d/956638909.json */ "./public/page-data/sq/d/956638909.json");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-
-
-
-
-const SubMenu = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.StaticQuery, {
-  query: "956638909",
-  render: data => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("ul", {
-    className: "footer__menu"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("li", {
-    className: "menu__item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
-    href: "https://maquinadossonhos.be.capital/",
-    className: "menu__link"
-  }, "Planejamento Financeiro")), data.allWpServico.edges.map(page => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("li", {
-    className: "menu__item",
-    key: page.node.id
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    to: `/${page.node.slug}`,
-    className: "menu__link"
-  }, page.node.title)))),
-  data: _public_page_data_sq_d_956638909_json__WEBPACK_IMPORTED_MODULE_0__
-});
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SubMenu);
-
-/***/ }),
-
-/***/ "./src/components/Footer/index.js":
-/*!****************************************!*\
-  !*** ./src/components/Footer/index.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _InvestimentosMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./InvestimentosMenu */ "./src/components/Footer/InvestimentosMenu/index.js");
-
-
-
-
-
-const Footer = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
-    className: "footer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer__container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "footer__section footer__section--header"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer__section--container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
-    src: "../../images/logo_becapital_2x.png",
-    alt: "logo BeCapital",
-    className: "footer__logo",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/535489621.json */ "./.cache/caches/gatsby-plugin-image/535489621.json")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "footer__title footer--andress"
-  }, "Av. Rio Branco, 108 | 8\xBA andar - Centro - Rio de Janeiro - RJ"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "mailto:imprensa@be.capital",
-    className: "footer__link"
-  }, "imprensa@be.capital"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "footer__section footer__section--main"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer__section--container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer__section--column"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: "footer__title"
-  }, "Investimentos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_InvestimentosMenu__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer__section--column"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: "footer__title"
-  }, "Conte\xFAdos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "footer__menu"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "menu__item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://www.youtube.com/channel/UCLImIm6777cZiGmjaRuFcwQ?view_as=subscriber",
-    className: "menu__link",
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, "Canal no Youtube")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "menu__item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://t.me/becapitalresearch",
-    className: "menu__link",
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, "Grupo no Telegram")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "menu__item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/blog/",
-    className: "menu__link"
-  }, "Blog")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer__section--column"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: "footer__title"
-  }, "Nossa Empresa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "footer__menu"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "menu__item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/somos-becapital/",
-    className: "menu__link"
-  }, "A BeCapital")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "menu__item width200"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://api.whatsapp.com/send?phone=5521965431886&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20planejamento%20financeiro.%20O%20que%20devo%20fazer%3F%20Poderia%20me%20ajudar%3F",
-    className: "menu__link"
-  }, " Fale com a Beca - Atendimento da BeCapital ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "menu__item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/carreiras/",
-    className: "menu__link"
-  }, "P\xE1gina de Carreiras")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer__section--column"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
-    src: "../../images/qrcode_3x.png",
-    alt: "QRCode BeCapital",
-    className: "qrcode",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3726475015.json */ "./.cache/caches/gatsby-plugin-image/3726475015.json")
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "footer__section footer__section--footer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer__section--container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer__section--column"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: "footer__title"
-  }, "Siga a BeCapital"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "footer__social social__menu"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "social__item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://www.instagram.com/becapital.oficial/",
-    className: "social__link",
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
-    src: "../../images/icon_instagram_orange.png",
-    alt: "Logo Instagram",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2154065702.json */ "./.cache/caches/gatsby-plugin-image/2154065702.json")
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "social__item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://www.youtube.com/channel/UCLImIm6777cZiGmjaRuFcwQ?view_as=subscriber",
-    className: "social__link",
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
-    src: "../../images/icon_youtube_orange.png",
-    alt: "Logo Youtube",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3182300424.json */ "./.cache/caches/gatsby-plugin-image/3182300424.json")
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "social__item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://www.linkedin.com/company/71399542/",
-    className: "social__link",
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
-    src: "../../images/icon_linkedin_orange.png",
-    alt: "Logo Linkedin",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2095264300.json */ "./.cache/caches/gatsby-plugin-image/2095264300.json")
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer__section--column"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: "footer__title"
-  }, "Hor\xE1rio de atendimento"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "footer__text"
-  }, "Segunda a Sexta de 9h \xE0s 18h")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer__section--column"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: "footer__title"
-  }, "Contato para atendimento"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "footer__text"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "tel:+552139939670"
-  }, "(21) 3993 - 9670"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer__section--column"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://www2.susep.gov.br/safe/Corretores/pesquisa",
-    className: "social__link",
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
-    src: "../../images/logo_susep_1x.png",
-    alt: "Logo SUSEP",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1537072282.json */ "./.cache/caches/gatsby-plugin-image/1537072282.json")
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "footer__section footer__end"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("small", {
-    className: "footer__title"
-  }, "BeCapital ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "\xAE"), " Todos os direitos reservados - CNPJ: 36.664.223/0001-09"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("small", {
-    className: "footer__text"
-  }, "A BeCapital Live Corretora de Seguros LTDA  (CNPJ 29.761.563/0001-84) est\xE1 registrada na Susep com o c\xF3digo 212113018, estando autorizada a comercializar produtos como: micro-seguros, plano de capitaliza\xE7\xE3o, seguro de pessoas, plano de previd\xEAncia complementar e seguro de danos.")))));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
-
-/***/ }),
-
-/***/ "./src/components/Header/Header.js":
-/*!*****************************************!*\
-  !*** ./src/components/Header/Header.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _SubMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SubMenu */ "./src/components/Header/SubMenu/index.js");
-
-
-
-
-
-const Header = () => {
-  const {
-    0: isActive,
-    1: setActive
-  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-
-  const toggleClass = () => {
-    setActive(!isActive);
-    document.querySelector('.header').classList.toggle('active');
-  };
-
-  const isCurrent = ({
-    current
-  }) => {
-    return current ? {
-      className: "header__menu_link_current"
-    } : {};
-  };
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
-    className: "header"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "header__content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
-    src: "../../images/logo_becapital_2x.png",
-    alt: "logo BeCapital",
-    className: "header__logo header__logo--mobile",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/535489621.json */ "./.cache/caches/gatsby-plugin-image/535489621.json")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
-    src: "../../images/logo_2_becapital_1x.png",
-    alt: "logo BeCapital",
-    className: "header__logo header__logo--desktop",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3255117786.json */ "./.cache/caches/gatsby-plugin-image/3255117786.json")
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    className: "burguer__container",
-    onClick: toggleClass,
-    onKeyDown: toggleClass
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: isActive ? 'header__menu active' : 'header__menu'
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    className: isActive ? 'burguer__container active' : 'burguer__container',
-    onClick: toggleClass,
-    onKeyDown: toggleClass
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-    className: "header__menu_nav"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "header__menu_items"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "header__menu_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/",
-    className: "header__menu_link",
-    getProps: isCurrent
-  }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "header__menu_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/somos-becapital/",
-    className: "header__menu_link",
-    getProps: isCurrent
-  }, "Somos BeCapital")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "header__menu_item header__menu_item--children"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "header__menu_link--children"
-  }, "Seja BeCapital ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
-    width: "6",
-    height: "5",
-    viewBox: "0 0 6 5",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
-    d: "M3 5L0.401925 0.5L5.59808 0.5L3 5Z",
-    fill: "#EA5E45"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-    className: "header__submenu"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SubMenu__WEBPACK_IMPORTED_MODULE_2__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "header__menu_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/blog/",
-    className: "header__menu_link",
-    getProps: isCurrent
-  }, "Blog")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "header__menu_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/carreiras/",
-    className: "header__menu_link",
-    getProps: isCurrent
-  }, "Carreiras")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "header__menu_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://becapitalresearch.com/",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    className: "header__menu_link header__menu_link--italic"
-  }, "Research")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "button__container header__button_cta"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://app.be.capital/#/auth",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    className: "button button__primary"
-  }, "Login"))))));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
-
-/***/ }),
-
-/***/ "./src/components/Header/SubMenu/index.js":
-/*!************************************************!*\
-  !*** ./src/components/Header/SubMenu/index.js ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_956638909_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../public/page-data/sq/d/956638909.json */ "./public/page-data/sq/d/956638909.json");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-
-
-
-
-const isCurrent = ({
-  current
-}) => {
-  return current ? {
-    className: "header__menu_link_current"
-  } : {};
-};
-
-const SubMenu = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.StaticQuery, {
-  query: "956638909",
-  render: data => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("ul", {
-    className: "header__submenu_items"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("li", {
-    className: "header__submenu_item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
-    href: "https://maquinadossonhos.be.capital/",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    className: "header__submenu_link"
-  }, "Planejamento Financeiro")), data.allWpServico.edges.map(page => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("li", {
-    className: "header__submenu_item",
-    key: page.node.id
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    to: `/${page.node.slug}`,
-    className: "header__submenu_link",
-    getProps: isCurrent
-  }, page.node.title)))),
-  data: _public_page_data_sq_d_956638909_json__WEBPACK_IMPORTED_MODULE_0__
-});
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SubMenu);
-
-/***/ }),
-
-/***/ "./src/components/Slides/DirectorsSlide/index.js":
-/*!*******************************************************!*\
-  !*** ./src/components/Slides/DirectorsSlide/index.js ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ DirectorsSlide)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
-
-
-
-class DirectorsSlide extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
-  render() {
-    const settings = {
-      infinite: false,
-      touchMove: true,
-      centerMode: true,
-      focusOnSelect: true,
-      centerPadding: 30,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      initialSlide: 0,
-      speed: 500,
-      dots: false,
-      arrows: false,
-      responsive: [{
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          touchMove: false,
-          centerPadding: 0
-        }
-      }, {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 3,
-          touchMove: false,
-          centerPadding: 0
-        }
-      }, {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }]
-    };
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-      className: "section section__directors"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-      className: "section__container"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-      className: "section__title"
-    }, "Somos BeCapital"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-      className: "section__subtitle--b"
-    }, "A BeCapital \xE9 resultado de uma nova maneira de pensar e agir no mercado de capitais como um todo.           "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-      className: "directors__items"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_slick__WEBPACK_IMPORTED_MODULE_1__["default"], settings, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
-      className: "directors__item"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
-      src: "../../../images/dir_paulo_paiva_2x.png",
-      alt: "Foto de Paulo Paiva, Diretor Executivo da BeCapital",
-      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2233200342.json */ "./.cache/caches/gatsby-plugin-image/2233200342.json")
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
-      className: "directors__information"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-      className: "directors__description"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-      className: "directors__name"
-    }, "Paulo Paiva"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-      className: "directors__job"
-    }, "CEO, Diretor Executivo")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-      href: "https://www.linkedin.com/in/paulo-paiva-8611259b/",
-      target: "_blank",
-      rel: "noopener noreferrer",
-      className: "directors__social"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
-      src: "../../../images/logo_linkedin.png",
-      alt: "logo do linkedin",
-      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2188967426.json */ "./.cache/caches/gatsby-plugin-image/2188967426.json")
-    })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
-      className: "directors__item"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
-      src: "../../../images/dir_calebe_vieira_2x.png",
-      alt: "Foto de Calebe Vieira, Diretor Comercial da BeCapital",
-      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2852829685.json */ "./.cache/caches/gatsby-plugin-image/2852829685.json")
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
-      className: "directors__information"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-      className: "directors__description"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-      className: "directors__name"
-    }, "Calebe Vieira"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-      className: "directors__job"
-    }, "CAO, Diretor Comercial")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-      href: "https://www.linkedin.com/in/calebevieira/",
-      target: "_blank",
-      rel: "noopener noreferrer",
-      className: "directors__social"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
-      src: "../../../images/logo_linkedin.png",
-      alt: "logo do linkedin",
-      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2188967426.json */ "./.cache/caches/gatsby-plugin-image/2188967426.json")
-    }))))))));
-  }
-
-}
-
-/***/ }),
-
-/***/ "./src/components/layout.js":
-/*!**********************************!*\
-  !*** ./src/components/layout.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Layout)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header/Header */ "./src/components/Header/Header.js");
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./src/components/Footer/index.js");
-
-
-
-function Layout({
-  children
-}) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
-}
-
-/***/ }),
-
-/***/ "./src/components/seo.js":
-/*!*******************************!*\
-  !*** ./src/components/seo.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_848497233_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/848497233.json */ "./public/page-data/sq/d/848497233.json");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5697);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/es/Helmet.js");
-
-
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4593);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7533);
 /**
  * Seo component that queries for data with
  *  Gatsby's useStaticQuery React hook
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
-
-
-
-const Seo = ({
-  description,
-  lang,
-  meta,
-  title
-}) => {
-  var _wp$generalSettings, _wp$generalSettings2;
-
-  const {
-    wp,
-    wpUser
-  } = _public_page_data_sq_d_848497233_json__WEBPACK_IMPORTED_MODULE_0__.data;
-  const metaDescription = description || ((_wp$generalSettings = wp.generalSettings) === null || _wp$generalSettings === void 0 ? void 0 : _wp$generalSettings.description);
-  const defaultTitle = (_wp$generalSettings2 = wp.generalSettings) === null || _wp$generalSettings2 === void 0 ? void 0 : _wp$generalSettings2.title;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_2__.Helmet, {
-    htmlAttributes: {
-      lang
-    },
-    title: title,
-    titleTemplate: defaultTitle ? `%s  ${defaultTitle}` : null,
-    meta: [{
-      name: `description`,
-      content: metaDescription
-    }, {
-      property: `og:title`,
-      content: title
-    }, {
-      property: `og:description`,
-      content: metaDescription
-    }, {
-      property: `og:type`,
-      content: `website`
-    }, {
-      name: `twitter:card`,
-      content: `summary`
-    }, {
-      name: `twitter:creator`,
-      content: (wpUser === null || wpUser === void 0 ? void 0 : wpUser.twitter) || ``
-    }, {
-      name: `twitter:title`,
-      content: title
-    }, {
-      name: `twitter:description`,
-      content: metaDescription
-    }].concat(meta)
-  });
-};
-
-Seo.defaultProps = {
-  lang: `pt-br`,
-  meta: [],
-  description: ``
-};
-Seo.propTypes = {
-  description: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
-  lang: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
-  meta: prop_types__WEBPACK_IMPORTED_MODULE_3___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)),
-  title: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired)
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Seo);
+ */const Seo=({description,lang,meta,title})=>{var _wp$generalSettings,_wp$generalSettings2;const{wp,wpUser}=(0,gatsby__WEBPACK_IMPORTED_MODULE_2__.useStaticQuery)("848497233");const metaDescription=description||((_wp$generalSettings=wp.generalSettings)===null||_wp$generalSettings===void 0?void 0:_wp$generalSettings.description);const defaultTitle=(_wp$generalSettings2=wp.generalSettings)===null||_wp$generalSettings2===void 0?void 0:_wp$generalSettings2.title;return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__.Helmet,{htmlAttributes:{lang},title:title,titleTemplate:defaultTitle?`%s  ${defaultTitle}`:null,meta:[{name:`description`,content:metaDescription},{property:`og:title`,content:title},{property:`og:description`,content:metaDescription},{property:`og:type`,content:`website`},{name:`twitter:card`,content:`summary`},{name:`twitter:creator`,content:(wpUser===null||wpUser===void 0?void 0:wpUser.twitter)||``},{name:`twitter:title`,content:title},{name:`twitter:description`,content:metaDescription}].concat(meta)});};Seo.defaultProps={lang:`pt-br`,meta:[],description:``};Seo.propTypes={description:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),lang:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),meta:prop_types__WEBPACK_IMPORTED_MODULE_3___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)),title:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired)};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Seo);
 
 /***/ }),
 
-/***/ "./src/pages/somos-becapital.js":
-/*!**************************************!*\
-  !*** ./src/pages/somos-becapital.js ***!
-  \**************************************/
+/***/ 2547:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
-/* harmony import */ var _components_Slides_DirectorsSlide__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Slides/DirectorsSlide */ "./src/components/Slides/DirectorsSlide/index.js");
-/* harmony import */ var _components_Cards_CardSupport__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Cards/CardSupport */ "./src/components/Cards/CardSupport/index.js");
-/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.js");
 
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ somos_becapital)
+});
 
-
-
-
-
-
-const Somos = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_seo__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: "Somos BeCapital |",
-    description: "Uma nova maneira de pensar e agir no mercado de capitais. Acreditamos que investir \xE9 para todos."
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "banner banner__secondary banner--somos"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "banner__content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_5__.StaticImage, {
-    src: "../images/somos_becapital_banner_2x.jpg",
-    alt: "Banner Somos BeCapital",
-    className: "banner__figure",
-    imgClassName: "banner__image",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/706991349.json */ "./.cache/caches/gatsby-plugin-image/706991349.json")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "banner__text"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "section__title"
-  }, "Nossos Diretores"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "section__subtitle"
-  }, "Com uma cultura corporativa que valoriza a especializa\xE7\xE3o, o conhecimento e a t\xE9cnica, ser BeCapital \xE9 ser parte de times capacitados que estruturam processos \xE1geis, para gerar altas performances e construir rela\xE7\xF5es s\xF3lidas de extrema confiabilidade com os clientes. Aqui, a gente acredita que investir \xE9 pra todo mundo. E a melhor escolha \xE9 ser sempre voc\xEA."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "section__subtitle"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "BeCapital. Invista ou invista."))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Slides_DirectorsSlide__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Cards_CardSupport__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "section cta-contact"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "section__container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "section__title"
-  }, "Invista com a BeCapital"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "section__description"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_5__.StaticImage, {
-    src: "../images/logo_beca_2x.jpg",
-    alt: "Banner Somos BeCapital",
-    className: "",
-    imgClassName: "banner__image",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/780410537.json */ "./.cache/caches/gatsby-plugin-image/780410537.json")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "a"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "b"
-  }, "Fale com a Beca, a atendente virtual da BeCapital:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "mailto:beca@be.capital",
-    className: "c"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "beca@be.capital")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "d"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("em", null, "Estamos prontos para entender seus sonhos e ajudar voc\xEA a planejar seus investimentos.")))))));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Somos);
+// EXTERNAL MODULE: external "C:\\Users\\home\\Desktop\\WORKSPACE\\FREELANCER\\BeCapital\\becapital\\node_modules\\react\\index.js"
+var external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_ = __webpack_require__(1051);
+var external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default = /*#__PURE__*/__webpack_require__.n(external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_);
+// EXTERNAL MODULE: ./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js
+var gatsby_image_module = __webpack_require__(3040);
+// EXTERNAL MODULE: ./src/components/layout.js + 4 modules
+var layout = __webpack_require__(1158);
+// EXTERNAL MODULE: ./node_modules/react-slick/lib/index.js
+var lib = __webpack_require__(6066);
+;// CONCATENATED MODULE: ./src/components/Slides/DirectorsSlide/index.js
+class DirectorsSlide extends external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_.Component{render(){const settings={infinite:false,touchMove:true,centerMode:true,focusOnSelect:true,centerPadding:30,slidesToShow:3,slidesToScroll:3,initialSlide:0,speed:500,dots:false,arrows:false,responsive:[{breakpoint:1024,settings:{slidesToShow:3,touchMove:false,centerPadding:0}},{breakpoint:600,settings:{slidesToShow:3,touchMove:false,centerPadding:0}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1}}]};return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"section section__directors"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"section__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"section__title"},"Somos BeCapital"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"section__subtitle--b"},"A BeCapital \xE9 resultado de uma nova maneira de pensar e agir no mercado de capitais como um todo.           "),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"directors__items"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(lib/* default */.Z,settings,/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("article",{className:"directors__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/dir_paulo_paiva_2x.png",alt:"Foto de Paulo Paiva, Diretor Executivo da BeCapital",__imageData:__webpack_require__(9965)}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("footer",{className:"directors__information"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"directors__description"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"directors__name"},"Paulo Paiva"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"directors__job"},"CEO, Diretor Executivo")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://www.linkedin.com/in/paulo-paiva-8611259b/",target:"_blank",rel:"noopener noreferrer",className:"directors__social"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_linkedin.png",alt:"logo do linkedin",__imageData:__webpack_require__(8023)})))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("article",{className:"directors__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/dir_calebe_vieira_2x.png",alt:"Foto de Calebe Vieira, Diretor Comercial da BeCapital",__imageData:__webpack_require__(3606)}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("footer",{className:"directors__information"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"directors__description"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"directors__name"},"Calebe Vieira"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"directors__job"},"CAO, Diretor Comercial")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://www.linkedin.com/in/calebevieira/",target:"_blank",rel:"noopener noreferrer",className:"directors__social"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_linkedin.png",alt:"logo do linkedin",__imageData:__webpack_require__(8023)}))))))));}}
+;// CONCATENATED MODULE: ./src/components/Cards/CardSupport/index.js
+function CardSupportCause(){return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"section section__cards-support"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"section__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"section__title"},"Causas que apoiamos"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"card-support__items"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("article",{className:"card-support__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/image_quadro_de_colaboradores_2x.jpg",alt:"imagem sobre a plataforma de ensino que forma refugiados e imigrantes da BeCapital",__imageData:__webpack_require__(6010)}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"card-support__description"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://totidiversidade.com.br/",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_toti.png",alt:"Logo Toti",__imageData:__webpack_require__(3872)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"card-support__text"},"Em nosso quadro de colaboradores, temos profissionais oriundos de uma ",/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("strong",null,"plataforma de ensino")," que forma ",/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("strong",null,"refugiados")," e ",/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("strong",null,"imigrantes"),"."))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("article",{className:"card-support__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/image_pratocinadores_hamburguer_2x.jpg",alt:"imagem Patrocinadores do Dia Mundial do Hamb\xFArguer da BeCapital",__imageData:__webpack_require__(6826)}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"card-support__description"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://osdm.org.br/",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_dona_meca.png",alt:"Logo Dona Meca ",__imageData:__webpack_require__(7045)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"card-support__text"},"Patrocinadores do ",/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("strong",null,"Dia Mundial do Hamb\xFArguer"),": A BeCapital viabilizou a entrega de hamb\xFArgueres na Obra Social Dona Meca, que acolhe ",/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("strong",null,"crian\xE7as")," e ",/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("strong",null,"jovens especiais")," em vulnerabilidade social."))))));}
+// EXTERNAL MODULE: ./src/components/seo.js
+var seo = __webpack_require__(9357);
+;// CONCATENATED MODULE: ./src/pages/somos-becapital.js
+const Somos=()=>{return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(layout/* default */.Z,null,/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(seo/* default */.Z,{title:"Somos BeCapital |",description:"Uma nova maneira de pensar e agir no mercado de capitais. Acreditamos que investir \xE9 para todos."}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"banner banner__secondary banner--somos"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"banner__content"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../images/somos_becapital_banner_2x.jpg",alt:"Banner Somos BeCapital",className:"banner__figure",imgClassName:"banner__image",__imageData:__webpack_require__(2922)}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"banner__text"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"section__title"},"Nossos Diretores"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"section__subtitle"},"Com uma cultura corporativa que valoriza a especializa\xE7\xE3o, o conhecimento e a t\xE9cnica, ser BeCapital \xE9 ser parte de times capacitados que estruturam processos \xE1geis, para gerar altas performances e construir rela\xE7\xF5es s\xF3lidas de extrema confiabilidade com os clientes. Aqui, a gente acredita que investir \xE9 pra todo mundo. E a melhor escolha \xE9 ser sempre voc\xEA."),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"section__subtitle"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("strong",null,"BeCapital. Invista ou invista."))))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(DirectorsSlide,null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(CardSupportCause,null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"section cta-contact"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"section__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"section__title"},"Invista com a BeCapital"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"section__description"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../images/logo_beca_2x.jpg",alt:"Banner Somos BeCapital",className:"",imgClassName:"banner__image",__imageData:__webpack_require__(282)}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"a"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"b"},"Fale com a Beca, a atendente virtual da BeCapital:"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"mailto:beca@be.capital",className:"c"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("strong",null,"beca@be.capital")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"d"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("em",null,"Estamos prontos para entender seus sonhos e ajudar voc\xEA a planejar seus investimentos.")))))));};/* harmony default export */ const somos_becapital = (Somos);
 
 /***/ }),
 
-/***/ "./node_modules/json2mq/index.js":
-/*!***************************************!*\
-  !*** ./node_modules/json2mq/index.js ***!
-  \***************************************/
+/***/ 973:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var camel2hyphen = __webpack_require__(/*! string-convert/camel2hyphen */ "./node_modules/string-convert/camel2hyphen.js");
+var camel2hyphen = __webpack_require__(1169);
 
 var isDimension = function (feature) {
   var re = /[height|width]$/;
@@ -2115,10 +645,7 @@ module.exports = json2mq;
 
 /***/ }),
 
-/***/ "./node_modules/lodash.debounce/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/lodash.debounce/index.js ***!
-  \***********************************************/
+/***/ 1296:
 /***/ ((module) => {
 
 /**
@@ -2502,10 +1029,7 @@ module.exports = debounce;
 
 /***/ }),
 
-/***/ "./node_modules/react-slick/lib/arrows.js":
-/*!************************************************!*\
-  !*** ./node_modules/react-slick/lib/arrows.js ***!
-  \************************************************/
+/***/ 8205:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -2516,11 +1040,11 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.NextArrow = exports.PrevArrow = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _react = _interopRequireDefault(__webpack_require__(1051));
 
-var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
+var _classnames = _interopRequireDefault(__webpack_require__(4184));
 
-var _innerSliderUtils = __webpack_require__(/*! ./utils/innerSliderUtils */ "./node_modules/react-slick/lib/utils/innerSliderUtils.js");
+var _innerSliderUtils = __webpack_require__(5518);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -2694,10 +1218,7 @@ exports.NextArrow = NextArrow;
 
 /***/ }),
 
-/***/ "./node_modules/react-slick/lib/default-props.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/react-slick/lib/default-props.js ***!
-  \*******************************************************/
+/***/ 3492:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -2708,7 +1229,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _react = _interopRequireDefault(__webpack_require__(1051));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -2777,10 +1298,7 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ "./node_modules/react-slick/lib/dots.js":
-/*!**********************************************!*\
-  !*** ./node_modules/react-slick/lib/dots.js ***!
-  \**********************************************/
+/***/ 6329:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -2791,11 +1309,11 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.Dots = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _react = _interopRequireDefault(__webpack_require__(1051));
 
-var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
+var _classnames = _interopRequireDefault(__webpack_require__(4184));
 
-var _innerSliderUtils = __webpack_require__(/*! ./utils/innerSliderUtils */ "./node_modules/react-slick/lib/utils/innerSliderUtils.js");
+var _innerSliderUtils = __webpack_require__(5518);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -2922,33 +1440,28 @@ exports.Dots = Dots;
 
 /***/ }),
 
-/***/ "./node_modules/react-slick/lib/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/react-slick/lib/index.js ***!
-  \***********************************************/
+/***/ 6066:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
+var __webpack_unused_export__;
 
 
-Object.defineProperty(exports, "__esModule", ({
+__webpack_unused_export__ = ({
   value: true
-}));
-exports["default"] = void 0;
+});
+exports.Z = void 0;
 
-var _slider = _interopRequireDefault(__webpack_require__(/*! ./slider */ "./node_modules/react-slick/lib/slider.js"));
+var _slider = _interopRequireDefault(__webpack_require__(5798));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var _default = _slider["default"];
-exports["default"] = _default;
+exports.Z = _default;
 
 /***/ }),
 
-/***/ "./node_modules/react-slick/lib/initial-state.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/react-slick/lib/initial-state.js ***!
-  \*******************************************************/
+/***/ 6948:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -2994,10 +1507,7 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ "./node_modules/react-slick/lib/inner-slider.js":
-/*!******************************************************!*\
-  !*** ./node_modules/react-slick/lib/inner-slider.js ***!
-  \******************************************************/
+/***/ 8517:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -3008,23 +1518,23 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.InnerSlider = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _react = _interopRequireDefault(__webpack_require__(1051));
 
-var _initialState = _interopRequireDefault(__webpack_require__(/*! ./initial-state */ "./node_modules/react-slick/lib/initial-state.js"));
+var _initialState = _interopRequireDefault(__webpack_require__(6948));
 
-var _lodash = _interopRequireDefault(__webpack_require__(/*! lodash.debounce */ "./node_modules/lodash.debounce/index.js"));
+var _lodash = _interopRequireDefault(__webpack_require__(1296));
 
-var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
+var _classnames = _interopRequireDefault(__webpack_require__(4184));
 
-var _innerSliderUtils = __webpack_require__(/*! ./utils/innerSliderUtils */ "./node_modules/react-slick/lib/utils/innerSliderUtils.js");
+var _innerSliderUtils = __webpack_require__(5518);
 
-var _track = __webpack_require__(/*! ./track */ "./node_modules/react-slick/lib/track.js");
+var _track = __webpack_require__(4740);
 
-var _dots = __webpack_require__(/*! ./dots */ "./node_modules/react-slick/lib/dots.js");
+var _dots = __webpack_require__(6329);
 
-var _arrows = __webpack_require__(/*! ./arrows */ "./node_modules/react-slick/lib/arrows.js");
+var _arrows = __webpack_require__(8205);
 
-var _resizeObserverPolyfill = _interopRequireDefault(__webpack_require__(/*! resize-observer-polyfill */ "./node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js"));
+var _resizeObserverPolyfill = _interopRequireDefault(__webpack_require__(1033));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -3878,10 +2388,7 @@ exports.InnerSlider = InnerSlider;
 
 /***/ }),
 
-/***/ "./node_modules/react-slick/lib/slider.js":
-/*!************************************************!*\
-  !*** ./node_modules/react-slick/lib/slider.js ***!
-  \************************************************/
+/***/ 5798:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -3892,15 +2399,15 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _react = _interopRequireDefault(__webpack_require__(1051));
 
-var _innerSlider = __webpack_require__(/*! ./inner-slider */ "./node_modules/react-slick/lib/inner-slider.js");
+var _innerSlider = __webpack_require__(8517);
 
-var _json2mq = _interopRequireDefault(__webpack_require__(/*! json2mq */ "./node_modules/json2mq/index.js"));
+var _json2mq = _interopRequireDefault(__webpack_require__(973));
 
-var _defaultProps = _interopRequireDefault(__webpack_require__(/*! ./default-props */ "./node_modules/react-slick/lib/default-props.js"));
+var _defaultProps = _interopRequireDefault(__webpack_require__(3492));
 
-var _innerSliderUtils = __webpack_require__(/*! ./utils/innerSliderUtils */ "./node_modules/react-slick/lib/utils/innerSliderUtils.js");
+var _innerSliderUtils = __webpack_require__(5518);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -3934,7 +2441,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var enquire = (0, _innerSliderUtils.canUseDOM)() && __webpack_require__(/*! enquire.js */ "./node_modules/enquire.js/src/index.js");
+var enquire = (0, _innerSliderUtils.canUseDOM)() && __webpack_require__(4974);
 
 var Slider = /*#__PURE__*/function (_React$Component) {
   _inherits(Slider, _React$Component);
@@ -4071,22 +2578,16 @@ var Slider = /*#__PURE__*/function (_React$Component) {
 
 
       if (settings.centerMode) {
-        if (settings.slidesToScroll > 1 && "development" !== "production") {
-          console.warn("slidesToScroll should be equal to 1 in centerMode, you are using ".concat(settings.slidesToScroll));
-        }
+        if (settings.slidesToScroll > 1 && "production" !== "production") {}
 
         settings.slidesToScroll = 1;
       } // force showing one slide and scrolling by one if the fade mode is on
 
 
       if (settings.fade) {
-        if (settings.slidesToShow > 1 && "development" !== "production") {
-          console.warn("slidesToShow should be equal to 1 when fade is true, you're using ".concat(settings.slidesToShow));
-        }
+        if (settings.slidesToShow > 1 && "production" !== "production") {}
 
-        if (settings.slidesToScroll > 1 && "development" !== "production") {
-          console.warn("slidesToScroll should be equal to 1 when fade is true, you're using ".concat(settings.slidesToScroll));
-        }
+        if (settings.slidesToScroll > 1 && "production" !== "production") {}
 
         settings.slidesToShow = 1;
         settings.slidesToScroll = 1;
@@ -4177,10 +2678,7 @@ exports["default"] = Slider;
 
 /***/ }),
 
-/***/ "./node_modules/react-slick/lib/track.js":
-/*!***********************************************!*\
-  !*** ./node_modules/react-slick/lib/track.js ***!
-  \***********************************************/
+/***/ 4740:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4191,11 +2689,11 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.Track = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _react = _interopRequireDefault(__webpack_require__(1051));
 
-var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
+var _classnames = _interopRequireDefault(__webpack_require__(4184));
 
-var _innerSliderUtils = __webpack_require__(/*! ./utils/innerSliderUtils */ "./node_modules/react-slick/lib/utils/innerSliderUtils.js");
+var _innerSliderUtils = __webpack_require__(5518);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -4475,10 +2973,7 @@ exports.Track = Track;
 
 /***/ }),
 
-/***/ "./node_modules/react-slick/lib/utils/innerSliderUtils.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/react-slick/lib/utils/innerSliderUtils.js ***!
-  \****************************************************************/
+/***/ 5518:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4490,7 +2985,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports.clamp = clamp;
 exports.canUseDOM = exports.slidesOnLeft = exports.slidesOnRight = exports.siblingDirection = exports.getTotalSlides = exports.getPostClones = exports.getPreClones = exports.getTrackLeft = exports.getTrackAnimateCSS = exports.getTrackCSS = exports.checkSpecKeys = exports.getSlideCount = exports.checkNavigable = exports.getNavigableIndexes = exports.swipeEnd = exports.swipeMove = exports.swipeStart = exports.keyHandler = exports.changeSlide = exports.slideHandler = exports.initializedState = exports.extractObject = exports.canGoNext = exports.getSwipeDirection = exports.getHeight = exports.getWidth = exports.lazySlidesOnRight = exports.lazySlidesOnLeft = exports.lazyEndIndex = exports.lazyStartIndex = exports.getRequiredLazySlides = exports.getOnDemandLazySlides = exports.safePreventDefault = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _react = _interopRequireDefault(__webpack_require__(1051));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -5438,10 +3933,7 @@ exports.canUseDOM = canUseDOM;
 
 /***/ }),
 
-/***/ "./node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js ***!
-  \*************************************************************************/
+/***/ 1033:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -6381,10 +4873,7 @@ var index = (function () {
 
 /***/ }),
 
-/***/ "./node_modules/string-convert/camel2hyphen.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/string-convert/camel2hyphen.js ***!
-  \*****************************************************/
+/***/ 1169:
 /***/ ((module) => {
 
 var camel2hyphen = function (str) {
@@ -6399,10 +4888,7 @@ module.exports = camel2hyphen;
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/1210744357.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1210744357.json ***!
-  \***********************************************************/
+/***/ 6010:
 /***/ ((module) => {
 
 "use strict";
@@ -6410,10 +4896,7 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#382828"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/1537072282.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1537072282.json ***!
-  \***********************************************************/
+/***/ 1734:
 /***/ ((module) => {
 
 "use strict";
@@ -6421,10 +4904,7 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/2095264300.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2095264300.json ***!
-  \***********************************************************/
+/***/ 936:
 /***/ ((module) => {
 
 "use strict";
@@ -6432,10 +4912,7 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#e85848"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/2154065702.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2154065702.json ***!
-  \***********************************************************/
+/***/ 642:
 /***/ ((module) => {
 
 "use strict";
@@ -6443,10 +4920,7 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#e85848"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/2188967426.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2188967426.json ***!
-  \***********************************************************/
+/***/ 8023:
 /***/ ((module) => {
 
 "use strict";
@@ -6454,10 +4928,7 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#184878"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/2233200342.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2233200342.json ***!
-  \***********************************************************/
+/***/ 9965:
 /***/ ((module) => {
 
 "use strict";
@@ -6465,10 +4936,7 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#785858"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/2622269618.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2622269618.json ***!
-  \***********************************************************/
+/***/ 6826:
 /***/ ((module) => {
 
 "use strict";
@@ -6476,10 +4944,7 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/2852829685.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2852829685.json ***!
-  \***********************************************************/
+/***/ 3606:
 /***/ ((module) => {
 
 "use strict";
@@ -6487,10 +4952,7 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#785858"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/3182300424.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/3182300424.json ***!
-  \***********************************************************/
+/***/ 1088:
 /***/ ((module) => {
 
 "use strict";
@@ -6498,10 +4960,7 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#e85848"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/3255117786.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/3255117786.json ***!
-  \***********************************************************/
+/***/ 7766:
 /***/ ((module) => {
 
 "use strict";
@@ -6509,10 +4968,7 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#e85848"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/3726475015.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/3726475015.json ***!
-  \***********************************************************/
+/***/ 3701:
 /***/ ((module) => {
 
 "use strict";
@@ -6520,10 +4976,7 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/404333013.json":
-/*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/404333013.json ***!
-  \**********************************************************/
+/***/ 7045:
 /***/ ((module) => {
 
 "use strict";
@@ -6531,10 +4984,7 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/535489621.json":
-/*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/535489621.json ***!
-  \**********************************************************/
+/***/ 4539:
 /***/ ((module) => {
 
 "use strict";
@@ -6542,10 +4992,7 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f86848"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/615666664.json":
-/*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/615666664.json ***!
-  \**********************************************************/
+/***/ 3872:
 /***/ ((module) => {
 
 "use strict";
@@ -6553,10 +5000,7 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#382858"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/706991349.json":
-/*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/706991349.json ***!
-  \**********************************************************/
+/***/ 2922:
 /***/ ((module) => {
 
 "use strict";
@@ -6564,36 +5008,11 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#282828"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/780410537.json":
-/*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/780410537.json ***!
-  \**********************************************************/
+/***/ 282:
 /***/ ((module) => {
 
 "use strict";
 module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#184878","images":{"fallback":{"src":"/static/8bcf436018858a8901332233b6d14fc3/1d646/logo_beca_2x.jpg","srcSet":"/static/8bcf436018858a8901332233b6d14fc3/5e297/logo_beca_2x.jpg 298w,\\n/static/8bcf436018858a8901332233b6d14fc3/c6bb4/logo_beca_2x.jpg 596w,\\n/static/8bcf436018858a8901332233b6d14fc3/1d646/logo_beca_2x.jpg 1191w","sizes":"(min-width: 1191px) 1191px, 100vw"},"sources":[{"srcSet":"/static/8bcf436018858a8901332233b6d14fc3/5f8e1/logo_beca_2x.webp 298w,\\n/static/8bcf436018858a8901332233b6d14fc3/8428f/logo_beca_2x.webp 596w,\\n/static/8bcf436018858a8901332233b6d14fc3/1348b/logo_beca_2x.webp 1191w","type":"image/webp","sizes":"(min-width: 1191px) 1191px, 100vw"}]},"width":1191,"height":1192}');
-
-/***/ }),
-
-/***/ "./public/page-data/sq/d/848497233.json":
-/*!**********************************************!*\
-  !*** ./public/page-data/sq/d/848497233.json ***!
-  \**********************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"data":{"wp":{"generalSettings":{"title":"BeCapital","description":"Só mais um site WordPress"}},"wpUser":{"twitter":"aurelio.campos"}}}');
-
-/***/ }),
-
-/***/ "./public/page-data/sq/d/956638909.json":
-/*!**********************************************!*\
-  !*** ./public/page-data/sq/d/956638909.json ***!
-  \**********************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"data":{"allWpServico":{"edges":[{"node":{"id":"cG9zdDozOA==","title":"Plano de Saúde","slug":"plano-de-saude"}},{"node":{"id":"cG9zdDozNg==","title":"Seguro de Vida","slug":"seguro-de-vida"}},{"node":{"id":"cG9zdDozNA==","title":"Consórcios","slug":"consorcios"}},{"node":{"id":"cG9zdDozMQ==","title":"Câmbio","slug":"cambio"}}]}}}');
 
 /***/ })
 
