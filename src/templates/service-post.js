@@ -4,23 +4,117 @@ import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image';
 import parse from "html-react-parser"
 import FormRdStation from "../components/Form";
 
-// We're using Gutenberg so we need the block styles
-// these are copied into this project due to a conflict in the postCSS
-// version used by the Gatsby and @wordpress packages that causes build
-// failures.
-// @todo update this once @wordpress upgrades their postcss version
 import "../css/@wordpress/block-library/build-style/style.css"
 import "../css/@wordpress/block-library/build-style/theme.css"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import LogoItau from "../images/logo_itau.webp";
+
+import LogoAmil from "../images/logo_amil.webp";
+import LogoBradesco from "../images/logo_bradesco-saude.webp"
+import LogoGolden from "../images/logo_goldencross.webp";
+import LogoNotredame from "../images/logo_notredame.webp";
+import LogoSulAmerica from "../images/logo_sulamerica_saude.webp";
+
+const clientsData = [
+  {
+    id:"consórcios",
+    logos: [
+      {
+        src: LogoItau, 
+        alt:"Logo Itaú Consorcio" 
+      },
+      {
+        src:"../images/logo_porto_seguro_1x.png", 
+        alt:"Logo Porto Seguro"
+      },
+      {
+        src:"../../../images/logo_caixa_1x.png", 
+        alt:"Logo Caixa"
+      }
+    ]
+  },
+  {
+    id: "cambio",
+    logos: [
+      {
+        src:"../images/logo_advanced.png", alt:"Logo Advanced"
+      },
+      {
+        src:"../images/logo_banco_daycoval.png", alt:"Logo Banco Daycoval"
+      }
+    ]
+  },
+  {
+    id: "planejamento-financeiro",
+    logos: [
+      {
+        src:"../images/logo_itau_consorcio_1x.png", alt:"Logo Itaú Consorcio"
+      },
+      {
+        src:"../images/logo_porto_seguro_1x.png", alt:"Logo Porto Seguro"
+      },
+      {
+        src:"../images/logo_caixa_1x.png", alt:"Logo Caixa"
+      }
+    ]
+  },
+  {
+    id: "plano-de-saude",
+    logos: [
+      {
+        src:LogoAmil, alt:"Logo Amil"
+      },
+      {
+        src:LogoBradesco, alt:"Logo Bradesco Saúde"
+      },
+      {
+        src:LogoGolden, alt:"Logo Golden Cross"
+      },
+      {
+        src:LogoNotredame, alt:"Logo Notredame"
+      },
+      {
+        src:LogoSulAmerica, alt:"Logo Sulamerica Saúde"
+      }
+    ]
+  },
+  {
+    id: "seguro-de-vida",
+    logos: [
+      {
+        src:"../images/logo_icatu.png", alt:"Logo Icatu"
+      },
+      {
+        src:"../images/logo_mapfre.png", alt:"Logo Mapfre"
+      },
+      {
+        src:"../images/logo_centauro-on.png", alt:"Logo Centauro on"
+      },
+      {
+        src:"../images/logo_metlife.png", alt:"Logo Metlife"
+      },
+      {
+        src:"../images/logo_mongeral_aegon.png", alt:"Logo Mogeral aegon"
+      },
+      {
+        src:"../images/logo_omint.png", alt:"Logo Omint" 
+      },
+      {
+        src:"../images/logo_prudential.png", alt:"Logo Prudential"
+      }
+    ]
+  }
+]
 const ServicesPostTemplate = ({ data: { service } }) => {
 
   const bannerImage = getImage(service.featuredImage.node.localFile);
-  const bodyImage = getImage(service.pageFieldsServices.subbanner.imagem.localFile)
+  const bodyImage = getImage(service.pageFieldsServices.subBanner.imagem.localFile)
 
-
+  const client = clientsData.filter( client => client.id === service.slug )
+  console.log(client);
   return (
     <Layout>
       <Seo title={`${service.title} |`} description={service.seo.metaDesc} />
@@ -44,31 +138,26 @@ const ServicesPostTemplate = ({ data: { service } }) => {
               className="single-service__body-figure"
               imgClassName="single-service__body-image" 
             />
-            <p className="description__text">{service.pageFieldsServices.subbanner.texto}</p>
+            <p className="description__text">{service.pageFieldsServices.subBanner.texto}</p>
           </div>
           <div className="single-service__partner">
             <h2 className="single-service__partner-title">Empresas Parceiras</h2>
             <ul className="single-service__partner-items">
             
-            {service.pageFieldsServices.empresasParceiras.map(logo => {
-                return(
-                  <li key={logo.id} className="single-service__partner-item">
-                    <GatsbyImage 
-                      image={getImage(logo.localFile)}
-                      alt={logo.altText ? logo.altText : "Empresa Parceira"}
-                      className="single-service__partner-figure"
-                    />
-                  </li>
-                )})
-                }
+            {client[0].logos.map((logo, index) => {
+              return (
+                <li key={index} className="single-service__partner-item">
+                  <img src={logo.src} alt={logo.alt} className="single-service__partner-figure"/>
+              </li>
+              )
+            })}
             </ul>
           </div>
           <div className="single-service__content editor__style--default">
             {parse(service.content)}
           </div>
-          <div class="button__container"><a href="https://conteudo.be.capital/quero-investir-becapital" target="_blank" rel="noopener noreferrer" class="button button__secondary">Fale com um de nossos especialistas</a></div>
+          <div className="button__container"><a href="https://conteudo.be.capital/quero-investir-becapital" target="_blank" rel="noopener noreferrer" className="button button__secondary">Fale com um de nossos especialistas</a></div>
           
-
         </section>
         
         <footer className="single-service__footer">
@@ -109,6 +198,7 @@ export const pageQuery = graphql`
       excerpt
       content
       title
+      slug
       date(formatString: "MMMM DD, YYYY")
       featuredImage {
         node {
@@ -120,16 +210,7 @@ export const pageQuery = graphql`
         }
       }
       pageFieldsServices {
-        empresasParceiras {
-          id
-          altText
-          localFile {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-        }
-        subbanner {
+        subBanner {
           imagem {
             localFile {
               childImageSharp {

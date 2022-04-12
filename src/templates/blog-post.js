@@ -102,7 +102,6 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostById(
-    # these variables are passed in via createPage.pageContext in gatsby-node.js
     $id: String!
     $previousPostId: String
     $nextPostId: String

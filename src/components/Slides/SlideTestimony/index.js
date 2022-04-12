@@ -86,7 +86,7 @@ export default class SlideTestimony extends Component {
                   {
                     data.allWpDepoimento.nodes.map( testimony => {
                       const { id, title, content, featuredImage } = testimony;
-                      const img = getImage(featuredImage.node.localFile);
+                      const img = getImage(featuredImage?.node.localFile);
 
                       return(
                         <li key={id} className="testimonies__item">

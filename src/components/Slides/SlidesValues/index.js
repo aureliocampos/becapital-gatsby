@@ -2,9 +2,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import React, { Component } from "react";
 import Slider from "react-slick";
 
-
-
-
 function SampleNextArrow(props) {
   const { className, onClick } = props;
   return (
