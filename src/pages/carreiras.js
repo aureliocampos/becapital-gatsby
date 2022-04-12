@@ -21,7 +21,7 @@ const Carreiras = () => {
             <h2 className="section__title">Ser BeCapital é <br/> <WordsEffect /></h2>
             <p className="section__subtitle">Conheça o Jeito <strong>Be</strong> de trabalhar, viver e compartilhar</p>
           </div>
-          <StaticImage src="../images/banner_carreiras_4x_v2.jpg" alt="Banner Somos BeCapital" className="banner__figure" imgClassName="banner__image" objectFit="contain" loading="eager" />
+          <StaticImage src="../images/banner_carreiras_4x_v2.png" alt="Banner Somos BeCapital" className="banner__figure" imgClassName="banner__image" objectFit="contain" loading="eager" />
         </div>
       </section>
       <section className="section section__values">

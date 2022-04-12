@@ -1,8 +1,11 @@
-exports.id = 678;
-exports.ids = [678];
+exports.id = "component---src-pages-index-js";
+exports.ids = ["component---src-pages-index-js"];
 exports.modules = {
 
-/***/ 3204:
+/***/ "./node_modules/camelcase/index.js":
+/*!*****************************************!*\
+  !*** ./node_modules/camelcase/index.js ***!
+  \*****************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -86,7 +89,10 @@ module.exports["default"] = camelCase;
 
 /***/ }),
 
-/***/ 4184:
+/***/ "./node_modules/classnames/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/classnames/index.js ***!
+  \******************************************/
 /***/ ((module, exports) => {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -150,7 +156,10 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
-/***/ 9960:
+/***/ "./node_modules/domelementtype/lib/index.js":
+/*!**************************************************!*\
+  !*** ./node_modules/domelementtype/lib/index.js ***!
+  \**************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -213,7 +222,10 @@ exports.Doctype = ElementType.Doctype;
 
 /***/ }),
 
-/***/ 7915:
+/***/ "./node_modules/domhandler/lib/index.js":
+/*!**********************************************!*\
+  !*** ./node_modules/domhandler/lib/index.js ***!
+  \**********************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -234,9 +246,9 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.DomHandler = void 0;
-var domelementtype_1 = __webpack_require__(9960);
-var node_1 = __webpack_require__(7790);
-__exportStar(__webpack_require__(7790), exports);
+var domelementtype_1 = __webpack_require__(/*! domelementtype */ "./node_modules/domelementtype/lib/index.js");
+var node_1 = __webpack_require__(/*! ./node */ "./node_modules/domhandler/lib/node.js");
+__exportStar(__webpack_require__(/*! ./node */ "./node_modules/domhandler/lib/node.js"), exports);
 var reWhitespace = /\s+/g;
 // Default options
 var defaultOpts = {
@@ -397,7 +409,10 @@ exports["default"] = DomHandler;
 
 /***/ }),
 
-/***/ 7790:
+/***/ "./node_modules/domhandler/lib/node.js":
+/*!*********************************************!*\
+  !*** ./node_modules/domhandler/lib/node.js ***!
+  \*********************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -430,7 +445,7 @@ var __assign = (this && this.__assign) || function () {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.cloneNode = exports.hasChildren = exports.isDocument = exports.isDirective = exports.isComment = exports.isText = exports.isCDATA = exports.isTag = exports.Element = exports.Document = exports.NodeWithChildren = exports.ProcessingInstruction = exports.Comment = exports.Text = exports.DataNode = exports.Node = void 0;
-var domelementtype_1 = __webpack_require__(9960);
+var domelementtype_1 = __webpack_require__(/*! domelementtype */ "./node_modules/domelementtype/lib/index.js");
 var nodeTypes = new Map([
     [domelementtype_1.ElementType.Tag, 1],
     [domelementtype_1.ElementType.Script, 1],
@@ -849,11 +864,14 @@ function cloneChildren(childs) {
 
 /***/ }),
 
-/***/ 2988:
+/***/ "./node_modules/enquire.js/src/MediaQuery.js":
+/*!***************************************************!*\
+  !*** ./node_modules/enquire.js/src/MediaQuery.js ***!
+  \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var QueryHandler = __webpack_require__(1755);
-var each = (__webpack_require__(6665).each);
+var QueryHandler = __webpack_require__(/*! ./QueryHandler */ "./node_modules/enquire.js/src/QueryHandler.js");
+var each = (__webpack_require__(/*! ./Util */ "./node_modules/enquire.js/src/Util.js").each);
 
 /**
  * Represents a single media query, manages it's state and registered handlers for this query
@@ -949,11 +967,14 @@ module.exports = MediaQuery;
 
 /***/ }),
 
-/***/ 8177:
+/***/ "./node_modules/enquire.js/src/MediaQueryDispatch.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/enquire.js/src/MediaQueryDispatch.js ***!
+  \***********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var MediaQuery = __webpack_require__(2988);
-var Util = __webpack_require__(6665);
+var MediaQuery = __webpack_require__(/*! ./MediaQuery */ "./node_modules/enquire.js/src/MediaQuery.js");
+var Util = __webpack_require__(/*! ./Util */ "./node_modules/enquire.js/src/Util.js");
 var each = Util.each;
 var isFunction = Util.isFunction;
 var isArray = Util.isArray;
@@ -1041,7 +1062,10 @@ module.exports = MediaQueryDispatch;
 
 /***/ }),
 
-/***/ 1755:
+/***/ "./node_modules/enquire.js/src/QueryHandler.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/enquire.js/src/QueryHandler.js ***!
+  \*****************************************************/
 /***/ ((module) => {
 
 /**
@@ -1122,7 +1146,10 @@ module.exports = QueryHandler;
 
 /***/ }),
 
-/***/ 6665:
+/***/ "./node_modules/enquire.js/src/Util.js":
+/*!*********************************************!*\
+  !*** ./node_modules/enquire.js/src/Util.js ***!
+  \*********************************************/
 /***/ ((module) => {
 
 /**
@@ -1173,131 +1200,2099 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4974:
+/***/ "./node_modules/enquire.js/src/index.js":
+/*!**********************************************!*\
+  !*** ./node_modules/enquire.js/src/index.js ***!
+  \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var MediaQueryDispatch = __webpack_require__(8177);
+var MediaQueryDispatch = __webpack_require__(/*! ./MediaQueryDispatch */ "./node_modules/enquire.js/src/MediaQueryDispatch.js");
 module.exports = new MediaQueryDispatch();
 
 
 /***/ }),
 
-/***/ 3040:
+/***/ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js ***!
+  \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "HN": () => (/* binding */ Y),
-/* harmony export */   "Jv": () => (/* binding */ J),
-/* harmony export */   "gJ": () => (/* binding */ R)
+/* harmony export */   "GatsbyImage": () => (/* binding */ Y),
+/* harmony export */   "MainImage": () => (/* binding */ q),
+/* harmony export */   "Placeholder": () => (/* binding */ C),
+/* harmony export */   "StaticImage": () => (/* binding */ J),
+/* harmony export */   "generateImageData": () => (/* binding */ y),
+/* harmony export */   "getImage": () => (/* binding */ R),
+/* harmony export */   "getImageData": () => (/* binding */ W),
+/* harmony export */   "getLowResolutionImageURL": () => (/* binding */ w),
+/* harmony export */   "getSrc": () => (/* binding */ x),
+/* harmony export */   "getSrcSet": () => (/* binding */ I),
+/* harmony export */   "withArtDirection": () => (/* binding */ j)
 /* harmony export */ });
-/* unused harmony exports MainImage, Placeholder, generateImageData, getImageData, getLowResolutionImageURL, getSrc, getSrcSet, withArtDirection */
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1051);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var common_tags__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5863);
-/* harmony import */ var camelcase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3204);
+/* harmony import */ var common_tags__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! common-tags */ "./node_modules/common-tags/es/index.js");
+/* harmony import */ var camelcase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! camelcase */ "./node_modules/camelcase/index.js");
 /* harmony import */ var camelcase__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(camelcase__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5697);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-function s(){return s=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var a=arguments[t];for(var i in a)Object.prototype.hasOwnProperty.call(a,i)&&(e[i]=a[i]);}return e;},s.apply(this,arguments);}function l(e,t){if(null==e)return{};var a,i,r={},n=Object.keys(e);for(i=0;i<n.length;i++)t.indexOf(a=n[i])>=0||(r[a]=e[a]);return r;}var d,u=(/* unused pure expression or super */ null && ([.25,.5,1,2])),c=(/* unused pure expression or super */ null && ([750,1080,1366,1920])),h=(/* unused pure expression or super */ null && ([320,654,768,1024,1366,1600,1920,2048,2560,3440,3840,4096])),g=function(e){return console.warn(e);},p=function(e,t){return e-t;},m=function(e){return e.map(function(e){return e.src+" "+e.width+"w";}).join(",\n");};function f(e){var t=e.lastIndexOf(".");if(-1!==t){var a=e.slice(t+1);if("jpeg"===a)return"jpg";if(3===a.length||4===a.length)return a;}}function v(e){var t=e.layout,a=void 0===t?"constrained":t,i=e.width,n=e.height,o=e.sourceMetadata,l=e.breakpoints,d=e.aspectRatio,u=e.formats,c=void 0===u?["auto","webp"]:u;return c=c.map(function(e){return e.toLowerCase();}),a=r(a),i&&n?s({},e,{formats:c,layout:a,aspectRatio:i/n}):(o.width&&o.height&&!d&&(d=o.width/o.height),"fullWidth"===a?(i=i||o.width||l[l.length-1],n=n||Math.round(i/(d||1.3333333333333333))):(i||(i=n&&d?n*d:o.width?o.width:n?Math.round(n/1.3333333333333333):800),d&&!n?n=Math.round(i/d):d||(d=i/n)),s({},e,{width:i,height:n,aspectRatio:d,layout:a,formats:c}));}function w(e,t){var a;return void 0===t&&(t=20),null==(a=(0,(e=v(e)).generateImageSource)(e.filename,t,Math.round(t/e.aspectRatio),e.sourceMetadata.format||"jpg",e.fit,e.options))?void 0:a.src;}function y(e){var t,a=(e=v(e)).pluginName,r=e.sourceMetadata,n=e.generateImageSource,o=e.layout,l=e.fit,h=e.options,p=e.width,w=e.height,y=e.filename,M=e.reporter,S=void 0===M?{warn:g}:M,N=e.backgroundColor,R=e.placeholderURL;if(a||S.warn('[gatsby-plugin-image] "generateImageData" was not passed a plugin name'),"function"!=typeof n)throw new Error("generateImageSource must be a function");r&&(r.width||r.height)?r.format||(r.format=f(y)):r={width:p,height:w,format:(null==(t=r)?void 0:t.format)||f(y)||"auto"};var x=new Set(e.formats);(0===x.size||x.has("auto")||x.has(""))&&(x.delete("auto"),x.delete(""),x.add(r.format)),x.has("jpg")&&x.has("png")&&(S.warn("["+a+"] Specifying both 'jpg' and 'png' formats is not supported. Using 'auto' instead"),x.delete("jpg"===r.format?"png":"jpg"));var I=function(e){var t=e.filename,a=e.layout,r=void 0===a?"constrained":a,n=e.sourceMetadata,o=e.reporter,l=void 0===o?{warn:g}:o,h=e.breakpoints,p=void 0===h?c:h,m=Object.entries({width:e.width,height:e.height}).filter(function(e){var t=e[1];return"number"==typeof t&&t<1;});if(m.length)throw new Error("Specified dimensions for images must be positive numbers (> 0). Problem dimensions you have are "+m.map(function(e){return e.join(": ");}).join(", "));return"fixed"===r?function(e){var t=e.filename,a=e.sourceMetadata,r=e.width,n=e.height,o=e.fit,s=void 0===o?"cover":o,l=e.outputPixelDensities,c=e.reporter,h=void 0===c?{warn:g}:c,p=a.width/a.height,m=b(void 0===l?u:l);if(r&&n){var f=k(a,{width:r,height:n,fit:s});r=f.width,n=f.height,p=f.aspectRatio;}r?n||(n=Math.round(r/p)):r=n?Math.round(n*p):800;var v,w,y=r;if(a.width<r||a.height<n){var E=a.width<r?"width":"height";h.warn(i(d||(v=["\n    The requested ",' "','px" for the image '," was larger than the actual image "," of ","px. If possible, replace the current image with a larger one."],w||(w=v.slice(0)),v.raw=w,d=v),E,"width"===E?r:n,t,E,a[E])),"width"===E?(r=a.width,n=Math.round(r/p)):r=(n=a.height)*p;}return{sizes:m.filter(function(e){return e>=1;}).map(function(e){return Math.round(e*r);}).filter(function(e){return e<=a.width;}),aspectRatio:p,presentationWidth:y,presentationHeight:Math.round(y/p),unscaledWidth:r};}(e):"constrained"===r?E(e):"fullWidth"===r?E(s({breakpoints:p},e)):(l.warn("No valid layout was provided for the image at "+t+". Valid image layouts are fixed, fullWidth, and constrained. Found "+r),{sizes:[n.width],presentationWidth:n.width,presentationHeight:n.height,aspectRatio:n.width/n.height,unscaledWidth:n.width});}(s({},e,{sourceMetadata:r})),W={sources:[]},j=e.sizes;j||(j=function(e,t){switch(t){case"constrained":return"(min-width: "+e+"px) "+e+"px, 100vw";case"fixed":return e+"px";case"fullWidth":return"100vw";default:return;}}(I.presentationWidth,o)),x.forEach(function(e){var t=I.sizes.map(function(t){var i=n(y,t,Math.round(t/I.aspectRatio),e,l,h);if(null!=i&&i.width&&i.height&&i.src&&i.format)return i;S.warn("["+a+"] The resolver for image "+y+" returned an invalid value.");}).filter(Boolean);if("jpg"===e||"png"===e||"auto"===e){var i=t.find(function(e){return e.width===I.unscaledWidth;})||t[0];i&&(W.fallback={src:i.src,srcSet:m(t),sizes:j});}else{var r;null==(r=W.sources)||r.push({srcSet:m(t),sizes:j,type:"image/"+e});}});var _={images:W,layout:o,backgroundColor:N};switch(R&&(_.placeholder={fallback:R}),o){case"fixed":_.width=I.presentationWidth,_.height=I.presentationHeight;break;case"fullWidth":_.width=1,_.height=1/I.aspectRatio;break;case"constrained":_.width=e.width||I.presentationWidth||1,_.height=(_.width||1)/I.aspectRatio;}return _;}var b=function(e){return Array.from(new Set([1].concat(e))).sort(p);};function E(e){var t,a=e.sourceMetadata,i=e.width,r=e.height,n=e.fit,o=void 0===n?"cover":n,s=e.outputPixelDensities,l=e.breakpoints,d=e.layout,c=a.width/a.height,h=b(void 0===s?u:s);if(i&&r){var g=k(a,{width:i,height:r,fit:o});i=g.width,r=g.height,c=g.aspectRatio;}i=i&&Math.min(i,a.width),r=r&&Math.min(r,a.height),i||r||(r=(i=Math.min(800,a.width))/c),i||(i=r*c);var m=i;return(a.width<i||a.height<r)&&(i=a.width,r=a.height),i=Math.round(i),(null==l?void 0:l.length)>0?(t=l.filter(function(e){return e<=a.width;})).length<l.length&&!t.includes(a.width)&&t.push(a.width):t=(t=h.map(function(e){return Math.round(e*i);})).filter(function(e){return e<=a.width;}),"constrained"!==d||t.includes(i)||t.push(i),{sizes:t=t.sort(p),aspectRatio:c,presentationWidth:m,presentationHeight:Math.round(m/c),unscaledWidth:i};}function k(e,t){var a=e.width/e.height,i=t.width,r=t.height;switch(t.fit){case"fill":i=t.width?t.width:e.width,r=t.height?t.height:e.height;break;case"inside":var n=t.width?t.width:Number.MAX_SAFE_INTEGER,o=t.height?t.height:Number.MAX_SAFE_INTEGER;i=Math.min(n,Math.round(o*a)),r=Math.min(o,Math.round(n/a));break;case"outside":var s=t.width?t.width:0,l=t.height?t.height:0;i=Math.max(s,Math.round(l*a)),r=Math.max(l,Math.round(s/a));break;default:t.width&&!t.height&&(i=t.width,r=Math.round(t.width/a)),t.height&&!t.width&&(i=Math.round(t.height*a),r=t.height);}return{width:i,height:r,aspectRatio:i/r};}var M=(/* unused pure expression or super */ null && (["baseUrl","urlBuilder","sourceWidth","sourceHeight","pluginName","formats","breakpoints","options"])),S=(/* unused pure expression or super */ null && (["images","placeholder"]));function N(){return true&&true;}new Set();var R=function(e){var t;return function(e){var t,a;return Boolean(null==e||null==(t=e.images)||null==(a=t.fallback)?void 0:a.src);}(e)?e:function(e){return Boolean(null==e?void 0:e.gatsbyImageData);}(e)?e.gatsbyImageData:null==e||null==(t=e.childImageSharp)?void 0:t.gatsbyImageData;},x=function(e){var t,a,i;return null==(t=R(e))||null==(a=t.images)||null==(i=a.fallback)?void 0:i.src;},I=function(e){var t,a,i;return null==(t=R(e))||null==(a=t.images)||null==(i=a.fallback)?void 0:i.srcSet;};function W(e){var t,a=e.baseUrl,i=e.urlBuilder,r=e.sourceWidth,n=e.sourceHeight,o=e.pluginName,d=void 0===o?"getImageData":o,u=e.formats,c=void 0===u?["auto"]:u,g=e.breakpoints,p=e.options,m=l(e,M);return null!=(t=g)&&t.length||"fullWidth"!==m.layout&&"FULL_WIDTH"!==m.layout||(g=h),y(s({},m,{pluginName:d,generateImageSource:function(e,t,a,r){return{width:t,height:a,format:r,src:i({baseUrl:e,width:t,height:a,options:p,format:r})};},filename:a,formats:c,breakpoints:g,sourceMetadata:{width:r,height:n,format:"auto"}}));}function j(e,t){var a,i,r,n=e.images,o=e.placeholder,d=s({},l(e,S),{images:s({},n,{sources:[]}),placeholder:o&&s({},o,{sources:[]})});return t.forEach(function(t){var a,i=t.media,r=t.image;i?(r.layout!==e.layout&&"development"==="production"&&0,(a=d.images.sources).push.apply(a,r.images.sources.map(function(e){return s({},e,{media:i});}).concat([{media:i,srcSet:r.images.fallback.srcSet}])),d.placeholder&&d.placeholder.sources.push({media:i,srcSet:r.placeholder.fallback})): false&&0;}),(a=d.images.sources).push.apply(a,n.sources),null!=o&&o.sources&&(null==(i=d.placeholder)||(r=i.sources).push.apply(r,o.sources)),d;}var _,T=["src","srcSet","loading","alt","shouldLoad","innerRef"],A=["fallback","sources","shouldLoad"],O=function(t){var a=t.src,i=t.srcSet,r=t.loading,n=t.alt,o=void 0===n?"":n,d=t.shouldLoad,u=t.innerRef,c=l(t,T);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img",s({},c,{decoding:"async",loading:r,src:d?a:void 0,"data-src":d?void 0:a,srcSet:d?i:void 0,"data-srcset":d?void 0:i,alt:o,ref:u}));},z=/*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function(t,a){var i=t.fallback,r=t.sources,n=void 0===r?[]:r,o=t.shouldLoad,d=void 0===o||o,u=l(t,A),c=u.sizes||(null==i?void 0:i.sizes),h=/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(O,s({},u,i,{sizes:c,shouldLoad:d,innerRef:a}));return n.length?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("picture",null,n.map(function(t){var a=t.media,i=t.srcSet,r=t.type;return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("source",{key:a+"-"+r+"-"+i,type:r,media:a,srcSet:d?i:void 0,"data-srcset":d?void 0:i,sizes:c});}),h):h;});O.propTypes={src:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,alt:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,sizes:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,srcSet:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,shouldLoad:prop_types__WEBPACK_IMPORTED_MODULE_3__.bool},z.displayName="Picture",z.propTypes={alt:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,shouldLoad:prop_types__WEBPACK_IMPORTED_MODULE_3__.bool,fallback:prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({src:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,srcSet:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,sizes:prop_types__WEBPACK_IMPORTED_MODULE_3__.string}),sources:prop_types__WEBPACK_IMPORTED_MODULE_3__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_3__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({media:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,type:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,sizes:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,srcSet:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired}),prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({media:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,type:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,sizes:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,srcSet:prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired})]))};var L=["fallback"],C=function(t){var a=t.fallback,i=l(t,L);return a?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z,s({},i,{fallback:{src:a},"aria-hidden":!0,alt:""})):/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div",s({},i));};C.displayName="Placeholder",C.propTypes={fallback:prop_types__WEBPACK_IMPORTED_MODULE_3__.string,sources:null==(_=z.propTypes)?void 0:_.sources,alt:function(e,t,a){return e[t]?new Error("Invalid prop `"+t+"` supplied to `"+a+"`. Validation failed."):null;}};var q=/*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function(t,a){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment),null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z,s({ref:a},t)),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z,s({},t,{shouldLoad:!0}))));});q.displayName="MainImage",q.propTypes=z.propTypes;var D=["children"],P=function(){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("script",{type:"module",dangerouslySetInnerHTML:{__html:'const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}'}});},H=function(t){var a=t.layout,i=t.width,r=t.height;return"fullWidth"===a?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div",{"aria-hidden":!0,style:{paddingTop:r/i*100+"%"}}):"constrained"===a?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div",{style:{maxWidth:i,display:"block"}},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img",{alt:"",role:"presentation","aria-hidden":"true",src:"data:image/svg+xml;charset=utf-8,%3Csvg height='"+r+"' width='"+i+"' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",style:{maxWidth:"100%",display:"block",position:"static"}})):null;},F=function(t){var i=t.children,r=l(t,D);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment,null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(H,s({},r)),i,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(P,null));},B=["as","children"],G=["as","className","class","style","image","loading","imgClassName","imgStyle","backgroundColor","objectFit","objectPosition"],V=["style","className"],U=function(e){return e.replace(/\n/g,"");},X=function(t){var a=t.as,i=void 0===a?"div":a,r=t.children,n=l(t,B);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(i,s({},n),r);},Y=function(t){var a=t.as,i=t.className,r=t.class,n=t.style,o=t.image,d=t.loading,u=void 0===d?"lazy":d,c=t.imgClassName,h=t.imgStyle,g=t.backgroundColor,p=t.objectFit,m=t.objectPosition,f=l(t,G);if(!o)return console.warn("[gatsby-plugin-image] Missing image prop"),null;r&&(i=r),h=s({objectFit:p,objectPosition:m,backgroundColor:g},h);var v=o.width,w=o.height,y=o.layout,b=o.images,E=o.placeholder,k=o.backgroundColor,M=function(e,t,a){var i={},r="gatsby-image-wrapper";return N()||(i.position="relative",i.overflow="hidden"),"fixed"===a?(i.width=e,i.height=t):"constrained"===a&&(N()||(i.display="inline-block",i.verticalAlign="top"),r="gatsby-image-wrapper gatsby-image-wrapper-constrained"),{className:r,"data-gatsby-image-wrapper":"",style:i};}(v,w,y),S=M.style,R=M.className,x=l(M,V),I={fallback:void 0,sources:[]};return b.fallback&&(I.fallback=s({},b.fallback,{srcSet:b.fallback.srcSet?U(b.fallback.srcSet):void 0})),b.sources&&(I.sources=b.sources.map(function(e){return s({},e,{srcSet:U(e.srcSet)});})),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(X,s({},x,{as:a,style:s({},S,n,{backgroundColor:g}),className:R+(i?" "+i:"")}),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(F,{layout:y,width:v,height:w},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(C,s({},function(e,t,a,i,r,n,o,l){var d={};n&&(d.backgroundColor=n,"fixed"===a?(d.width=i,d.height=r,d.backgroundColor=n,d.position="relative"):("constrained"===a||"fullWidth"===a)&&(d.position="absolute",d.top=0,d.left=0,d.bottom=0,d.right=0)),o&&(d.objectFit=o),l&&(d.objectPosition=l);var u=s({},e,{"aria-hidden":!0,"data-placeholder-image":"",style:s({opacity:1,transition:"opacity 500ms linear"},d)});return N()||(u.style={height:"100%",left:0,position:"absolute",top:0,width:"100%"}),u;}(E,0,y,v,w,k,p,m))),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(q,s({"data-gatsby-image-ssr":"",className:c},f,function(e,t,a,i,r,n,o,l){return void 0===l&&(l={}),N()||(l=s({height:"100%",left:0,position:"absolute",top:0,transform:"translateZ(0)",transition:"opacity 250ms linear",width:"100%",willChange:"opacity"},l)),s({},a,{loading:i,shouldLoad:e,"data-main-image":"",style:s({},l,{opacity:0}),onLoad:function(e){var t=e.currentTarget,a=new Image();a.src=t.currentSrc,a.decode?a.decode().catch(function(){}).then(function(){r(!0);}):r(!0);},ref:void 0});}("eager"===u,0,I,u,void 0,0,0,h)))));},Z=["src","__imageData","__error","width","height","aspectRatio","tracedSVGOptions","placeholder","formats","quality","transformOptions","jpgOptions","pngOptions","webpOptions","avifOptions","blurredOptions"],J=function(t){return function(a){var i=a.src,r=a.__imageData,n=a.__error,o=l(a,Z);return n&&console.warn(n),r?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(t,s({image:r},o)):(console.warn("Image not loaded",i),n||"development"!=="production"||0,null);};}(Y),K=function(e,t){return"fullWidth"!==e.layout||"width"!==t&&"height"!==t||!e[t]?prop_types__WEBPACK_IMPORTED_MODULE_3___default().number.apply((prop_types__WEBPACK_IMPORTED_MODULE_3___default()),[e,t].concat([].slice.call(arguments,2))):new Error('"'+t+'" '+e[t]+" may not be passed when layout is fullWidth.");},Q=new Set(["fixed","fullWidth","constrained"]),$={src:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired),alt:function(e,t,a){return e.alt||""===e.alt?prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.apply((prop_types__WEBPACK_IMPORTED_MODULE_3___default()),[e,t,a].concat([].slice.call(arguments,3))):new Error('The "alt" prop is required in '+a+'. If the image is purely presentational then pass an empty string: e.g. alt="". Learn more: https://a11y-style-guide.com/style-guide/section-media.html');},width:K,height:K,sizes:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),layout:function(e){if(void 0!==e.layout&&!Q.has(e.layout))return new Error("Invalid value "+e.layout+'" provided for prop "layout". Defaulting to "constrained". Valid values are "fixed", "fullWidth" or "constrained".');}};J.displayName="StaticImage",J.propTypes=$;
 
-/***/ }),
 
-/***/ 1158:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "Z": () => (/* binding */ Layout)
+
+
+function s() {
+  return s = Object.assign || function (e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var a = arguments[t];
+
+      for (var i in a) Object.prototype.hasOwnProperty.call(a, i) && (e[i] = a[i]);
+    }
+
+    return e;
+  }, s.apply(this, arguments);
+}
+
+function l(e, t) {
+  if (null == e) return {};
+  var a,
+      i,
+      r = {},
+      n = Object.keys(e);
+
+  for (i = 0; i < n.length; i++) t.indexOf(a = n[i]) >= 0 || (r[a] = e[a]);
+
+  return r;
+}
+
+var d,
+    u = [.25, .5, 1, 2],
+    c = [750, 1080, 1366, 1920],
+    h = [320, 654, 768, 1024, 1366, 1600, 1920, 2048, 2560, 3440, 3840, 4096],
+    g = function (e) {
+  return console.warn(e);
+},
+    p = function (e, t) {
+  return e - t;
+},
+    m = function (e) {
+  return e.map(function (e) {
+    return e.src + " " + e.width + "w";
+  }).join(",\n");
+};
+
+function f(e) {
+  var t = e.lastIndexOf(".");
+
+  if (-1 !== t) {
+    var a = e.slice(t + 1);
+    if ("jpeg" === a) return "jpg";
+    if (3 === a.length || 4 === a.length) return a;
+  }
+}
+
+function v(e) {
+  var t = e.layout,
+      a = void 0 === t ? "constrained" : t,
+      i = e.width,
+      n = e.height,
+      o = e.sourceMetadata,
+      l = e.breakpoints,
+      d = e.aspectRatio,
+      u = e.formats,
+      c = void 0 === u ? ["auto", "webp"] : u;
+  return c = c.map(function (e) {
+    return e.toLowerCase();
+  }), a = camelcase__WEBPACK_IMPORTED_MODULE_2___default()(a), i && n ? s({}, e, {
+    formats: c,
+    layout: a,
+    aspectRatio: i / n
+  }) : (o.width && o.height && !d && (d = o.width / o.height), "fullWidth" === a ? (i = i || o.width || l[l.length - 1], n = n || Math.round(i / (d || 1.3333333333333333))) : (i || (i = n && d ? n * d : o.width ? o.width : n ? Math.round(n / 1.3333333333333333) : 800), d && !n ? n = Math.round(i / d) : d || (d = i / n)), s({}, e, {
+    width: i,
+    height: n,
+    aspectRatio: d,
+    layout: a,
+    formats: c
+  }));
+}
+
+function w(e, t) {
+  var a;
+  return void 0 === t && (t = 20), null == (a = (0, (e = v(e)).generateImageSource)(e.filename, t, Math.round(t / e.aspectRatio), e.sourceMetadata.format || "jpg", e.fit, e.options)) ? void 0 : a.src;
+}
+
+function y(e) {
+  var t,
+      a = (e = v(e)).pluginName,
+      r = e.sourceMetadata,
+      n = e.generateImageSource,
+      o = e.layout,
+      l = e.fit,
+      h = e.options,
+      p = e.width,
+      w = e.height,
+      y = e.filename,
+      M = e.reporter,
+      S = void 0 === M ? {
+    warn: g
+  } : M,
+      N = e.backgroundColor,
+      R = e.placeholderURL;
+  if (a || S.warn('[gatsby-plugin-image] "generateImageData" was not passed a plugin name'), "function" != typeof n) throw new Error("generateImageSource must be a function");
+  r && (r.width || r.height) ? r.format || (r.format = f(y)) : r = {
+    width: p,
+    height: w,
+    format: (null == (t = r) ? void 0 : t.format) || f(y) || "auto"
+  };
+  var x = new Set(e.formats);
+  (0 === x.size || x.has("auto") || x.has("")) && (x.delete("auto"), x.delete(""), x.add(r.format)), x.has("jpg") && x.has("png") && (S.warn("[" + a + "] Specifying both 'jpg' and 'png' formats is not supported. Using 'auto' instead"), x.delete("jpg" === r.format ? "png" : "jpg"));
+
+  var I = function (e) {
+    var t = e.filename,
+        a = e.layout,
+        r = void 0 === a ? "constrained" : a,
+        n = e.sourceMetadata,
+        o = e.reporter,
+        l = void 0 === o ? {
+      warn: g
+    } : o,
+        h = e.breakpoints,
+        p = void 0 === h ? c : h,
+        m = Object.entries({
+      width: e.width,
+      height: e.height
+    }).filter(function (e) {
+      var t = e[1];
+      return "number" == typeof t && t < 1;
+    });
+    if (m.length) throw new Error("Specified dimensions for images must be positive numbers (> 0). Problem dimensions you have are " + m.map(function (e) {
+      return e.join(": ");
+    }).join(", "));
+    return "fixed" === r ? function (e) {
+      var t = e.filename,
+          a = e.sourceMetadata,
+          r = e.width,
+          n = e.height,
+          o = e.fit,
+          s = void 0 === o ? "cover" : o,
+          l = e.outputPixelDensities,
+          c = e.reporter,
+          h = void 0 === c ? {
+        warn: g
+      } : c,
+          p = a.width / a.height,
+          m = b(void 0 === l ? u : l);
+
+      if (r && n) {
+        var f = k(a, {
+          width: r,
+          height: n,
+          fit: s
+        });
+        r = f.width, n = f.height, p = f.aspectRatio;
+      }
+
+      r ? n || (n = Math.round(r / p)) : r = n ? Math.round(n * p) : 800;
+      var v,
+          w,
+          y = r;
+
+      if (a.width < r || a.height < n) {
+        var E = a.width < r ? "width" : "height";
+        h.warn((0,common_tags__WEBPACK_IMPORTED_MODULE_1__.stripIndent)(d || (v = ["\n    The requested ", ' "', 'px" for the image ', " was larger than the actual image ", " of ", "px. If possible, replace the current image with a larger one."], w || (w = v.slice(0)), v.raw = w, d = v), E, "width" === E ? r : n, t, E, a[E])), "width" === E ? (r = a.width, n = Math.round(r / p)) : r = (n = a.height) * p;
+      }
+
+      return {
+        sizes: m.filter(function (e) {
+          return e >= 1;
+        }).map(function (e) {
+          return Math.round(e * r);
+        }).filter(function (e) {
+          return e <= a.width;
+        }),
+        aspectRatio: p,
+        presentationWidth: y,
+        presentationHeight: Math.round(y / p),
+        unscaledWidth: r
+      };
+    }(e) : "constrained" === r ? E(e) : "fullWidth" === r ? E(s({
+      breakpoints: p
+    }, e)) : (l.warn("No valid layout was provided for the image at " + t + ". Valid image layouts are fixed, fullWidth, and constrained. Found " + r), {
+      sizes: [n.width],
+      presentationWidth: n.width,
+      presentationHeight: n.height,
+      aspectRatio: n.width / n.height,
+      unscaledWidth: n.width
+    });
+  }(s({}, e, {
+    sourceMetadata: r
+  })),
+      W = {
+    sources: []
+  },
+      j = e.sizes;
+
+  j || (j = function (e, t) {
+    switch (t) {
+      case "constrained":
+        return "(min-width: " + e + "px) " + e + "px, 100vw";
+
+      case "fixed":
+        return e + "px";
+
+      case "fullWidth":
+        return "100vw";
+
+      default:
+        return;
+    }
+  }(I.presentationWidth, o)), x.forEach(function (e) {
+    var t = I.sizes.map(function (t) {
+      var i = n(y, t, Math.round(t / I.aspectRatio), e, l, h);
+      if (null != i && i.width && i.height && i.src && i.format) return i;
+      S.warn("[" + a + "] The resolver for image " + y + " returned an invalid value.");
+    }).filter(Boolean);
+
+    if ("jpg" === e || "png" === e || "auto" === e) {
+      var i = t.find(function (e) {
+        return e.width === I.unscaledWidth;
+      }) || t[0];
+      i && (W.fallback = {
+        src: i.src,
+        srcSet: m(t),
+        sizes: j
+      });
+    } else {
+      var r;
+      null == (r = W.sources) || r.push({
+        srcSet: m(t),
+        sizes: j,
+        type: "image/" + e
+      });
+    }
+  });
+  var _ = {
+    images: W,
+    layout: o,
+    backgroundColor: N
+  };
+
+  switch (R && (_.placeholder = {
+    fallback: R
+  }), o) {
+    case "fixed":
+      _.width = I.presentationWidth, _.height = I.presentationHeight;
+      break;
+
+    case "fullWidth":
+      _.width = 1, _.height = 1 / I.aspectRatio;
+      break;
+
+    case "constrained":
+      _.width = e.width || I.presentationWidth || 1, _.height = (_.width || 1) / I.aspectRatio;
+  }
+
+  return _;
+}
+
+var b = function (e) {
+  return Array.from(new Set([1].concat(e))).sort(p);
+};
+
+function E(e) {
+  var t,
+      a = e.sourceMetadata,
+      i = e.width,
+      r = e.height,
+      n = e.fit,
+      o = void 0 === n ? "cover" : n,
+      s = e.outputPixelDensities,
+      l = e.breakpoints,
+      d = e.layout,
+      c = a.width / a.height,
+      h = b(void 0 === s ? u : s);
+
+  if (i && r) {
+    var g = k(a, {
+      width: i,
+      height: r,
+      fit: o
+    });
+    i = g.width, r = g.height, c = g.aspectRatio;
+  }
+
+  i = i && Math.min(i, a.width), r = r && Math.min(r, a.height), i || r || (r = (i = Math.min(800, a.width)) / c), i || (i = r * c);
+  var m = i;
+  return (a.width < i || a.height < r) && (i = a.width, r = a.height), i = Math.round(i), (null == l ? void 0 : l.length) > 0 ? (t = l.filter(function (e) {
+    return e <= a.width;
+  })).length < l.length && !t.includes(a.width) && t.push(a.width) : t = (t = h.map(function (e) {
+    return Math.round(e * i);
+  })).filter(function (e) {
+    return e <= a.width;
+  }), "constrained" !== d || t.includes(i) || t.push(i), {
+    sizes: t = t.sort(p),
+    aspectRatio: c,
+    presentationWidth: m,
+    presentationHeight: Math.round(m / c),
+    unscaledWidth: i
+  };
+}
+
+function k(e, t) {
+  var a = e.width / e.height,
+      i = t.width,
+      r = t.height;
+
+  switch (t.fit) {
+    case "fill":
+      i = t.width ? t.width : e.width, r = t.height ? t.height : e.height;
+      break;
+
+    case "inside":
+      var n = t.width ? t.width : Number.MAX_SAFE_INTEGER,
+          o = t.height ? t.height : Number.MAX_SAFE_INTEGER;
+      i = Math.min(n, Math.round(o * a)), r = Math.min(o, Math.round(n / a));
+      break;
+
+    case "outside":
+      var s = t.width ? t.width : 0,
+          l = t.height ? t.height : 0;
+      i = Math.max(s, Math.round(l * a)), r = Math.max(l, Math.round(s / a));
+      break;
+
+    default:
+      t.width && !t.height && (i = t.width, r = Math.round(t.width / a)), t.height && !t.width && (i = Math.round(t.height * a), r = t.height);
+  }
+
+  return {
+    width: i,
+    height: r,
+    aspectRatio: i / r
+  };
+}
+
+var M = ["baseUrl", "urlBuilder", "sourceWidth", "sourceHeight", "pluginName", "formats", "breakpoints", "options"],
+    S = ["images", "placeholder"];
+
+function N() {
+  return "undefined" != typeof GATSBY___IMAGE && GATSBY___IMAGE;
+}
+
+new Set();
+
+var R = function (e) {
+  var t;
+  return function (e) {
+    var t, a;
+    return Boolean(null == e || null == (t = e.images) || null == (a = t.fallback) ? void 0 : a.src);
+  }(e) ? e : function (e) {
+    return Boolean(null == e ? void 0 : e.gatsbyImageData);
+  }(e) ? e.gatsbyImageData : null == e || null == (t = e.childImageSharp) ? void 0 : t.gatsbyImageData;
+},
+    x = function (e) {
+  var t, a, i;
+  return null == (t = R(e)) || null == (a = t.images) || null == (i = a.fallback) ? void 0 : i.src;
+},
+    I = function (e) {
+  var t, a, i;
+  return null == (t = R(e)) || null == (a = t.images) || null == (i = a.fallback) ? void 0 : i.srcSet;
+};
+
+function W(e) {
+  var t,
+      a = e.baseUrl,
+      i = e.urlBuilder,
+      r = e.sourceWidth,
+      n = e.sourceHeight,
+      o = e.pluginName,
+      d = void 0 === o ? "getImageData" : o,
+      u = e.formats,
+      c = void 0 === u ? ["auto"] : u,
+      g = e.breakpoints,
+      p = e.options,
+      m = l(e, M);
+  return null != (t = g) && t.length || "fullWidth" !== m.layout && "FULL_WIDTH" !== m.layout || (g = h), y(s({}, m, {
+    pluginName: d,
+    generateImageSource: function (e, t, a, r) {
+      return {
+        width: t,
+        height: a,
+        format: r,
+        src: i({
+          baseUrl: e,
+          width: t,
+          height: a,
+          options: p,
+          format: r
+        })
+      };
+    },
+    filename: a,
+    formats: c,
+    breakpoints: g,
+    sourceMetadata: {
+      width: r,
+      height: n,
+      format: "auto"
+    }
+  }));
+}
+
+function j(e, t) {
+  var a,
+      i,
+      r,
+      n = e.images,
+      o = e.placeholder,
+      d = s({}, l(e, S), {
+    images: s({}, n, {
+      sources: []
+    }),
+    placeholder: o && s({}, o, {
+      sources: []
+    })
+  });
+  return t.forEach(function (t) {
+    var a,
+        i = t.media,
+        r = t.image;
+    i ? (r.layout !== e.layout && "development" === "development" && console.warn('[gatsby-plugin-image] Mismatched image layout: expected "' + e.layout + '" but received "' + r.layout + '". All art-directed images use the same layout as the default image'), (a = d.images.sources).push.apply(a, r.images.sources.map(function (e) {
+      return s({}, e, {
+        media: i
+      });
+    }).concat([{
+      media: i,
+      srcSet: r.images.fallback.srcSet
+    }])), d.placeholder && d.placeholder.sources.push({
+      media: i,
+      srcSet: r.placeholder.fallback
+    })) :  true && console.warn("[gatsby-plugin-image] All art-directed images passed to must have a value set for `media`. Skipping.");
+  }), (a = d.images.sources).push.apply(a, n.sources), null != o && o.sources && (null == (i = d.placeholder) || (r = i.sources).push.apply(r, o.sources)), d;
+}
+
+var _,
+    T = ["src", "srcSet", "loading", "alt", "shouldLoad", "innerRef"],
+    A = ["fallback", "sources", "shouldLoad"],
+    O = function (t) {
+  var a = t.src,
+      i = t.srcSet,
+      r = t.loading,
+      n = t.alt,
+      o = void 0 === n ? "" : n,
+      d = t.shouldLoad,
+      u = t.innerRef,
+      c = l(t, T);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", s({}, c, {
+    decoding: "async",
+    loading: r,
+    src: d ? a : void 0,
+    "data-src": d ? void 0 : a,
+    srcSet: d ? i : void 0,
+    "data-srcset": d ? void 0 : i,
+    alt: o,
+    ref: u
+  }));
+},
+    z = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function (t, a) {
+  var i = t.fallback,
+      r = t.sources,
+      n = void 0 === r ? [] : r,
+      o = t.shouldLoad,
+      d = void 0 === o || o,
+      u = l(t, A),
+      c = u.sizes || (null == i ? void 0 : i.sizes),
+      h = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(O, s({}, u, i, {
+    sizes: c,
+    shouldLoad: d,
+    innerRef: a
+  }));
+  return n.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("picture", null, n.map(function (t) {
+    var a = t.media,
+        i = t.srcSet,
+        r = t.type;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("source", {
+      key: a + "-" + r + "-" + i,
+      type: r,
+      media: a,
+      srcSet: d ? i : void 0,
+      "data-srcset": d ? void 0 : i,
+      sizes: c
+    });
+  }), h) : h;
 });
 
-// EXTERNAL MODULE: external "C:\\Users\\home\\Desktop\\WORKSPACE\\FREELANCER\\BeCapital\\becapital\\node_modules\\react\\index.js"
-var external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_ = __webpack_require__(1051);
-var external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default = /*#__PURE__*/__webpack_require__.n(external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_);
-// EXTERNAL MODULE: ./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js
-var gatsby_image_module = __webpack_require__(3040);
-// EXTERNAL MODULE: ./.cache/gatsby-browser-entry.js + 4 modules
-var gatsby_browser_entry = __webpack_require__(7533);
-;// CONCATENATED MODULE: ./src/components/Header/SubMenu/index.js
-const isCurrent=({current})=>{return current?{className:"header__menu_link_current"}:{};};const SubMenu=()=>/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.StaticQuery,{query:"956638909",render:data=>/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"header__submenu_items"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__submenu_item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://maquinadossonhos.be.capital/",target:"_blank",rel:"noopener noreferrer",className:"header__submenu_link"},"Planejamento Financeiro")),data.allWpServico.edges.map(page=>/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__submenu_item",key:page.node.id},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:`/${page.node.slug}`,className:"header__submenu_link",getProps:isCurrent},page.node.title))))});/* harmony default export */ const Header_SubMenu = (SubMenu);
-;// CONCATENATED MODULE: ./src/components/Header/Header.js
-const Header=()=>{const{0:isActive,1:setActive}=(0,external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_.useState)(false);const toggleClass=()=>{setActive(!isActive);document.querySelector('.header').classList.toggle('active');};const isCurrent=({current})=>{return current?{className:"header__menu_link_current"}:{};};return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement((external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default()).Fragment,null,/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("header",{className:"header"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"header__content"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/logo_becapital_2x.png",alt:"logo BeCapital",className:"header__logo header__logo--mobile",__imageData:__webpack_require__(4539)}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/logo_2_becapital_1x.png",alt:"logo BeCapital",className:"header__logo header__logo--desktop",__imageData:__webpack_require__(7766)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("button",{className:"burguer__container",onClick:toggleClass,onKeyDown:toggleClass},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",null)),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:isActive?'header__menu active':'header__menu'},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("button",{className:isActive?'burguer__container active':'burguer__container',onClick:toggleClass,onKeyDown:toggleClass},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",null)),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("nav",{className:"header__menu_nav"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"header__menu_items"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__menu_item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/",className:"header__menu_link",getProps:isCurrent},"Home")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__menu_item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/somos-becapital/",className:"header__menu_link",getProps:isCurrent},"Somos BeCapital")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__menu_item header__menu_item--children"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",{className:"header__menu_link--children"},"Seja BeCapital ",/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("svg",{width:"6",height:"5",viewBox:"0 0 6 5",fill:"none",xmlns:"http://www.w3.org/2000/svg"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M3 5L0.401925 0.5L5.59808 0.5L3 5Z",fill:"#EA5E45"}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("nav",{className:"header__submenu"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(Header_SubMenu,null))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__menu_item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/blog/",className:"header__menu_link",getProps:isCurrent},"Blog")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__menu_item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/carreiras/",className:"header__menu_link",getProps:isCurrent},"Carreiras")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"header__menu_item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://becapitalresearch.com/",target:"_blank",rel:"noopener noreferrer",className:"header__menu_link header__menu_link--italic"},"Research")))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"button__container header__button_cta"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://app.be.capital/#/auth",target:"_blank",rel:"noopener noreferrer",className:"button button__primary"},"Login"))))));};/* harmony default export */ const Header_Header = (Header);
-;// CONCATENATED MODULE: ./src/components/Footer/InvestimentosMenu/index.js
-const InvestimentosMenu_SubMenu=()=>/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.StaticQuery,{query:"956638909",render:data=>/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"footer__menu"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://maquinadossonhos.be.capital/",className:"menu__link"},"Planejamento Financeiro")),data.allWpServico.edges.map(page=>/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item",key:page.node.id},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:`/${page.node.slug}`,className:"menu__link"},page.node.title))))});/* harmony default export */ const InvestimentosMenu = (InvestimentosMenu_SubMenu);
-;// CONCATENATED MODULE: ./src/components/Footer/index.js
-const Footer=()=>{return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement((external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default()).Fragment,null,/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("footer",{className:"footer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"footer__section footer__section--header"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/logo_becapital_2x.png",alt:"logo BeCapital",className:"footer__logo",__imageData:__webpack_require__(4539)}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"footer__title footer--andress"},"Av. Rio Branco, 108 | 8\xBA andar - Centro - Rio de Janeiro - RJ"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"mailto:imprensa@be.capital",className:"footer__link"},"imprensa@be.capital"))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"footer__section footer__section--main"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h3",{className:"footer__title"},"Investimentos"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(InvestimentosMenu,null)),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h3",{className:"footer__title"},"Conte\xFAdos"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"footer__menu"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://www.youtube.com/channel/UCLImIm6777cZiGmjaRuFcwQ?view_as=subscriber",className:"menu__link",target:"_blank",rel:"noopener noreferrer"},"Canal no Youtube")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://t.me/becapitalresearch",className:"menu__link",target:"_blank",rel:"noopener noreferrer"},"Grupo no Telegram")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/blog/",className:"menu__link"},"Blog")))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h3",{className:"footer__title"},"Nossa Empresa"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"footer__menu"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/somos-becapital/",className:"menu__link"},"A BeCapital")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item width200"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://api.whatsapp.com/send?phone=5521965431886&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20planejamento%20financeiro.%20O%20que%20devo%20fazer%3F%20Poderia%20me%20ajudar%3F",className:"menu__link"}," Fale com a Beca - Atendimento da BeCapital ")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"menu__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/carreiras/",className:"menu__link"},"P\xE1gina de Carreiras")))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/qrcode_3x.png",alt:"QRCode BeCapital",className:"qrcode",__imageData:__webpack_require__(3701)})))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"footer__section footer__section--footer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h3",{className:"footer__title"},"Siga a BeCapital"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"footer__social social__menu"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"social__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://www.instagram.com/becapital.oficial/",className:"social__link",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/icon_instagram_orange.png",alt:"Logo Instagram",__imageData:__webpack_require__(642)}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"social__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://www.youtube.com/channel/UCLImIm6777cZiGmjaRuFcwQ?view_as=subscriber",className:"social__link",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/icon_youtube_orange.png",alt:"Logo Youtube",__imageData:__webpack_require__(1088)}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"social__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://www.linkedin.com/company/71399542/",className:"social__link",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/icon_linkedin_orange.png",alt:"Logo Linkedin",__imageData:__webpack_require__(936)}))))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h3",{className:"footer__title"},"Hor\xE1rio de atendimento"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"footer__text"},"Segunda a Sexta de 9h \xE0s 18h")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h3",{className:"footer__title"},"Contato para atendimento"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"footer__text"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"tel:+552139939670"},"(21) 3993 - 9670"))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"footer__section--column"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://www2.susep.gov.br/safe/Corretores/pesquisa",className:"social__link",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/logo_susep_1x.png",alt:"Logo SUSEP",__imageData:__webpack_require__(1734)}))))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"footer__section footer__end"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("small",{className:"footer__title"},"BeCapital ",/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("strong",null,"\xAE")," Todos os direitos reservados - CNPJ: 36.664.223/0001-09"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("small",{className:"footer__text"},"A BeCapital Live Corretora de Seguros LTDA  (CNPJ 29.761.563/0001-84) est\xE1 registrada na Susep com o c\xF3digo 212113018, estando autorizada a comercializar produtos como: micro-seguros, plano de capitaliza\xE7\xE3o, seguro de pessoas, plano de previd\xEAncia complementar e seguro de danos.")))));};/* harmony default export */ const components_Footer = (Footer);
-;// CONCATENATED MODULE: ./src/components/layout.js
-function Layout({children}){return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement((external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default()).Fragment,null,/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(Header_Header,null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("main",null,children),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(components_Footer,null));}
+O.propTypes = {
+  src: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
+  alt: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
+  sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
+  srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
+  shouldLoad: prop_types__WEBPACK_IMPORTED_MODULE_3__.bool
+}, z.displayName = "Picture", z.propTypes = {
+  alt: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
+  shouldLoad: prop_types__WEBPACK_IMPORTED_MODULE_3__.bool,
+  fallback: prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({
+    src: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
+    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
+    sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__.string
+  }),
+  sources: prop_types__WEBPACK_IMPORTED_MODULE_3__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_3__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({
+    media: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
+    type: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
+    sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
+    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired
+  }), prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({
+    media: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
+    type: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
+    sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
+    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired
+  })]))
+};
+
+var L = ["fallback"],
+    C = function (t) {
+  var a = t.fallback,
+      i = l(t, L);
+  return a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z, s({}, i, {
+    fallback: {
+      src: a
+    },
+    "aria-hidden": !0,
+    alt: ""
+  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", s({}, i));
+};
+
+C.displayName = "Placeholder", C.propTypes = {
+  fallback: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
+  sources: null == (_ = z.propTypes) ? void 0 : _.sources,
+  alt: function (e, t, a) {
+    return e[t] ? new Error("Invalid prop `" + t + "` supplied to `" + a + "`. Validation failed.") : null;
+  }
+};
+var q = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function (t, a) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z, s({
+    ref: a
+  }, t)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z, s({}, t, {
+    shouldLoad: !0
+  }))));
+});
+q.displayName = "MainImage", q.propTypes = z.propTypes;
+
+var D = ["children"],
+    P = function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("script", {
+    type: "module",
+    dangerouslySetInnerHTML: {
+      __html: 'const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}'
+    }
+  });
+},
+    H = function (t) {
+  var a = t.layout,
+      i = t.width,
+      r = t.height;
+  return "fullWidth" === a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    "aria-hidden": !0,
+    style: {
+      paddingTop: r / i * 100 + "%"
+    }
+  }) : "constrained" === a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: {
+      maxWidth: i,
+      display: "block"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    alt: "",
+    role: "presentation",
+    "aria-hidden": "true",
+    src: "data:image/svg+xml;charset=utf-8,%3Csvg height='" + r + "' width='" + i + "' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    style: {
+      maxWidth: "100%",
+      display: "block",
+      position: "static"
+    }
+  })) : null;
+},
+    F = function (t) {
+  var i = t.children,
+      r = l(t, D);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(H, s({}, r)), i, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(P, null));
+},
+    B = ["as", "children"],
+    G = ["as", "className", "class", "style", "image", "loading", "imgClassName", "imgStyle", "backgroundColor", "objectFit", "objectPosition"],
+    V = ["style", "className"],
+    U = function (e) {
+  return e.replace(/\n/g, "");
+},
+    X = function (t) {
+  var a = t.as,
+      i = void 0 === a ? "div" : a,
+      r = t.children,
+      n = l(t, B);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(i, s({}, n), r);
+},
+    Y = function (t) {
+  var a = t.as,
+      i = t.className,
+      r = t.class,
+      n = t.style,
+      o = t.image,
+      d = t.loading,
+      u = void 0 === d ? "lazy" : d,
+      c = t.imgClassName,
+      h = t.imgStyle,
+      g = t.backgroundColor,
+      p = t.objectFit,
+      m = t.objectPosition,
+      f = l(t, G);
+  if (!o) return console.warn("[gatsby-plugin-image] Missing image prop"), null;
+  r && (i = r), h = s({
+    objectFit: p,
+    objectPosition: m,
+    backgroundColor: g
+  }, h);
+
+  var v = o.width,
+      w = o.height,
+      y = o.layout,
+      b = o.images,
+      E = o.placeholder,
+      k = o.backgroundColor,
+      M = function (e, t, a) {
+    var i = {},
+        r = "gatsby-image-wrapper";
+    return N() || (i.position = "relative", i.overflow = "hidden"), "fixed" === a ? (i.width = e, i.height = t) : "constrained" === a && (N() || (i.display = "inline-block", i.verticalAlign = "top"), r = "gatsby-image-wrapper gatsby-image-wrapper-constrained"), {
+      className: r,
+      "data-gatsby-image-wrapper": "",
+      style: i
+    };
+  }(v, w, y),
+      S = M.style,
+      R = M.className,
+      x = l(M, V),
+      I = {
+    fallback: void 0,
+    sources: []
+  };
+
+  return b.fallback && (I.fallback = s({}, b.fallback, {
+    srcSet: b.fallback.srcSet ? U(b.fallback.srcSet) : void 0
+  })), b.sources && (I.sources = b.sources.map(function (e) {
+    return s({}, e, {
+      srcSet: U(e.srcSet)
+    });
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(X, s({}, x, {
+    as: a,
+    style: s({}, S, n, {
+      backgroundColor: g
+    }),
+    className: R + (i ? " " + i : "")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(F, {
+    layout: y,
+    width: v,
+    height: w
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(C, s({}, function (e, t, a, i, r, n, o, l) {
+    var d = {};
+    n && (d.backgroundColor = n, "fixed" === a ? (d.width = i, d.height = r, d.backgroundColor = n, d.position = "relative") : ("constrained" === a || "fullWidth" === a) && (d.position = "absolute", d.top = 0, d.left = 0, d.bottom = 0, d.right = 0)), o && (d.objectFit = o), l && (d.objectPosition = l);
+    var u = s({}, e, {
+      "aria-hidden": !0,
+      "data-placeholder-image": "",
+      style: s({
+        opacity: 1,
+        transition: "opacity 500ms linear"
+      }, d)
+    });
+    return N() || (u.style = {
+      height: "100%",
+      left: 0,
+      position: "absolute",
+      top: 0,
+      width: "100%"
+    }), u;
+  }(E, 0, y, v, w, k, p, m))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(q, s({
+    "data-gatsby-image-ssr": "",
+    className: c
+  }, f, function (e, t, a, i, r, n, o, l) {
+    return void 0 === l && (l = {}), N() || (l = s({
+      height: "100%",
+      left: 0,
+      position: "absolute",
+      top: 0,
+      transform: "translateZ(0)",
+      transition: "opacity 250ms linear",
+      width: "100%",
+      willChange: "opacity"
+    }, l)), s({}, a, {
+      loading: i,
+      shouldLoad: e,
+      "data-main-image": "",
+      style: s({}, l, {
+        opacity: 0
+      }),
+      onLoad: function (e) {
+        var t = e.currentTarget,
+            a = new Image();
+        a.src = t.currentSrc, a.decode ? a.decode().catch(function () {}).then(function () {
+          r(!0);
+        }) : r(!0);
+      },
+      ref: void 0
+    });
+  }("eager" === u, 0, I, u, void 0, 0, 0, h)))));
+},
+    Z = ["src", "__imageData", "__error", "width", "height", "aspectRatio", "tracedSVGOptions", "placeholder", "formats", "quality", "transformOptions", "jpgOptions", "pngOptions", "webpOptions", "avifOptions", "blurredOptions"],
+    J = function (t) {
+  return function (a) {
+    var i = a.src,
+        r = a.__imageData,
+        n = a.__error,
+        o = l(a, Z);
+    return n && console.warn(n), r ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(t, s({
+      image: r
+    }, o)) : (console.warn("Image not loaded", i), n || "development" !== "development" || console.warn('Please ensure that "gatsby-plugin-image" is included in the plugins array in gatsby-config.js, and that your version of gatsby is at least 2.24.78'), null);
+  };
+}(Y),
+    K = function (e, t) {
+  return "fullWidth" !== e.layout || "width" !== t && "height" !== t || !e[t] ? prop_types__WEBPACK_IMPORTED_MODULE_3___default().number.apply((prop_types__WEBPACK_IMPORTED_MODULE_3___default()), [e, t].concat([].slice.call(arguments, 2))) : new Error('"' + t + '" ' + e[t] + " may not be passed when layout is fullWidth.");
+},
+    Q = new Set(["fixed", "fullWidth", "constrained"]),
+    $ = {
+  src: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired),
+  alt: function (e, t, a) {
+    return e.alt || "" === e.alt ? prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.apply((prop_types__WEBPACK_IMPORTED_MODULE_3___default()), [e, t, a].concat([].slice.call(arguments, 3))) : new Error('The "alt" prop is required in ' + a + '. If the image is purely presentational then pass an empty string: e.g. alt="". Learn more: https://a11y-style-guide.com/style-guide/section-media.html');
+  },
+  width: K,
+  height: K,
+  sizes: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  layout: function (e) {
+    if (void 0 !== e.layout && !Q.has(e.layout)) return new Error("Invalid value " + e.layout + '" provided for prop "layout". Defaulting to "constrained". Valid values are "fixed", "fullWidth" or "constrained".');
+  }
+};
+
+J.displayName = "StaticImage", J.propTypes = $;
+
 
 /***/ }),
 
-/***/ 9357:
+/***/ "./src/components/Cards/CardBlog/index.js":
+/*!************************************************!*\
+  !*** ./src/components/Cards/CardBlog/index.js ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "default": () => (/* binding */ CardBlog)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1051);
+/* harmony import */ var _public_page_data_sq_d_1976188318_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../public/page-data/sq/d/1976188318.json */ "./public/page-data/sq/d/1976188318.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! html-react-parser */ "./node_modules/html-react-parser/index.mjs");
+
+
+
+
+
+function CardBlog() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.StaticQuery, {
+    query: "1976188318",
+    render: data => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("section", {
+      className: "section section__posts--more"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h2", {
+      className: "section__title"
+    }, "Blog"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+      className: "section__content posts posts--grid"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("ul", {
+      className: "posts__items"
+    }, data.allWpPost.nodes.map(article => {
+      const {
+        uri,
+        title,
+        featuredImage,
+        excerpt
+      } = article;
+      const image = (0,gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.getImage)(featuredImage.node.localFile);
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("li", {
+        key: uri,
+        className: "posts__item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+        to: uri
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("article", {
+        className: "posts__article"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
+        image: image,
+        alt: title,
+        as: "figure",
+        className: "posts__figure",
+        imgClassName: "posts__image"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h2", {
+        className: "posts__title"
+      }, (0,html_react_parser__WEBPACK_IMPORTED_MODULE_3__["default"])(title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
+        className: "posts__excerpt"
+      }, (0,html_react_parser__WEBPACK_IMPORTED_MODULE_3__["default"])(excerpt)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+        href: uri,
+        className: "button button__primary"
+      }, "LER ARTIGO"))));
+    })))),
+    data: _public_page_data_sq_d_1976188318_json__WEBPACK_IMPORTED_MODULE_0__
+  });
+}
+
+/***/ }),
+
+/***/ "./src/components/Footer/InvestimentosMenu/index.js":
+/*!**********************************************************!*\
+  !*** ./src/components/Footer/InvestimentosMenu/index.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_956638909_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../public/page-data/sq/d/956638909.json */ "./public/page-data/sq/d/956638909.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+
+
+
+
+const SubMenu = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.StaticQuery, {
+  query: "956638909",
+  render: data => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("ul", {
+    className: "footer__menu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("li", {
+    className: "menu__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    href: "https://maquinadossonhos.be.capital/",
+    className: "menu__link"
+  }, "Planejamento Financeiro")), data.allWpServico.edges.map(page => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("li", {
+    className: "menu__item",
+    key: page.node.id
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: `/${page.node.slug}`,
+    className: "menu__link"
+  }, page.node.title)))),
+  data: _public_page_data_sq_d_956638909_json__WEBPACK_IMPORTED_MODULE_0__
+});
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SubMenu);
+
+/***/ }),
+
+/***/ "./src/components/Footer/index.js":
+/*!****************************************!*\
+  !*** ./src/components/Footer/index.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5697);
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _InvestimentosMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./InvestimentosMenu */ "./src/components/Footer/InvestimentosMenu/index.js");
+
+
+
+
+
+const Footer = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
+    className: "footer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "footer__container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: "footer__section footer__section--header"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "footer__section--container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+    src: "../../images/logo_becapital_2x.png",
+    alt: "logo BeCapital",
+    className: "footer__logo",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/535489621.json */ "./.cache/caches/gatsby-plugin-image/535489621.json")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "footer__title footer--andress"
+  }, "Av. Rio Branco, 108 | 8\xBA andar - Centro - Rio de Janeiro - RJ"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "mailto:imprensa@be.capital",
+    className: "footer__link"
+  }, "imprensa@be.capital"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: "footer__section footer__section--main"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "footer__section--container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "footer__section--column"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "footer__title"
+  }, "Investimentos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_InvestimentosMenu__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "footer__section--column"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "footer__title"
+  }, "Conte\xFAdos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "footer__menu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "menu__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.youtube.com/channel/UCLImIm6777cZiGmjaRuFcwQ?view_as=subscriber",
+    className: "menu__link",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, "Canal no Youtube")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "menu__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://t.me/becapitalresearch",
+    className: "menu__link",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, "Grupo no Telegram")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "menu__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/blog/",
+    className: "menu__link"
+  }, "Blog")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "footer__section--column"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "footer__title"
+  }, "Nossa Empresa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "footer__menu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "menu__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/somos-becapital/",
+    className: "menu__link"
+  }, "A BeCapital")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "menu__item width200"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://api.whatsapp.com/send?phone=5521965431886&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20planejamento%20financeiro.%20O%20que%20devo%20fazer%3F%20Poderia%20me%20ajudar%3F",
+    className: "menu__link"
+  }, " Fale com a Beca - Atendimento da BeCapital ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "menu__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/carreiras/",
+    className: "menu__link"
+  }, "P\xE1gina de Carreiras")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "footer__section--column"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+    src: "../../images/qrcode_3x.png",
+    alt: "QRCode BeCapital",
+    className: "qrcode",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3726475015.json */ "./.cache/caches/gatsby-plugin-image/3726475015.json")
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: "footer__section footer__section--footer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "footer__section--container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "footer__section--column"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "footer__title"
+  }, "Siga a BeCapital"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "footer__social social__menu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "social__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.instagram.com/becapital.oficial/",
+    className: "social__link",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+    src: "../../images/icon_instagram_orange.png",
+    alt: "Logo Instagram",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2154065702.json */ "./.cache/caches/gatsby-plugin-image/2154065702.json")
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "social__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.youtube.com/channel/UCLImIm6777cZiGmjaRuFcwQ?view_as=subscriber",
+    className: "social__link",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+    src: "../../images/icon_youtube_orange.png",
+    alt: "Logo Youtube",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3182300424.json */ "./.cache/caches/gatsby-plugin-image/3182300424.json")
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "social__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.linkedin.com/company/71399542/",
+    className: "social__link",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+    src: "../../images/icon_linkedin_orange.png",
+    alt: "Logo Linkedin",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2095264300.json */ "./.cache/caches/gatsby-plugin-image/2095264300.json")
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "footer__section--column"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "footer__title"
+  }, "Hor\xE1rio de atendimento"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "footer__text"
+  }, "Segunda a Sexta de 9h \xE0s 18h")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "footer__section--column"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "footer__title"
+  }, "Contato para atendimento"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "footer__text"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "tel:+552139939670"
+  }, "(21) 3993 - 9670"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "footer__section--column"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www2.susep.gov.br/safe/Corretores/pesquisa",
+    className: "social__link",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+    src: "../../images/logo_susep_1x.png",
+    alt: "Logo SUSEP",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1537072282.json */ "./.cache/caches/gatsby-plugin-image/1537072282.json")
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: "footer__section footer__end"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("small", {
+    className: "footer__title"
+  }, "BeCapital ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "\xAE"), " Todos os direitos reservados - CNPJ: 36.664.223/0001-09"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("small", {
+    className: "footer__text"
+  }, "A BeCapital Live Corretora de Seguros LTDA  (CNPJ 29.761.563/0001-84) est\xE1 registrada na Susep com o c\xF3digo 212113018, estando autorizada a comercializar produtos como: micro-seguros, plano de capitaliza\xE7\xE3o, seguro de pessoas, plano de previd\xEAncia complementar e seguro de danos.")))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
+
+/***/ }),
+
+/***/ "./src/components/Header/Header.js":
+/*!*****************************************!*\
+  !*** ./src/components/Header/Header.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _SubMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SubMenu */ "./src/components/Header/SubMenu/index.js");
+
+
+
+
+
+const Header = () => {
+  const {
+    0: isActive,
+    1: setActive
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+
+  const toggleClass = () => {
+    setActive(!isActive);
+    document.querySelector('.header').classList.toggle('active');
+  };
+
+  const isCurrent = ({
+    current
+  }) => {
+    return current ? {
+      className: "header__menu_link_current"
+    } : {};
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
+    className: "header"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "header__content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+    src: "../../images/logo_becapital_2x.png",
+    alt: "logo BeCapital",
+    className: "header__logo header__logo--mobile",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/535489621.json */ "./.cache/caches/gatsby-plugin-image/535489621.json")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+    src: "../../images/logo_2_becapital_1x.png",
+    alt: "logo BeCapital",
+    className: "header__logo header__logo--desktop",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3255117786.json */ "./.cache/caches/gatsby-plugin-image/3255117786.json")
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "burguer__container",
+    onClick: toggleClass,
+    onKeyDown: toggleClass
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: isActive ? 'header__menu active' : 'header__menu'
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: isActive ? 'burguer__container active' : 'burguer__container',
+    onClick: toggleClass,
+    onKeyDown: toggleClass
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+    className: "header__menu_nav"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "header__menu_items"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "header__menu_item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/",
+    className: "header__menu_link",
+    getProps: isCurrent
+  }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "header__menu_item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/somos-becapital/",
+    className: "header__menu_link",
+    getProps: isCurrent
+  }, "Somos BeCapital")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "header__menu_item header__menu_item--children"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "header__menu_link--children"
+  }, "Seja BeCapital ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+    width: "6",
+    height: "5",
+    viewBox: "0 0 6 5",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+    d: "M3 5L0.401925 0.5L5.59808 0.5L3 5Z",
+    fill: "#EA5E45"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+    className: "header__submenu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SubMenu__WEBPACK_IMPORTED_MODULE_2__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "header__menu_item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/blog/",
+    className: "header__menu_link",
+    getProps: isCurrent
+  }, "Blog")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "header__menu_item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/carreiras/",
+    className: "header__menu_link",
+    getProps: isCurrent
+  }, "Carreiras")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "button__container header__button_cta"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://app.be.capital/#/auth",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "button button__primary"
+  }, "Login"))))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
+
+/***/ }),
+
+/***/ "./src/components/Header/SubMenu/index.js":
+/*!************************************************!*\
+  !*** ./src/components/Header/SubMenu/index.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_956638909_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../public/page-data/sq/d/956638909.json */ "./public/page-data/sq/d/956638909.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+
+
+
+
+const isCurrent = ({
+  current
+}) => {
+  return current ? {
+    className: "header__menu_link_current"
+  } : {};
+};
+
+const SubMenu = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.StaticQuery, {
+  query: "956638909",
+  render: data => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("ul", {
+    className: "header__submenu_items"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("li", {
+    className: "header__submenu_item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    href: "https://maquinadossonhos.be.capital/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "header__submenu_link"
+  }, "Planejamento Financeiro")), data.allWpServico.edges.map(page => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("li", {
+    className: "header__submenu_item",
+    key: page.node.id
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: `/${page.node.slug}`,
+    className: "header__submenu_link",
+    getProps: isCurrent
+  }, page.node.title)))),
+  data: _public_page_data_sq_d_956638909_json__WEBPACK_IMPORTED_MODULE_0__
+});
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SubMenu);
+
+/***/ }),
+
+/***/ "./src/components/SectionMidia/index.js":
+/*!**********************************************!*\
+  !*** ./src/components/SectionMidia/index.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SectionMidia)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+
+
+function SectionMidia() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: "section section__midia"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "section__title"
+  }, "Na m\xEDdia"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "section__container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "logos__items"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "logos__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://forbes.com.br/forbes-money/2021/07/ipos-impulsionam-flippers-conheca-estrategias-e-riscos-da-pratica/",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_1__.StaticImage, {
+    src: "../../images/logo_forbes_1x.png",
+    alt: "Logo Forbes",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/560468053.json */ "./.cache/caches/gatsby-plugin-image/560468053.json")
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "logos__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://virtz.r7.com/criancas-com-deficiencia-ganham-festa-do-hamburguer-em-ong-08062021",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_1__.StaticImage, {
+    src: "../../images/logo_r7_1x.png",
+    alt: "Logo portal R7",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2226104660.json */ "./.cache/caches/gatsby-plugin-image/2226104660.json")
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "logos__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://economia.estadao.com.br/noticias/geral,o-dilema-do-mundo-imobiliario,70003817015",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_1__.StaticImage, {
+    src: "../../images/logo_estadao_1x.png",
+    alt: "Logo Estad\xE3o",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/562964066.json */ "./.cache/caches/gatsby-plugin-image/562964066.json")
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "logos__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://revistapress.com.br/advertising/becapital-lanca-campanha-digital-que-incentiva-as-pessoas-a-realizarem-seus-sonhos/",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_1__.StaticImage, {
+    src: "../../images/logo_press_1x.png",
+    alt: "Logo revista press",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1506710174.json */ "./.cache/caches/gatsby-plugin-image/1506710174.json")
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "logos__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.abcdacomunicacao.com.br/becapital-lanca-campanha-digital-que-incentiva-as-pessoas-a-realizarem-seus-sonhos/",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_1__.StaticImage, {
+    src: "../../images/logo_abc_1x.png",
+    alt: "Logo ABC da Comunica\xE7\xE3o",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/495007391.json */ "./.cache/caches/gatsby-plugin-image/495007391.json")
+  }))))));
+}
+
+/***/ }),
+
+/***/ "./src/components/Slides/SlideTestimony/index.js":
+/*!*******************************************************!*\
+  !*** ./src/components/Slides/SlideTestimony/index.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SlideTestimony)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_417994374_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../public/page-data/sq/d/417994374.json */ "./public/page-data/sq/d/417994374.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
+/* harmony import */ var html_react_parser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! html-react-parser */ "./node_modules/html-react-parser/index.mjs");
+
+
+
+
+
+
+
+function SampleNextArrow(props) {
+  const {
+    className,
+    onClick
+  } = props;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+    className: className,
+    onClick: onClick,
+    onKeyDown: onClick,
+    role: "button",
+    tabIndex: "0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("svg", {
+    width: "30",
+    height: "71",
+    viewBox: "0 0 41 71",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("path", {
+    d: "M39.0628 38.7462C40.9083 36.9007 40.9083 33.9086 39.0628 32.0631L8.98884 1.98915C7.14335 0.143661 4.15122 0.143661 2.30573 1.98915C0.460247 3.83464 0.460247 6.82676 2.30573 8.67225L29.0381 35.4047L2.30573 62.1371C0.460247 63.9826 0.460247 66.9747 2.30573 68.8202C4.15122 70.6657 7.14335 70.6657 8.98884 68.8202L39.0628 38.7462ZM29.9454 40.1303H35.7213V30.679H29.9454V40.1303Z",
+    fill: "#1A4A73"
+  })));
+}
+
+function SamplePrevArrow(props) {
+  const {
+    className,
+    onClick
+  } = props;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+    className: className,
+    onClick: onClick,
+    onKeyDown: onClick,
+    role: "button",
+    tabIndex: "0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("svg", {
+    width: "30",
+    height: "71",
+    viewBox: "0 0 41 71",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("path", {
+    d: "M2.32855 32.0631C0.483066 33.9086 0.483066 36.9007 2.32855 38.7462L32.4025 68.8202C34.248 70.6657 37.2401 70.6657 39.0856 68.8202C40.9311 66.9747 40.9311 63.9826 39.0856 62.1371L12.3532 35.4047L39.0856 8.67225C40.9311 6.82676 40.9311 3.83464 39.0856 1.98915C37.2401 0.143661 34.248 0.143661 32.4025 1.98915L2.32855 32.0631ZM13.0211 30.679H5.6701V40.1303H13.0211V30.679Z",
+    fill: "#1A4A73"
+  })));
+}
+
+class SlideTestimony extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
+  render() {
+    const settings = {
+      infinite: true,
+      touchMove: true,
+      centerPadding: 30,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 500,
+      dots: true,
+      arrows: true,
+      nextArrow: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(SampleNextArrow, null),
+      prevArrow: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(SamplePrevArrow, null)
+    };
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.StaticQuery, {
+      query: "417994374",
+      render: data => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("section", {
+        className: "section section__testimonies"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+        className: "section__container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h2", {
+        className: "section__title"
+      }, "Quem j\xE1 soma"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("ul", {
+        className: "testimonies__items"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_slick__WEBPACK_IMPORTED_MODULE_3__["default"], settings, data.allWpDepoimento.nodes.map(testimony => {
+        const {
+          id,
+          title,
+          content,
+          featuredImage
+        } = testimony;
+        const img = (0,gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_5__.getImage)(featuredImage === null || featuredImage === void 0 ? void 0 : featuredImage.node.localFile);
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("li", {
+          key: id,
+          className: "testimonies__item"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("article", {
+          className: "testimonies__card"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("header", {
+          className: "testimonies__header"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+          className: "testimonies__header--sub"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_5__.GatsbyImage, {
+          image: img,
+          alt: title,
+          as: "figure",
+          className: "testimonies__figure",
+          imgClassName: "testimonies__image"
+        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h2", {
+          className: "testimonies__name"
+        }, (0,html_react_parser__WEBPACK_IMPORTED_MODULE_4__["default"])(title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("small", {
+          className: "testimonies__description"
+        }, "Cliente BeCapital"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_5__.StaticImage, {
+          src: "../../../images/icon_bullets_menu.png",
+          alt: "icone de menu",
+          __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1594855364.json */ "./.cache/caches/gatsby-plugin-image/1594855364.json")
+        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("section", {
+          className: "testimonies__text"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", {
+          className: "testimonies__text--site"
+        }, "Como \xE9 investir na BeCapital?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+          className: "testimonies__text--client"
+        }, (0,html_react_parser__WEBPACK_IMPORTED_MODULE_4__["default"])(content)))));
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+        className: "button__container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+        href: "https://conteudo.be.capital/quero-investir-becapital",
+        className: "button button__secondary",
+        target: "_blank",
+        rel: "noopener noreferrer"
+      }, "Quero Investir")))),
+      data: _public_page_data_sq_d_417994374_json__WEBPACK_IMPORTED_MODULE_0__
+    });
+  }
+
+}
+
+/***/ }),
+
+/***/ "./src/components/Slides/SlidesServices/index.js":
+/*!*******************************************************!*\
+  !*** ./src/components/Slides/SlidesServices/index.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ CenterMode)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+
+
+
+
+
+function SampleNextArrow(props) {
+  const {
+    className,
+    onClick
+  } = props;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: className,
+    onClick: onClick,
+    onKeyDown: onClick,
+    role: "button",
+    tabIndex: "0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+    width: "30",
+    height: "71",
+    viewBox: "0 0 41 71",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+    d: "M39.0628 38.7462C40.9083 36.9007 40.9083 33.9086 39.0628 32.0631L8.98884 1.98915C7.14335 0.143661 4.15122 0.143661 2.30573 1.98915C0.460247 3.83464 0.460247 6.82676 2.30573 8.67225L29.0381 35.4047L2.30573 62.1371C0.460247 63.9826 0.460247 66.9747 2.30573 68.8202C4.15122 70.6657 7.14335 70.6657 8.98884 68.8202L39.0628 38.7462ZM29.9454 40.1303H35.7213V30.679H29.9454V40.1303Z",
+    fill: "#1A4A73"
+  })));
+}
+
+function SamplePrevArrow(props) {
+  const {
+    className,
+    onClick
+  } = props;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: className,
+    onClick: onClick,
+    onKeyDown: onClick,
+    role: "button",
+    tabIndex: "0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+    width: "30",
+    height: "71",
+    viewBox: "0 0 41 71",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+    d: "M2.32855 32.0631C0.483066 33.9086 0.483066 36.9007 2.32855 38.7462L32.4025 68.8202C34.248 70.6657 37.2401 70.6657 39.0856 68.8202C40.9311 66.9747 40.9311 63.9826 39.0856 62.1371L12.3532 35.4047L39.0856 8.67225C40.9311 6.82676 40.9311 3.83464 39.0856 1.98915C37.2401 0.143661 34.248 0.143661 32.4025 1.98915L2.32855 32.0631ZM13.0211 30.679H5.6701V40.1303H13.0211V30.679Z",
+    fill: "#1A4A73"
+  })));
+}
+
+class CenterMode extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
+  render() {
+    const settings = {
+      className: "center",
+      centerMode: true,
+      focusOnSelect: true,
+      infinite: true,
+      touchMove: true,
+      centerPadding: "50px",
+      slidesToShow: 1,
+      speed: 500,
+      dots: false,
+      nav: false,
+      nextArrow: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SampleNextArrow, null),
+      prevArrow: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SamplePrevArrow, null)
+    };
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+      className: "section section__slide-services"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "section__container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+      className: "section__title"
+    }, "Seja BeCapital"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      className: "section__subtitle"
+    }, "Um portf\xF3lio de servi\xE7os e produtos para quem quer transformar o sonho em meta."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_slick__WEBPACK_IMPORTED_MODULE_1__["default"], Object.assign({}, settings, {
+      className: "slide-services__items slide-services"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "slide-services__custom-item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "slide-services__article"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+      className: "slide-services__icon"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+      width: "45",
+      height: "46",
+      viewBox: "0 0 45 46",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M40.6423 0.041626H12.1864C10.1984 0.041626 8.58691 1.64235 8.58691 3.61694V29.3524C8.58691 31.327 10.1984 32.9277 12.1864 32.9277H40.6423C42.6303 32.9277 44.2418 31.327 44.2418 29.3524V3.61694C44.2418 1.64235 42.6303 0.041626 40.6423 0.041626Z",
+      fill: "#F69F92"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M32.7813 40.5169H4.76676C3.75359 40.5169 2.78191 40.1171 2.06549 39.4055C1.34907 38.6939 0.946594 37.7287 0.946594 36.7224L0.946594 11.4253C0.946594 10.419 1.34907 9.45381 2.06549 8.7422C2.78191 8.03058 3.75359 7.6308 4.76676 7.6308H32.7813C33.7945 7.6308 34.7662 8.03058 35.4826 8.7422C36.199 9.45381 36.6015 10.419 36.6015 11.4253V36.7224C36.6015 37.7287 36.199 38.6939 35.4826 39.4055C34.7662 40.1171 33.7945 40.5169 32.7813 40.5169ZM4.76676 10.1605C4.4304 10.1649 4.10906 10.2995 3.8712 10.5358C3.63334 10.7721 3.49777 11.0912 3.49337 11.4253V36.7224C3.49777 37.0565 3.63334 37.3756 3.8712 37.6119C4.10906 37.8482 4.4304 37.9828 4.76676 37.9872H32.7813C33.1177 37.9828 33.439 37.8482 33.6769 37.6119C33.9147 37.3756 34.0503 37.0565 34.0547 36.7224V11.4253C34.0503 11.0912 33.9147 10.7721 33.6769 10.5358C33.439 10.2995 33.1177 10.1649 32.7813 10.1605H4.76676Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M37.8749 45.5763H9.8603C9.52258 45.5763 9.19869 45.443 8.95988 45.2058C8.72107 44.9686 8.58691 44.6469 8.58691 44.3114C8.58691 43.976 8.72107 43.6542 8.95988 43.417C9.19869 43.1798 9.52258 43.0466 9.8603 43.0466H37.8749C38.2112 43.0422 38.5326 42.9075 38.7704 42.6713C39.0083 42.435 39.1438 42.1158 39.1482 41.7817V16.1474C39.1482 15.812 39.2824 15.4902 39.5212 15.253C39.76 15.0158 40.0839 14.8826 40.4216 14.8826C40.7594 14.8826 41.0832 15.0158 41.3221 15.253C41.5609 15.4902 41.695 15.812 41.695 16.1474V41.7817C41.695 42.7881 41.2925 43.7533 40.5761 44.4649C39.8597 45.1765 38.888 45.5763 37.8749 45.5763Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M22.5943 32.9278H14.9539C14.2785 32.9278 13.6307 32.6612 13.1531 32.1868C12.6755 31.7124 12.4072 31.069 12.4072 30.3981V20.7009C12.4072 20.3654 12.5413 20.0437 12.7801 19.8065C13.0189 19.5693 13.3428 19.436 13.6806 19.436C14.0183 19.436 14.3422 19.5693 14.581 19.8065C14.8198 20.0437 14.9539 20.3654 14.9539 20.7009V30.3981H22.5943V20.7009C22.5943 20.3654 22.7284 20.0437 22.9672 19.8065C23.206 19.5693 23.5299 19.436 23.8677 19.436C24.2054 19.436 24.5293 19.5693 24.7681 19.8065C25.0069 20.0437 25.141 20.3654 25.141 20.7009V30.3981C25.141 31.069 24.8727 31.7124 24.3951 32.1868C23.9175 32.6612 23.2697 32.9278 22.5943 32.9278Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M26.4144 24.0738C26.1181 24.0715 25.8311 23.9706 25.5994 23.7871L18.808 18.1375L12.0166 23.7871C11.7554 24.0108 11.4155 24.1222 11.0716 24.0969C10.7277 24.0716 10.4081 23.9117 10.1829 23.6522C9.95775 23.3928 9.84558 23.0552 9.87105 22.7136C9.89652 22.372 10.0576 22.0545 10.3187 21.8308L17.9251 15.5066C18.1586 15.2992 18.4608 15.1845 18.774 15.1845C19.0873 15.1845 19.3895 15.2992 19.623 15.5066L27.2633 21.8308C27.4694 21.9984 27.6174 22.2258 27.6865 22.4813C27.7557 22.7367 27.7425 23.0072 27.6488 23.2548C27.5551 23.5024 27.3856 23.7146 27.1641 23.8615C26.9427 24.0084 26.6805 24.0827 26.4144 24.0738Z",
+      fill: "#1A4A71"
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+      className: "slide-services__title"
+    }, "Cons\xF3rcios"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      className: "slide-services__text"
+    }, "Ao adquirir um cons\xF3rcio, voc\xEA planeja a aquisi\xE7\xE3o de um servi\xE7o, produto ou bem sem precisar se descapitalizar por completo. Voc\xEA se une a um grupo de pessoas que t\xEAm o mesmo objetivo que o seu, criando um formato de \"poupan\xE7a\", ou seja, cada um compra uma cota e paga em parcelas mensais, sem juros. Ao ser contemplado (a), voc\xEA resgata o valor integral necess\xE1rio para sua aquisi\xE7\xE3o. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+      to: "/consorcios/",
+      className: "slide-services__link"
+    }, "saiba mais")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+      className: "section section__logos"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "section__container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+      className: "logos__items"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_itau_consorcio_1x.png",
+      alt: "Logo Ita\xFA Consorcio",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2484953849.json */ "./.cache/caches/gatsby-plugin-image/2484953849.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_porto_seguro_1x.png",
+      alt: "Logo Porto Seguro",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/4141864532.json */ "./.cache/caches/gatsby-plugin-image/4141864532.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_caixa_1x.png",
+      alt: "Logo Caixa",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/210781606.json */ "./.cache/caches/gatsby-plugin-image/210781606.json")
+    })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "slide-services__custom-item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "slide-services__article"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+      className: "slide-services__icon"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+      width: "52",
+      height: "52",
+      viewBox: "0 0 52 52",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M36.5929 31.1873C45.0532 31.1873 51.9116 24.368 51.9116 15.956C51.9116 7.54396 45.0532 0.72467 36.5929 0.72467C28.1327 0.72467 21.2743 7.54396 21.2743 15.956C21.2743 24.368 28.1327 31.1873 36.5929 31.1873Z",
+      fill: "#F69F92"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M29.2167 38.0314C26.2367 38.035 23.3226 37.1597 20.8431 35.5162C18.3636 33.8726 16.4301 31.5348 15.2872 28.7984C14.1444 26.062 13.8434 23.05 14.4226 20.1435C15.0017 17.2371 16.4349 14.5667 18.5408 12.4703C20.6467 10.3739 23.3306 8.94564 26.253 8.36627C29.1755 7.7869 32.2051 8.08243 34.9585 9.21548C37.712 10.3485 40.0656 12.2682 41.7216 14.7316C43.3775 17.1949 44.2614 20.0913 44.2614 23.0543C44.2566 27.0219 42.6706 30.8258 39.8507 33.633C37.0308 36.4402 33.207 38.0218 29.2167 38.0314ZM29.2167 10.8003C26.7791 10.8003 24.3964 11.5189 22.3696 12.8654C20.3429 14.2119 18.7633 16.1257 17.8305 18.3649C16.8977 20.604 16.6536 23.0679 17.1292 25.4449C17.6047 27.822 18.7785 30.0054 20.5021 31.7192C22.2257 33.433 24.4216 34.6 26.8123 35.0729C29.203 35.5457 31.681 35.303 33.933 34.3755C36.1849 33.4481 38.1097 31.8774 39.4639 29.8623C40.8181 27.8471 41.5409 25.4779 41.5409 23.0543C41.5409 19.8043 40.2425 16.6875 37.9312 14.3894C35.62 12.0913 32.4853 10.8003 29.2167 10.8003Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M15.5231 46.2008C15.1599 46.2008 14.8116 46.0573 14.5548 45.802C14.298 45.5467 14.1537 45.2003 14.1537 44.8392V43.4777H12.7843C12.4212 43.4777 12.0729 43.3342 11.816 43.0789C11.5592 42.8235 11.415 42.4772 11.415 42.1161C11.415 41.755 11.5592 41.4087 11.816 41.1534C12.0729 40.898 12.4212 40.7546 12.7843 40.7546H16.436C16.6539 40.7541 16.8665 40.6879 17.0458 40.5647C17.2251 40.4415 17.3626 40.2672 17.4402 40.0647C17.5396 39.8014 17.5396 39.5111 17.4402 39.2478C17.3304 38.9911 17.1287 38.7841 16.8742 38.6668L13.2225 37.1782C12.511 36.9005 11.9003 36.4158 11.4703 35.7874C11.0403 35.1591 10.811 34.4163 10.8124 33.6563C10.8124 33.2952 10.9567 32.9489 11.2135 32.6935C11.4703 32.4382 11.8186 32.2947 12.1818 32.2947C12.545 32.2947 12.8933 32.4382 13.1501 32.6935C13.4069 32.9489 13.5512 33.2952 13.5512 33.6563C13.5527 33.8703 13.6175 34.0791 13.7377 34.2567C13.8578 34.4343 14.0279 34.5727 14.2267 34.6548L18.0062 36.1434C18.9427 36.5225 19.6908 37.2541 20.0874 38.1789C20.4841 39.1037 20.4973 40.1469 20.1241 41.0813C19.8628 41.7404 19.4187 42.3121 18.8433 42.7299C18.2679 43.1477 17.5851 43.3944 16.8742 43.4414V44.8392C16.8696 45.1958 16.7263 45.5368 16.4744 45.7906C16.2225 46.0444 15.8816 46.1914 15.5231 46.2008Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M15.5234 51.647C12.0549 51.6484 8.69222 50.4596 6.00319 48.2813C3.31416 46.103 1.46358 43.0687 0.763969 39.6908C0.0643559 36.313 0.55858 32.7986 2.16318 29.7411C3.76778 26.6836 6.38443 24.2704 9.57123 22.909C9.74465 22.8367 9.93091 22.7996 10.119 22.8001C10.434 22.8017 10.7388 22.9113 10.982 23.1104C11.2253 23.3094 11.3921 23.5858 11.4542 23.8928C11.5164 24.1999 11.4703 24.5189 11.3235 24.7961C11.1767 25.0732 10.9383 25.2916 10.6485 25.4143C7.98262 26.494 5.78095 28.4674 4.42537 30.9922C3.06979 33.5171 2.64583 36.4341 3.22702 39.2372C3.80821 42.0404 5.3579 44.5528 7.60725 46.3387C9.85661 48.1247 12.6637 49.0714 15.5417 49.0147C17.2071 48.9888 18.8488 48.6178 20.3618 47.9254C23.2661 46.6968 25.5814 44.4012 26.8252 41.517C26.9294 41.2701 27.1044 41.0591 27.3285 40.9106C27.5526 40.7621 27.8157 40.6825 28.085 40.6819C28.2741 40.6895 28.4599 40.7326 28.6328 40.809C28.8009 40.88 28.953 40.9836 29.0802 41.1139C29.2074 41.2442 29.3071 41.3984 29.3734 41.5676C29.4398 41.7367 29.4714 41.9174 29.4665 42.0989C29.4616 42.2804 29.4202 42.4591 29.3449 42.6244C27.8267 46.1491 25.0022 48.9574 21.4573 50.467C19.5846 51.2743 17.5645 51.6883 15.5234 51.6833V51.647Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M29.2167 32.5852C29.0353 32.5876 28.8553 32.5542 28.687 32.4868C28.5188 32.4195 28.3657 32.3196 28.2366 32.1929C28.1075 32.0662 28.005 31.9153 27.935 31.7489C27.8651 31.5825 27.829 31.404 27.8291 31.2236V29.8621H26.4597C26.0965 29.8621 25.7482 29.7186 25.4914 29.4633C25.2346 29.208 25.0903 28.8616 25.0903 28.5005C25.0903 28.1394 25.2346 27.7931 25.4914 27.5378C25.7482 27.2824 26.0965 27.139 26.4597 27.139H30.1113C30.2877 27.1307 30.4597 27.0809 30.6129 26.9935C30.7661 26.9062 30.8962 26.7839 30.9925 26.6367C31.0888 26.4895 31.1486 26.3217 31.1668 26.147C31.185 25.9723 31.1612 25.7959 31.0973 25.6322C30.9831 25.3723 30.7744 25.1648 30.513 25.0512L26.7336 23.5626C26.1469 23.3293 25.6277 22.9548 25.2226 22.4727C24.8175 21.9906 24.539 21.4161 24.4123 20.8006C24.2856 20.1851 24.3146 19.548 24.4967 18.9464C24.6788 18.3448 25.0082 17.7976 25.4555 17.3539C26.0966 16.7294 26.9352 16.3445 27.8291 16.2646V14.8849C27.8291 14.5238 27.9733 14.1775 28.2301 13.9222C28.4869 13.6668 28.8352 13.5234 29.1984 13.5234C29.5616 13.5234 29.9099 13.6668 30.1667 13.9222C30.4235 14.1775 30.5678 14.5238 30.5678 14.8849V16.2465H31.9372C32.3003 16.2465 32.6486 16.3899 32.9054 16.6453C33.1623 16.9006 33.3065 17.2469 33.3065 17.6081C33.3065 17.9692 33.1623 18.3155 32.9054 18.5708C32.6486 18.8262 32.3003 18.9696 31.9372 18.9696H28.2855C27.9995 18.9708 27.725 19.0813 27.5187 19.2782C27.419 19.3787 27.3402 19.4978 27.2869 19.6287C27.2337 19.7595 27.2069 19.8995 27.2083 20.0407C27.2098 20.2547 27.2747 20.4635 27.3948 20.6411C27.5149 20.8187 27.685 20.9571 27.8838 21.0392L31.6633 22.5278C32.5973 22.9097 33.3442 23.6393 33.7447 24.5611C33.9836 25.1065 34.0894 25.7003 34.0537 26.2941C34.0179 26.8879 33.8416 27.4649 33.539 27.9781C33.2365 28.4913 32.8162 28.9262 32.3126 29.2472C31.8089 29.5683 31.2361 29.7666 30.6408 29.8258V31.2236C30.6385 31.4064 30.5996 31.5869 30.5265 31.7546C30.4535 31.9223 30.3476 32.0738 30.2151 32.2005C30.0826 32.3272 29.9261 32.4264 29.7547 32.4925C29.5833 32.5585 29.4004 32.59 29.2167 32.5852Z",
+      fill: "#1A4A71"
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+      className: "slide-services__title"
+    }, "C\xE2mbio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      className: "slide-services__text"
+    }, "Se voc\xEA vai viajar pra fora do pa\xEDs, ou receber e realizar um pagamento internacional, conte com a BeCapital na sua bagagem. Realizamos opera\xE7\xF5es de c\xE2mbio para pessoas f\xEDsica e jur\xEDdica, com taxas e condi\xE7\xF5es competitivas no mercado. Atuamos com envio de remessas para o exterior e venda de moedas. Trabalhamos com todas elas! Ent\xE3o, para qualquer lugar que voc\xEA for, estaremos sempre com voc\xEA."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+      to: "/cambio/",
+      className: "slide-services__link"
+    }, "saiba mais")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+      className: "section section__logos"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "section__container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+      className: "logos__items"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_advanced.png",
+      alt: "Logo Advanced",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2896147533.json */ "./.cache/caches/gatsby-plugin-image/2896147533.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_banco_daycoval.png",
+      alt: "Logo Banco Daycoval",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2354360796.json */ "./.cache/caches/gatsby-plugin-image/2354360796.json")
+    })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "slide-services__custom-item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "slide-services__article"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+      className: "slide-services__icon"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+      width: "65",
+      height: "68",
+      viewBox: "0 0 65 68",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M51.26 1H18.58C15.7992 1 13.545 3.23858 13.545 6V45.5283C13.545 48.2897 15.7992 50.5283 18.58 50.5283H51.26C54.0408 50.5283 56.295 48.2897 56.295 45.5283V6C56.295 3.23858 54.0408 1 51.26 1Z",
+      fill: "#F69F92"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M45.2275 58.9245H40.4775C40.0051 58.9245 39.552 58.7381 39.218 58.4064C38.8839 58.0747 38.6962 57.6247 38.6962 57.1556C38.6962 56.6865 38.8839 56.2366 39.218 55.9048C39.552 55.5731 40.0051 55.3867 40.4775 55.3867H45.2275C45.5557 55.3904 45.8748 55.2795 46.1291 55.0733C46.3834 54.8672 46.5567 54.579 46.6189 54.259C46.6811 53.9389 46.6282 53.6074 46.4694 53.3221C46.3106 53.0368 46.056 52.816 45.75 52.6981L40.8575 50.7641C39.8292 50.3119 38.9859 49.5264 38.4659 48.5362C37.9459 47.5459 37.7799 46.4096 37.9952 45.3135C38.2104 44.2173 38.7941 43.2262 39.6507 42.5025C40.5073 41.7789 41.5859 41.3655 42.71 41.3301H47.46C47.9324 41.3301 48.3855 41.5165 48.7195 41.8482C49.0536 42.18 49.2413 42.6299 49.2413 43.099C49.2413 43.5681 49.0536 44.0181 48.7195 44.3498C48.3855 44.6815 47.9324 44.8679 47.46 44.8679H42.71C42.3835 44.8677 42.0673 44.9807 41.8158 45.1874C41.5643 45.3941 41.3934 45.6815 41.3325 46C41.2606 46.3183 41.3076 46.6517 41.4649 46.9381C41.6222 47.2245 41.8791 47.4443 42.1875 47.5566L47.08 49.5141C48.1083 49.9663 48.9516 50.7518 49.4716 51.742C49.9916 52.7323 50.1576 53.8686 49.9423 54.9647C49.7271 56.0609 49.1434 57.052 48.2868 57.7757C47.4302 58.4993 46.3516 58.9127 45.2275 58.9481V58.9245Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M43.9687 44.7736C43.4963 44.7736 43.0432 44.5872 42.7092 44.2555C42.3751 43.9238 42.1875 43.4738 42.1875 43.0047V41.2358C42.1875 40.7667 42.3751 40.3168 42.7092 39.9851C43.0432 39.6533 43.4963 39.467 43.9687 39.467C44.4411 39.467 44.8942 39.6533 45.2283 39.9851C45.5623 40.3168 45.75 40.7667 45.75 41.2358V43.0047C45.75 43.4738 45.5623 43.9238 45.2283 44.2555C44.8942 44.5872 44.4411 44.7736 43.9687 44.7736Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M43.9687 60.6934C43.4963 60.6934 43.0432 60.507 42.7092 60.1753C42.3751 59.8436 42.1875 59.3937 42.1875 58.9245V57.1556C42.1875 56.6865 42.3751 56.2366 42.7092 55.9049C43.0432 55.5731 43.4963 55.3868 43.9687 55.3868C44.4411 55.3868 44.8942 55.5731 45.2283 55.9049C45.5623 56.2366 45.75 56.6865 45.75 57.1556V58.9245C45.75 59.3937 45.5623 59.8436 45.2283 60.1753C44.8942 60.507 44.4411 60.6934 43.9687 60.6934Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M43.9687 66C40.7981 66 37.6986 65.0663 35.0623 63.317C32.4259 61.5677 30.3712 59.0814 29.1578 56.1724C27.9444 53.2634 27.627 50.0625 28.2455 46.9744C28.8641 43.8862 30.3909 41.0496 32.6329 38.8232C34.8749 36.5967 37.7314 35.0805 40.8412 34.4662C43.951 33.852 47.1743 34.1672 50.1036 35.3722C53.033 36.5771 55.5367 38.6176 57.2982 41.2356C59.0598 43.8536 60 46.9315 60 50.0802C60 52.1708 59.5853 54.2409 58.7797 56.1724C57.974 58.1039 56.7932 59.8589 55.3045 61.3372C53.8159 62.8155 52.0486 63.9881 50.1036 64.7882C48.1586 65.5882 46.074 66 43.9687 66ZM43.9687 37.6981C41.5027 37.6981 39.092 38.4243 37.0415 39.7848C34.991 41.1454 33.3928 43.0792 32.4491 45.3417C31.5054 47.6043 31.2585 50.0939 31.7396 52.4958C32.2207 54.8977 33.4082 57.1039 35.152 58.8356C36.8958 60.5673 39.1175 61.7466 41.5362 62.2243C43.9549 62.7021 46.462 62.4569 48.7403 61.5197C51.0187 60.5825 52.966 58.9955 54.3361 56.9593C55.7062 54.9231 56.4375 52.5291 56.4375 50.0802C56.4312 46.7981 55.1155 43.6523 52.7785 41.3316C50.4416 39.0109 47.2737 37.7043 43.9687 37.6981Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M22.5937 48.3113H11.9062C11.4338 48.3113 10.9807 48.125 10.6467 47.7932C10.3127 47.4615 10.125 47.0116 10.125 46.5425V25.316C10.125 24.8469 10.3127 24.397 10.6467 24.0653C10.9807 23.7335 11.4338 23.5472 11.9062 23.5472C12.3787 23.5472 12.8317 23.7335 13.1658 24.0653C13.4998 24.397 13.6875 24.8469 13.6875 25.316V44.7736H22.5937C23.0662 44.7736 23.5192 44.96 23.8533 45.2917C24.1873 45.6234 24.375 46.0733 24.375 46.5425C24.375 47.0116 24.1873 47.4615 23.8533 47.7932C23.5192 48.125 23.0662 48.3113 22.5937 48.3113Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M11.9062 41.2359C11.6722 41.237 11.4403 41.1917 11.2242 41.1026C11.008 41.0135 10.8119 40.8824 10.6475 40.717C10.3139 40.3854 10.1266 39.9358 10.1266 39.467C10.1266 38.9983 10.3139 38.5487 10.6475 38.217L17.0362 31.8727C18.0528 30.9068 19.4055 30.3677 20.8125 30.3677C22.2194 30.3677 23.5721 30.9068 24.5887 31.8727L25.9662 33.2406C26.1569 33.4341 26.3898 33.5816 26.6469 33.6717C26.904 33.7617 27.1785 33.792 27.4493 33.7601C27.72 33.7282 27.9798 33.635 28.2085 33.4877C28.4373 33.3404 28.629 33.1429 28.7687 32.9104L29.6 31.4953C29.8425 31.0919 30.2365 30.8006 30.6952 30.6856C31.154 30.5706 31.64 30.6413 32.0462 30.8821C32.4525 31.123 32.7458 31.5142 32.8616 31.9698C32.9774 32.4253 32.9062 32.9079 32.6637 33.3114L31.8087 34.7265C31.3934 35.421 30.8233 36.0116 30.1421 36.4531C29.461 36.8945 28.687 37.175 27.8796 37.273C27.0722 37.3709 26.253 37.2837 25.4849 37.0181C24.7168 36.7524 24.0202 36.3154 23.4487 35.7406L22 34.3727C21.6602 34.0525 21.2096 33.874 20.7412 33.874C20.2728 33.874 19.8223 34.0525 19.4825 34.3727L13.165 40.717C13.0005 40.8824 12.8045 41.0135 12.5883 41.1026C12.3722 41.1917 12.1403 41.237 11.9062 41.2359Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M20.8125 58.9245H8.34372C6.92647 58.9245 5.56727 58.3655 4.56512 57.3703C3.56297 56.3751 2.99997 55.0253 2.99997 53.6179L2.99997 14.7028C2.99997 13.2954 3.56297 11.9457 4.56512 10.9505C5.56727 9.95533 6.92647 9.39624 8.34372 9.39624H33.59C35.0057 9.4026 36.3621 9.96172 37.3662 10.9528L44.1825 17.7217C44.682 18.2116 45.078 18.7957 45.3472 19.4397C45.6163 20.0836 45.7533 20.7745 45.75 21.4717V27.0849C45.75 27.5541 45.5623 28.004 45.2283 28.3357C44.8942 28.6674 44.4411 28.8538 43.9687 28.8538C43.4963 28.8538 43.0432 28.6674 42.7092 28.3357C42.3751 28.004 42.1875 27.5541 42.1875 27.0849V21.4717C42.182 21.0038 41.9948 20.556 41.665 20.2217L34.8487 13.4528C34.515 13.121 34.0622 12.9344 33.59 12.934H8.34372C7.87322 12.9401 7.42371 13.1284 7.09099 13.4588C6.75826 13.7892 6.56862 14.2356 6.56247 14.7028V53.6179C6.56247 54.0871 6.75014 54.537 7.08419 54.8687C7.41823 55.2004 7.8713 55.3868 8.34372 55.3868H20.8125C21.2849 55.3868 21.738 55.5732 22.072 55.9049C22.4061 56.2366 22.5937 56.6865 22.5937 57.1557C22.5937 57.6248 22.4061 58.0747 22.072 58.4065C21.738 58.7382 21.2849 58.9245 20.8125 58.9245Z",
+      fill: "#1A4A71"
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+      className: "slide-services__title"
+    }, "Planejamento Financeiro"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      className: "slide-services__text"
+    }, "Qual \xE9 o seu objetivo de vida hoje? O que voc\xEA deseja alcan\xE7ar? Seja o que for, o nosso time desenvolve todas as etapas necess\xE1rias para voc\xEA conseguir conquistar o que voc\xEA quer. Sabemos, por\xE9m, que essa trajet\xF3ria envolve a possibilidade de imprevistos. Eles s\xE3o aquela parte turbulenta do sonho. E como resolv\xEA-los? A BeCapital existe para planejar, executar e transformar os seus sonhos em conquistas concretas."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      href: "https://maquinadossonhos.be.capital/",
+      target: "_blank",
+      rel: "noopener noreferrer",
+      className: "slide-services__link"
+    }, "saiba mais")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+      className: "section section__logos"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "section__container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+      className: "logos__items"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_itau_consorcio_1x.png",
+      alt: "Logo Ita\xFA Consorcio",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2484953849.json */ "./.cache/caches/gatsby-plugin-image/2484953849.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_porto_seguro_1x.png",
+      alt: "Logo Porto Seguro",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/4141864532.json */ "./.cache/caches/gatsby-plugin-image/4141864532.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_caixa_1x.png",
+      alt: "Logo Caixa",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/210781606.json */ "./.cache/caches/gatsby-plugin-image/210781606.json")
+    })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "slide-services__custom-item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "slide-services__article"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+      className: "slide-services__icon"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+      width: "47",
+      height: "39",
+      viewBox: "0 0 47 39",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("g", {
+      "clip-path": "url(#clip0)"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M42.979 0.0328369H10.5095C8.44042 0.0328369 6.76306 1.71634 6.76306 3.79305V28.8611C6.76306 30.9378 8.44042 32.6213 10.5095 32.6213H42.979C45.0481 32.6213 46.7255 30.9378 46.7255 28.8611V3.79305C46.7255 1.71634 45.0481 0.0328369 42.979 0.0328369Z",
+      fill: "#F69F92"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M4.2654 38.8883C3.27177 38.8883 2.31884 38.4922 1.61624 37.787C0.913638 37.0818 0.518921 36.1254 0.518921 35.1281L0.518921 10.0601C0.518921 9.06281 0.913638 8.10638 1.61624 7.40121C2.31884 6.69603 3.27177 6.29987 4.2654 6.29987H36.7348C37.7285 6.29987 38.6814 6.69603 39.384 7.40121C40.0866 8.10638 40.4813 9.06281 40.4813 10.0601V35.1281C40.4813 36.1254 40.0866 37.0818 39.384 37.787C38.6814 38.4922 37.7285 38.8883 36.7348 38.8883H4.2654ZM3.01657 35.1281C3.02088 35.4592 3.15384 35.7755 3.38711 36.0096C3.62038 36.2438 3.93553 36.3772 4.2654 36.3815H36.7348C37.0647 36.3772 37.3799 36.2438 37.6131 36.0096C37.8464 35.7755 37.9794 35.4592 37.9837 35.1281V16.3271H3.01657V35.1281ZM37.9837 13.8203V10.0601C37.9794 9.729 37.8464 9.4127 37.6131 9.17857C37.3799 8.94444 37.0647 8.811 36.7348 8.80667H4.2654C3.93553 8.811 3.62038 8.94444 3.38711 9.17857C3.15384 9.4127 3.02088 9.729 3.01657 10.0601V13.8203H37.9837Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M24.2466 23.8474C23.9154 23.8474 23.5977 23.7154 23.3635 23.4803C23.1293 23.2453 22.9977 22.9265 22.9977 22.594C22.9977 22.2616 23.1293 21.9428 23.3635 21.7078C23.5977 21.4727 23.9154 21.3406 24.2466 21.3406H34.2372C34.5684 21.3406 34.886 21.4727 35.1202 21.7078C35.3544 21.9428 35.486 22.2616 35.486 22.594C35.486 22.9265 35.3544 23.2453 35.1202 23.4803C34.886 23.7154 34.5684 23.8474 34.2372 23.8474H24.2466Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M24.2466 31.3679C23.9154 31.3679 23.5977 31.2358 23.3635 31.0008C23.1293 30.7657 22.9977 30.4469 22.9977 30.1145C22.9977 29.7821 23.1293 29.4633 23.3635 29.2282C23.5977 28.9931 23.9154 28.8611 24.2466 28.8611H29.2419C29.5731 28.8611 29.8907 28.9931 30.1249 29.2282C30.3591 29.4633 30.4907 29.7821 30.4907 30.1145C30.4907 30.4469 30.3591 30.7657 30.1249 31.0008C29.8907 31.2358 29.5731 31.3679 29.2419 31.3679H24.2466Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M13.0072 32.6214C12.6773 32.617 12.3622 32.4836 12.1289 32.2495C11.8956 32.0153 11.7627 31.699 11.7584 31.368V27.6078H8.01189C7.68068 27.6078 7.36303 27.4757 7.12883 27.2406C6.89463 27.0056 6.76306 26.6868 6.76306 26.3544C6.76306 26.0219 6.89463 25.7031 7.12883 25.4681C7.36303 25.233 7.68068 25.101 8.01189 25.101H11.7584V21.3407C11.7584 21.0083 11.8899 20.6895 12.1241 20.4545C12.3583 20.2194 12.676 20.0873 13.0072 20.0873C13.3384 20.0873 13.656 20.2194 13.8902 20.4545C14.1244 20.6895 14.256 21.0083 14.256 21.3407V25.101H18.0025C18.3337 25.101 18.6513 25.233 18.8855 25.4681C19.1197 25.7031 19.2513 26.0219 19.2513 26.3544C19.2513 26.6868 19.1197 27.0056 18.8855 27.2406C18.6513 27.4757 18.3337 27.6078 18.0025 27.6078H14.256V31.368C14.2517 31.699 14.1187 32.0153 13.8855 32.2495C13.6522 32.4836 13.3371 32.617 13.0072 32.6214Z",
+      fill: "#1A4A71"
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("defs", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("clipPath", {
+      id: "clip0"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("rect", {
+      width: "46.2065",
+      height: "38.8555",
+      fill: "white",
+      transform: "translate(0.518921 0.0328369)"
+    }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+      className: "slide-services__title"
+    }, "Plano de Sa\xFAde"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      className: "slide-services__text"
+    }, "Ter um plano de sa\xFAde \xE9 a alternativa mais eficaz na redu\xE7\xE3o dos seus custos. Voc\xEA n\xE3o vai desembolsar toda vez que precisar fazer um exame, uma consulta ou at\xE9 uma cirurgia mais complexa. Nossos planos apresentam diferentes coberturas para te atender de acordo com as suas necessidades. E o melhor: trabalhamos com as principais empresas do mercado."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+      to: "/plano-de-saude/",
+      className: "slide-services__link"
+    }, "saiba mais")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+      className: "section section__logos"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "section__container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+      className: "logos__items"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_amil.png",
+      alt: "Logo Amil",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2140057490.json */ "./.cache/caches/gatsby-plugin-image/2140057490.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_bradesco-saude.png",
+      alt: "Logo Bradesco Sa\xFAde",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3767496472.json */ "./.cache/caches/gatsby-plugin-image/3767496472.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_goldencross.png",
+      alt: "Logo Golden Cross",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2745591126.json */ "./.cache/caches/gatsby-plugin-image/2745591126.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_notredame.png",
+      alt: "Logo Notredame",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/594671516.json */ "./.cache/caches/gatsby-plugin-image/594671516.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_sulamerica_saude.png",
+      alt: "Logo Sulamerica Sa\xFAde",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/693349198.json */ "./.cache/caches/gatsby-plugin-image/693349198.json")
+    })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "slide-services__custom-item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+      className: "slide-services__article"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+      className: "slide-services__icon"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+      width: "54",
+      height: "50",
+      viewBox: "0 0 54 50",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M8.37329 22.7681C8.37329 16.7977 10.7457 11.0719 14.9686 6.85015C19.1915 2.62845 24.919 0.256714 30.891 0.256714C36.8631 0.256714 42.5906 2.62845 46.8135 6.85015C51.0364 11.0719 53.4088 16.7977 53.4088 22.7681",
+      fill: "#F69F92"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M19.936 49.6071C18.8031 49.6071 17.7165 49.1572 16.9153 48.3563C16.1142 47.5554 15.6641 46.4691 15.6641 45.3364C15.6641 44.9589 15.8142 44.5968 16.0812 44.3298C16.3483 44.0628 16.7104 43.9129 17.0881 43.9129C17.4658 43.9129 17.828 44.0628 18.095 44.3298C18.362 44.5968 18.5121 44.9589 18.5121 45.3364C18.5121 45.714 18.6621 46.0761 18.9291 46.343C19.1962 46.61 19.5584 46.76 19.936 46.76C20.3137 46.76 20.6759 46.61 20.9429 46.343C21.21 46.0761 21.36 45.714 21.36 45.3364V28.2536C19.5804 28.5389 17.9379 29.3832 16.6704 30.6642C16.4036 30.9312 16.0417 31.0814 15.6641 31.0817C15.456 31.0877 15.2489 31.0503 15.0561 30.9718C14.8632 30.8934 14.6888 30.7757 14.5439 30.6262V30.5123C13.9154 29.7531 13.1416 29.1269 12.2679 28.6706C11.3941 28.2143 10.438 27.937 9.45562 27.855C9.22186 27.8355 8.98688 27.8355 8.75312 27.855C6.95283 27.7889 5.19046 28.383 3.7977 29.5253L2.25981 30.797C2.0056 31.0144 1.68296 31.1353 1.34847 31.1387C1.13942 31.1328 0.933327 31.0877 0.740909 31.0058C0.511822 30.8782 0.321838 30.6907 0.191376 30.4633C0.0609138 30.2359 -0.00509486 29.9772 0.000444087 29.7151C-0.0109018 23.913 2.19306 18.3252 6.1625 14.0924C10.1319 9.85948 15.5676 7.30059 21.36 6.93796V5.51439C21.36 5.13684 21.51 4.77475 21.7771 4.50777C22.0441 4.2408 22.4063 4.09082 22.784 4.09082C23.1617 4.09082 23.5238 4.2408 23.7909 4.50777C24.0579 4.77475 24.208 5.13684 24.208 5.51439V6.97592C29.9938 7.33815 35.424 9.8917 39.3925 14.1165C43.3609 18.3413 45.5692 23.9195 45.5675 29.7151C45.5659 29.9851 45.4885 30.2491 45.3442 30.4773C45.1999 30.7055 44.9944 30.8886 44.7511 31.0058C44.5587 31.0877 44.3526 31.1328 44.1436 31.1387C43.8091 31.1353 43.4864 31.0144 43.2322 30.797L41.5614 29.4114C40.0054 28.1732 38.0211 27.6036 36.045 27.8278C34.0689 28.0521 32.2629 29.0518 31.024 30.6072C30.8881 30.7681 30.7198 30.8987 30.5301 30.9902C30.3403 31.0818 30.1334 31.1324 29.9228 31.1387C29.727 31.1376 29.5334 31.0966 29.3538 31.0183C29.1743 30.94 29.0126 30.8259 28.8786 30.6831C27.6079 29.4239 25.9746 28.5941 24.208 28.3105V45.3934C24.193 46.5161 23.7363 47.5878 22.9368 48.3765C22.1373 49.1651 21.0592 49.6072 19.936 49.6071ZM22.784 25.3305C25.3246 25.3358 27.7931 26.1762 29.8089 27.7221C31.4914 26.1505 33.6493 25.1835 35.9424 24.9739C38.2355 24.7642 40.5331 25.3238 42.4728 26.5643C41.7284 21.8791 39.3367 17.6131 35.7278 14.533C32.1188 11.4529 27.5292 9.76071 22.784 9.76071C18.0388 9.76071 13.4492 11.4529 9.84021 14.533C6.23124 17.6131 3.8396 21.8791 3.09521 26.5643C4.75695 25.4879 6.69715 24.9205 8.67718 24.9319H9.62649C11.9267 25.1447 14.0877 26.1279 15.7591 27.7221C17.7736 26.1737 20.2429 25.333 22.784 25.3305Z",
+      fill: "#1A4A71"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("path", {
+      d: "M35.5617 49.6072C35.227 49.6052 34.8962 49.5352 34.5894 49.4014C34.2825 49.2676 34.0062 49.0729 33.777 48.829L27.1128 42.0148C26.1614 41.0249 25.63 39.7053 25.63 38.3325C25.63 36.9597 26.1614 35.6401 27.1128 34.6502L27.2837 34.4793C28.2491 33.5628 29.5385 33.0662 30.8694 33.0982C32.2004 33.1302 33.4644 33.6883 34.3846 34.6502L35.5997 35.8839L36.8148 34.6312L36.9857 34.4793C37.9391 33.5779 39.205 33.0813 40.5171 33.0937C41.1803 33.1017 41.8351 33.2437 42.442 33.5111C43.0489 33.7786 43.5954 34.1661 44.0486 34.6502C44.9988 35.6369 45.5296 36.9533 45.5296 38.323C45.5296 39.6927 44.9988 41.0091 44.0486 41.9958L37.3844 48.9049L37.2895 48.9998C36.8224 49.4404 36.2039 49.685 35.5617 49.6831V49.6072ZM30.7392 35.865C30.1832 35.8665 29.648 36.0765 29.2393 36.4534C28.8014 36.9182 28.5575 37.5326 28.5575 38.1711C28.5575 38.8097 28.8014 39.4241 29.2393 39.8889L35.6756 46.5512L42.112 39.8889C42.5499 39.4241 42.7937 38.8097 42.7937 38.1711C42.7937 37.5326 42.5499 36.9182 42.112 36.4534C41.7046 36.0414 41.1534 35.8033 40.5741 35.789C40.0301 35.7945 39.5082 36.0046 39.1121 36.3774L36.8718 38.6931C36.5999 38.9665 36.2321 39.1232 35.8465 39.1297C35.6552 39.1285 35.466 39.0893 35.29 39.0143C35.114 38.9394 34.9547 38.8302 34.8212 38.6931L32.2771 36.5862C31.8751 36.1639 31.3221 35.9182 30.7392 35.9029V35.865Z",
+      fill: "#1A4A71"
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+      className: "slide-services__title"
+    }, "Seguro de Vida"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      className: "slide-services__text"
+    }, "O seguro de vida \xE9 a sua blindagem patrimonial, ou seja, qualquer dano que aconte\xE7a com voc\xEA, em sua vida, o seguro estar\xE1 l\xE1 para proteger o que voc\xEA conquistou e o que mais importa."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+      to: "/seguro-de-vida/",
+      className: "slide-services__link"
+    }, "saiba mais")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+      className: "section section__logos"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "section__container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+      className: "logos__items"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_icatu.png",
+      alt: "Logo Icatu",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/547625751.json */ "./.cache/caches/gatsby-plugin-image/547625751.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_mapfre.png",
+      alt: "Logo Mapfre",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1252155912.json */ "./.cache/caches/gatsby-plugin-image/1252155912.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_centauro-on.png",
+      alt: "Logo Centauro on",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1832934863.json */ "./.cache/caches/gatsby-plugin-image/1832934863.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_metlife.png",
+      alt: "Logo Metlife",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2071622543.json */ "./.cache/caches/gatsby-plugin-image/2071622543.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_mongeral_aegon.png",
+      alt: "Logo Mogeral aegon",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3218449267.json */ "./.cache/caches/gatsby-plugin-image/3218449267.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_omint.png",
+      alt: "Logo Omint",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1449662315.json */ "./.cache/caches/gatsby-plugin-image/1449662315.json")
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      className: "logos__item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+      src: "../../../images/logo_prudential.png",
+      alt: "Logo Prudential",
+      __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/4137960355.json */ "./.cache/caches/gatsby-plugin-image/4137960355.json")
+    }))))))))));
+  }
+
+}
+
+/***/ }),
+
+/***/ "./src/components/layout.js":
+/*!**********************************!*\
+  !*** ./src/components/layout.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Layout)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header/Header */ "./src/components/Header/Header.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./src/components/Footer/index.js");
+
+
+
+function Layout({
+  children
+}) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+}
+
+/***/ }),
+
+/***/ "./src/components/seo.js":
+/*!*******************************!*\
+  !*** ./src/components/seo.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_848497233_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/848497233.json */ "./public/page-data/sq/d/848497233.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4593);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7533);
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/es/Helmet.js");
+
+
 /**
  * Seo component that queries for data with
  *  Gatsby's useStaticQuery React hook
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
- */const Seo=({description,lang,meta,title})=>{var _wp$generalSettings,_wp$generalSettings2;const{wp,wpUser}=(0,gatsby__WEBPACK_IMPORTED_MODULE_2__.useStaticQuery)("848497233");const metaDescription=description||((_wp$generalSettings=wp.generalSettings)===null||_wp$generalSettings===void 0?void 0:_wp$generalSettings.description);const defaultTitle=(_wp$generalSettings2=wp.generalSettings)===null||_wp$generalSettings2===void 0?void 0:_wp$generalSettings2.title;return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__.Helmet,{htmlAttributes:{lang},title:title,titleTemplate:defaultTitle?`%s  ${defaultTitle}`:null,meta:[{name:`description`,content:metaDescription},{property:`og:title`,content:title},{property:`og:description`,content:metaDescription},{property:`og:type`,content:`website`},{name:`twitter:card`,content:`summary`},{name:`twitter:creator`,content:(wpUser===null||wpUser===void 0?void 0:wpUser.twitter)||``},{name:`twitter:title`,content:title},{name:`twitter:description`,content:metaDescription}].concat(meta)});};Seo.defaultProps={lang:`pt-br`,meta:[],description:``};Seo.propTypes={description:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),lang:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),meta:prop_types__WEBPACK_IMPORTED_MODULE_3___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)),title:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired)};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Seo);
+ */
+
+
+
+
+const Seo = ({
+  description,
+  lang,
+  meta,
+  title
+}) => {
+  var _wp$generalSettings, _wp$generalSettings2;
+
+  const {
+    wp,
+    wpUser
+  } = _public_page_data_sq_d_848497233_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const metaDescription = description || ((_wp$generalSettings = wp.generalSettings) === null || _wp$generalSettings === void 0 ? void 0 : _wp$generalSettings.description);
+  const defaultTitle = (_wp$generalSettings2 = wp.generalSettings) === null || _wp$generalSettings2 === void 0 ? void 0 : _wp$generalSettings2.title;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_2__.Helmet, {
+    htmlAttributes: {
+      lang
+    },
+    title: title,
+    titleTemplate: defaultTitle ? `%s  ${defaultTitle}` : null,
+    meta: [{
+      name: `description`,
+      content: metaDescription
+    }, {
+      property: `og:title`,
+      content: title
+    }, {
+      property: `og:description`,
+      content: metaDescription
+    }, {
+      property: `og:type`,
+      content: `website`
+    }, {
+      name: `twitter:card`,
+      content: `summary`
+    }, {
+      name: `twitter:creator`,
+      content: (wpUser === null || wpUser === void 0 ? void 0 : wpUser.twitter) || ``
+    }, {
+      name: `twitter:title`,
+      content: title
+    }, {
+      name: `twitter:description`,
+      content: metaDescription
+    }].concat(meta)
+  });
+};
+
+Seo.defaultProps = {
+  lang: `pt-br`,
+  meta: [],
+  description: ``
+};
+Seo.propTypes = {
+  description: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  lang: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  meta: prop_types__WEBPACK_IMPORTED_MODULE_3___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)),
+  title: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Seo);
 
 /***/ }),
 
-/***/ 7777:
+/***/ "./src/pages/index.js":
+/*!****************************!*\
+  !*** ./src/pages/index.js ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
+/* harmony import */ var _components_Slides_SlidesServices__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Slides/SlidesServices */ "./src/components/Slides/SlidesServices/index.js");
+/* harmony import */ var _components_SectionMidia__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/SectionMidia */ "./src/components/SectionMidia/index.js");
+/* harmony import */ var _components_Cards_CardBlog__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Cards/CardBlog */ "./src/components/Cards/CardBlog/index.js");
+/* harmony import */ var _components_Slides_SlideTestimony__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Slides/SlideTestimony */ "./src/components/Slides/SlideTestimony/index.js");
+/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.js");
+/* harmony import */ var _images_banner_home_1_webp__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../images/banner-home_1.webp */ "./src/images/banner-home_1.webp");
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ pages)
-});
 
-// EXTERNAL MODULE: external "C:\\Users\\home\\Desktop\\WORKSPACE\\FREELANCER\\BeCapital\\becapital\\node_modules\\react\\index.js"
-var external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_ = __webpack_require__(1051);
-var external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default = /*#__PURE__*/__webpack_require__.n(external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_);
-// EXTERNAL MODULE: ./src/components/layout.js + 4 modules
-var layout = __webpack_require__(1158);
-// EXTERNAL MODULE: ./node_modules/react-slick/lib/index.js
-var lib = __webpack_require__(6066);
-// EXTERNAL MODULE: ./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js
-var gatsby_image_module = __webpack_require__(3040);
-// EXTERNAL MODULE: ./.cache/gatsby-browser-entry.js + 4 modules
-var gatsby_browser_entry = __webpack_require__(7533);
-;// CONCATENATED MODULE: ./src/components/Slides/SlidesServices/index.js
-function SampleNextArrow(props){const{className,onClick}=props;return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:className,onClick:onClick,onKeyDown:onClick,role:"button",tabIndex:"0"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("svg",{width:"30",height:"71",viewBox:"0 0 41 71",fill:"none",xmlns:"http://www.w3.org/2000/svg"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M39.0628 38.7462C40.9083 36.9007 40.9083 33.9086 39.0628 32.0631L8.98884 1.98915C7.14335 0.143661 4.15122 0.143661 2.30573 1.98915C0.460247 3.83464 0.460247 6.82676 2.30573 8.67225L29.0381 35.4047L2.30573 62.1371C0.460247 63.9826 0.460247 66.9747 2.30573 68.8202C4.15122 70.6657 7.14335 70.6657 8.98884 68.8202L39.0628 38.7462ZM29.9454 40.1303H35.7213V30.679H29.9454V40.1303Z",fill:"#1A4A73"})));}function SamplePrevArrow(props){const{className,onClick}=props;return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:className,onClick:onClick,onKeyDown:onClick,role:"button",tabIndex:"0"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("svg",{width:"30",height:"71",viewBox:"0 0 41 71",fill:"none",xmlns:"http://www.w3.org/2000/svg"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M2.32855 32.0631C0.483066 33.9086 0.483066 36.9007 2.32855 38.7462L32.4025 68.8202C34.248 70.6657 37.2401 70.6657 39.0856 68.8202C40.9311 66.9747 40.9311 63.9826 39.0856 62.1371L12.3532 35.4047L39.0856 8.67225C40.9311 6.82676 40.9311 3.83464 39.0856 1.98915C37.2401 0.143661 34.248 0.143661 32.4025 1.98915L2.32855 32.0631ZM13.0211 30.679H5.6701V40.1303H13.0211V30.679Z",fill:"#1A4A73"})));}class CenterMode extends external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_.Component{render(){const settings={className:"center",centerMode:true,focusOnSelect:true,infinite:true,touchMove:true,centerPadding:"50px",slidesToShow:1,speed:500,dots:false,nav:false,nextArrow:/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(SampleNextArrow,null),prevArrow:/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(SamplePrevArrow,null)};return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement((external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default()).Fragment,null,/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"section section__slide-services"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"section__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"section__title"},"Seja BeCapital"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"section__subtitle"},"Um portf\xF3lio de servi\xE7os e produtos para quem quer transformar o sonho em meta."),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(lib/* default */.Z,Object.assign({},settings,{className:"slide-services__items slide-services"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"slide-services__custom-item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("article",{className:"slide-services__article"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",{className:"slide-services__icon"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("svg",{width:"45",height:"46",viewBox:"0 0 45 46",fill:"none",xmlns:"http://www.w3.org/2000/svg"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M40.6423 0.041626H12.1864C10.1984 0.041626 8.58691 1.64235 8.58691 3.61694V29.3524C8.58691 31.327 10.1984 32.9277 12.1864 32.9277H40.6423C42.6303 32.9277 44.2418 31.327 44.2418 29.3524V3.61694C44.2418 1.64235 42.6303 0.041626 40.6423 0.041626Z",fill:"#F69F92"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M32.7813 40.5169H4.76676C3.75359 40.5169 2.78191 40.1171 2.06549 39.4055C1.34907 38.6939 0.946594 37.7287 0.946594 36.7224L0.946594 11.4253C0.946594 10.419 1.34907 9.45381 2.06549 8.7422C2.78191 8.03058 3.75359 7.6308 4.76676 7.6308H32.7813C33.7945 7.6308 34.7662 8.03058 35.4826 8.7422C36.199 9.45381 36.6015 10.419 36.6015 11.4253V36.7224C36.6015 37.7287 36.199 38.6939 35.4826 39.4055C34.7662 40.1171 33.7945 40.5169 32.7813 40.5169ZM4.76676 10.1605C4.4304 10.1649 4.10906 10.2995 3.8712 10.5358C3.63334 10.7721 3.49777 11.0912 3.49337 11.4253V36.7224C3.49777 37.0565 3.63334 37.3756 3.8712 37.6119C4.10906 37.8482 4.4304 37.9828 4.76676 37.9872H32.7813C33.1177 37.9828 33.439 37.8482 33.6769 37.6119C33.9147 37.3756 34.0503 37.0565 34.0547 36.7224V11.4253C34.0503 11.0912 33.9147 10.7721 33.6769 10.5358C33.439 10.2995 33.1177 10.1649 32.7813 10.1605H4.76676Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M37.8749 45.5763H9.8603C9.52258 45.5763 9.19869 45.443 8.95988 45.2058C8.72107 44.9686 8.58691 44.6469 8.58691 44.3114C8.58691 43.976 8.72107 43.6542 8.95988 43.417C9.19869 43.1798 9.52258 43.0466 9.8603 43.0466H37.8749C38.2112 43.0422 38.5326 42.9075 38.7704 42.6713C39.0083 42.435 39.1438 42.1158 39.1482 41.7817V16.1474C39.1482 15.812 39.2824 15.4902 39.5212 15.253C39.76 15.0158 40.0839 14.8826 40.4216 14.8826C40.7594 14.8826 41.0832 15.0158 41.3221 15.253C41.5609 15.4902 41.695 15.812 41.695 16.1474V41.7817C41.695 42.7881 41.2925 43.7533 40.5761 44.4649C39.8597 45.1765 38.888 45.5763 37.8749 45.5763Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M22.5943 32.9278H14.9539C14.2785 32.9278 13.6307 32.6612 13.1531 32.1868C12.6755 31.7124 12.4072 31.069 12.4072 30.3981V20.7009C12.4072 20.3654 12.5413 20.0437 12.7801 19.8065C13.0189 19.5693 13.3428 19.436 13.6806 19.436C14.0183 19.436 14.3422 19.5693 14.581 19.8065C14.8198 20.0437 14.9539 20.3654 14.9539 20.7009V30.3981H22.5943V20.7009C22.5943 20.3654 22.7284 20.0437 22.9672 19.8065C23.206 19.5693 23.5299 19.436 23.8677 19.436C24.2054 19.436 24.5293 19.5693 24.7681 19.8065C25.0069 20.0437 25.141 20.3654 25.141 20.7009V30.3981C25.141 31.069 24.8727 31.7124 24.3951 32.1868C23.9175 32.6612 23.2697 32.9278 22.5943 32.9278Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M26.4144 24.0738C26.1181 24.0715 25.8311 23.9706 25.5994 23.7871L18.808 18.1375L12.0166 23.7871C11.7554 24.0108 11.4155 24.1222 11.0716 24.0969C10.7277 24.0716 10.4081 23.9117 10.1829 23.6522C9.95775 23.3928 9.84558 23.0552 9.87105 22.7136C9.89652 22.372 10.0576 22.0545 10.3187 21.8308L17.9251 15.5066C18.1586 15.2992 18.4608 15.1845 18.774 15.1845C19.0873 15.1845 19.3895 15.2992 19.623 15.5066L27.2633 21.8308C27.4694 21.9984 27.6174 22.2258 27.6865 22.4813C27.7557 22.7367 27.7425 23.0072 27.6488 23.2548C27.5551 23.5024 27.3856 23.7146 27.1641 23.8615C26.9427 24.0084 26.6805 24.0827 26.4144 24.0738Z",fill:"#1A4A71"}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"slide-services__title"},"Cons\xF3rcios"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"slide-services__text"},"Ao adquirir um cons\xF3rcio, voc\xEA planeja a aquisi\xE7\xE3o de um servi\xE7o, produto ou bem sem precisar se descapitalizar por completo. Voc\xEA se une a um grupo de pessoas que t\xEAm o mesmo objetivo que o seu, criando um formato de \"poupan\xE7a\", ou seja, cada um compra uma cota e paga em parcelas mensais, sem juros. Ao ser contemplado (a), voc\xEA resgata o valor integral necess\xE1rio para sua aquisi\xE7\xE3o. "),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/consorcios/",className:"slide-services__link"},"saiba mais")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"section section__logos"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"section__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"logos__items"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_itau_consorcio_1x.png",alt:"Logo Ita\xFA Consorcio",__imageData:__webpack_require__(1061)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_porto_seguro_1x.png",alt:"Logo Porto Seguro",__imageData:__webpack_require__(6927)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_caixa_1x.png",alt:"Logo Caixa",__imageData:__webpack_require__(8779)})))))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"slide-services__custom-item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("article",{className:"slide-services__article"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",{className:"slide-services__icon"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("svg",{width:"52",height:"52",viewBox:"0 0 52 52",fill:"none",xmlns:"http://www.w3.org/2000/svg"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M36.5929 31.1873C45.0532 31.1873 51.9116 24.368 51.9116 15.956C51.9116 7.54396 45.0532 0.72467 36.5929 0.72467C28.1327 0.72467 21.2743 7.54396 21.2743 15.956C21.2743 24.368 28.1327 31.1873 36.5929 31.1873Z",fill:"#F69F92"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M29.2167 38.0314C26.2367 38.035 23.3226 37.1597 20.8431 35.5162C18.3636 33.8726 16.4301 31.5348 15.2872 28.7984C14.1444 26.062 13.8434 23.05 14.4226 20.1435C15.0017 17.2371 16.4349 14.5667 18.5408 12.4703C20.6467 10.3739 23.3306 8.94564 26.253 8.36627C29.1755 7.7869 32.2051 8.08243 34.9585 9.21548C37.712 10.3485 40.0656 12.2682 41.7216 14.7316C43.3775 17.1949 44.2614 20.0913 44.2614 23.0543C44.2566 27.0219 42.6706 30.8258 39.8507 33.633C37.0308 36.4402 33.207 38.0218 29.2167 38.0314ZM29.2167 10.8003C26.7791 10.8003 24.3964 11.5189 22.3696 12.8654C20.3429 14.2119 18.7633 16.1257 17.8305 18.3649C16.8977 20.604 16.6536 23.0679 17.1292 25.4449C17.6047 27.822 18.7785 30.0054 20.5021 31.7192C22.2257 33.433 24.4216 34.6 26.8123 35.0729C29.203 35.5457 31.681 35.303 33.933 34.3755C36.1849 33.4481 38.1097 31.8774 39.4639 29.8623C40.8181 27.8471 41.5409 25.4779 41.5409 23.0543C41.5409 19.8043 40.2425 16.6875 37.9312 14.3894C35.62 12.0913 32.4853 10.8003 29.2167 10.8003Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M15.5231 46.2008C15.1599 46.2008 14.8116 46.0573 14.5548 45.802C14.298 45.5467 14.1537 45.2003 14.1537 44.8392V43.4777H12.7843C12.4212 43.4777 12.0729 43.3342 11.816 43.0789C11.5592 42.8235 11.415 42.4772 11.415 42.1161C11.415 41.755 11.5592 41.4087 11.816 41.1534C12.0729 40.898 12.4212 40.7546 12.7843 40.7546H16.436C16.6539 40.7541 16.8665 40.6879 17.0458 40.5647C17.2251 40.4415 17.3626 40.2672 17.4402 40.0647C17.5396 39.8014 17.5396 39.5111 17.4402 39.2478C17.3304 38.9911 17.1287 38.7841 16.8742 38.6668L13.2225 37.1782C12.511 36.9005 11.9003 36.4158 11.4703 35.7874C11.0403 35.1591 10.811 34.4163 10.8124 33.6563C10.8124 33.2952 10.9567 32.9489 11.2135 32.6935C11.4703 32.4382 11.8186 32.2947 12.1818 32.2947C12.545 32.2947 12.8933 32.4382 13.1501 32.6935C13.4069 32.9489 13.5512 33.2952 13.5512 33.6563C13.5527 33.8703 13.6175 34.0791 13.7377 34.2567C13.8578 34.4343 14.0279 34.5727 14.2267 34.6548L18.0062 36.1434C18.9427 36.5225 19.6908 37.2541 20.0874 38.1789C20.4841 39.1037 20.4973 40.1469 20.1241 41.0813C19.8628 41.7404 19.4187 42.3121 18.8433 42.7299C18.2679 43.1477 17.5851 43.3944 16.8742 43.4414V44.8392C16.8696 45.1958 16.7263 45.5368 16.4744 45.7906C16.2225 46.0444 15.8816 46.1914 15.5231 46.2008Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M15.5234 51.647C12.0549 51.6484 8.69222 50.4596 6.00319 48.2813C3.31416 46.103 1.46358 43.0687 0.763969 39.6908C0.0643559 36.313 0.55858 32.7986 2.16318 29.7411C3.76778 26.6836 6.38443 24.2704 9.57123 22.909C9.74465 22.8367 9.93091 22.7996 10.119 22.8001C10.434 22.8017 10.7388 22.9113 10.982 23.1104C11.2253 23.3094 11.3921 23.5858 11.4542 23.8928C11.5164 24.1999 11.4703 24.5189 11.3235 24.7961C11.1767 25.0732 10.9383 25.2916 10.6485 25.4143C7.98262 26.494 5.78095 28.4674 4.42537 30.9922C3.06979 33.5171 2.64583 36.4341 3.22702 39.2372C3.80821 42.0404 5.3579 44.5528 7.60725 46.3387C9.85661 48.1247 12.6637 49.0714 15.5417 49.0147C17.2071 48.9888 18.8488 48.6178 20.3618 47.9254C23.2661 46.6968 25.5814 44.4012 26.8252 41.517C26.9294 41.2701 27.1044 41.0591 27.3285 40.9106C27.5526 40.7621 27.8157 40.6825 28.085 40.6819C28.2741 40.6895 28.4599 40.7326 28.6328 40.809C28.8009 40.88 28.953 40.9836 29.0802 41.1139C29.2074 41.2442 29.3071 41.3984 29.3734 41.5676C29.4398 41.7367 29.4714 41.9174 29.4665 42.0989C29.4616 42.2804 29.4202 42.4591 29.3449 42.6244C27.8267 46.1491 25.0022 48.9574 21.4573 50.467C19.5846 51.2743 17.5645 51.6883 15.5234 51.6833V51.647Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M29.2167 32.5852C29.0353 32.5876 28.8553 32.5542 28.687 32.4868C28.5188 32.4195 28.3657 32.3196 28.2366 32.1929C28.1075 32.0662 28.005 31.9153 27.935 31.7489C27.8651 31.5825 27.829 31.404 27.8291 31.2236V29.8621H26.4597C26.0965 29.8621 25.7482 29.7186 25.4914 29.4633C25.2346 29.208 25.0903 28.8616 25.0903 28.5005C25.0903 28.1394 25.2346 27.7931 25.4914 27.5378C25.7482 27.2824 26.0965 27.139 26.4597 27.139H30.1113C30.2877 27.1307 30.4597 27.0809 30.6129 26.9935C30.7661 26.9062 30.8962 26.7839 30.9925 26.6367C31.0888 26.4895 31.1486 26.3217 31.1668 26.147C31.185 25.9723 31.1612 25.7959 31.0973 25.6322C30.9831 25.3723 30.7744 25.1648 30.513 25.0512L26.7336 23.5626C26.1469 23.3293 25.6277 22.9548 25.2226 22.4727C24.8175 21.9906 24.539 21.4161 24.4123 20.8006C24.2856 20.1851 24.3146 19.548 24.4967 18.9464C24.6788 18.3448 25.0082 17.7976 25.4555 17.3539C26.0966 16.7294 26.9352 16.3445 27.8291 16.2646V14.8849C27.8291 14.5238 27.9733 14.1775 28.2301 13.9222C28.4869 13.6668 28.8352 13.5234 29.1984 13.5234C29.5616 13.5234 29.9099 13.6668 30.1667 13.9222C30.4235 14.1775 30.5678 14.5238 30.5678 14.8849V16.2465H31.9372C32.3003 16.2465 32.6486 16.3899 32.9054 16.6453C33.1623 16.9006 33.3065 17.2469 33.3065 17.6081C33.3065 17.9692 33.1623 18.3155 32.9054 18.5708C32.6486 18.8262 32.3003 18.9696 31.9372 18.9696H28.2855C27.9995 18.9708 27.725 19.0813 27.5187 19.2782C27.419 19.3787 27.3402 19.4978 27.2869 19.6287C27.2337 19.7595 27.2069 19.8995 27.2083 20.0407C27.2098 20.2547 27.2747 20.4635 27.3948 20.6411C27.5149 20.8187 27.685 20.9571 27.8838 21.0392L31.6633 22.5278C32.5973 22.9097 33.3442 23.6393 33.7447 24.5611C33.9836 25.1065 34.0894 25.7003 34.0537 26.2941C34.0179 26.8879 33.8416 27.4649 33.539 27.9781C33.2365 28.4913 32.8162 28.9262 32.3126 29.2472C31.8089 29.5683 31.2361 29.7666 30.6408 29.8258V31.2236C30.6385 31.4064 30.5996 31.5869 30.5265 31.7546C30.4535 31.9223 30.3476 32.0738 30.2151 32.2005C30.0826 32.3272 29.9261 32.4264 29.7547 32.4925C29.5833 32.5585 29.4004 32.59 29.2167 32.5852Z",fill:"#1A4A71"}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"slide-services__title"},"C\xE2mbio"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"slide-services__text"},"Se voc\xEA vai viajar pra fora do pa\xEDs, ou receber e realizar um pagamento internacional, conte com a BeCapital na sua bagagem. Realizamos opera\xE7\xF5es de c\xE2mbio para pessoas f\xEDsica e jur\xEDdica, com taxas e condi\xE7\xF5es competitivas no mercado. Atuamos com envio de remessas para o exterior e venda de moedas. Trabalhamos com todas elas! Ent\xE3o, para qualquer lugar que voc\xEA for, estaremos sempre com voc\xEA."),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/cambio/",className:"slide-services__link"},"saiba mais")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"section section__logos"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"section__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"logos__items"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_advanced.png",alt:"Logo Advanced",__imageData:__webpack_require__(7985)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_banco_daycoval.png",alt:"Logo Banco Daycoval",__imageData:__webpack_require__(4594)})))))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"slide-services__custom-item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("article",{className:"slide-services__article"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",{className:"slide-services__icon"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("svg",{width:"65",height:"68",viewBox:"0 0 65 68",fill:"none",xmlns:"http://www.w3.org/2000/svg"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M51.26 1H18.58C15.7992 1 13.545 3.23858 13.545 6V45.5283C13.545 48.2897 15.7992 50.5283 18.58 50.5283H51.26C54.0408 50.5283 56.295 48.2897 56.295 45.5283V6C56.295 3.23858 54.0408 1 51.26 1Z",fill:"#F69F92"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M45.2275 58.9245H40.4775C40.0051 58.9245 39.552 58.7381 39.218 58.4064C38.8839 58.0747 38.6962 57.6247 38.6962 57.1556C38.6962 56.6865 38.8839 56.2366 39.218 55.9048C39.552 55.5731 40.0051 55.3867 40.4775 55.3867H45.2275C45.5557 55.3904 45.8748 55.2795 46.1291 55.0733C46.3834 54.8672 46.5567 54.579 46.6189 54.259C46.6811 53.9389 46.6282 53.6074 46.4694 53.3221C46.3106 53.0368 46.056 52.816 45.75 52.6981L40.8575 50.7641C39.8292 50.3119 38.9859 49.5264 38.4659 48.5362C37.9459 47.5459 37.7799 46.4096 37.9952 45.3135C38.2104 44.2173 38.7941 43.2262 39.6507 42.5025C40.5073 41.7789 41.5859 41.3655 42.71 41.3301H47.46C47.9324 41.3301 48.3855 41.5165 48.7195 41.8482C49.0536 42.18 49.2413 42.6299 49.2413 43.099C49.2413 43.5681 49.0536 44.0181 48.7195 44.3498C48.3855 44.6815 47.9324 44.8679 47.46 44.8679H42.71C42.3835 44.8677 42.0673 44.9807 41.8158 45.1874C41.5643 45.3941 41.3934 45.6815 41.3325 46C41.2606 46.3183 41.3076 46.6517 41.4649 46.9381C41.6222 47.2245 41.8791 47.4443 42.1875 47.5566L47.08 49.5141C48.1083 49.9663 48.9516 50.7518 49.4716 51.742C49.9916 52.7323 50.1576 53.8686 49.9423 54.9647C49.7271 56.0609 49.1434 57.052 48.2868 57.7757C47.4302 58.4993 46.3516 58.9127 45.2275 58.9481V58.9245Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M43.9687 44.7736C43.4963 44.7736 43.0432 44.5872 42.7092 44.2555C42.3751 43.9238 42.1875 43.4738 42.1875 43.0047V41.2358C42.1875 40.7667 42.3751 40.3168 42.7092 39.9851C43.0432 39.6533 43.4963 39.467 43.9687 39.467C44.4411 39.467 44.8942 39.6533 45.2283 39.9851C45.5623 40.3168 45.75 40.7667 45.75 41.2358V43.0047C45.75 43.4738 45.5623 43.9238 45.2283 44.2555C44.8942 44.5872 44.4411 44.7736 43.9687 44.7736Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M43.9687 60.6934C43.4963 60.6934 43.0432 60.507 42.7092 60.1753C42.3751 59.8436 42.1875 59.3937 42.1875 58.9245V57.1556C42.1875 56.6865 42.3751 56.2366 42.7092 55.9049C43.0432 55.5731 43.4963 55.3868 43.9687 55.3868C44.4411 55.3868 44.8942 55.5731 45.2283 55.9049C45.5623 56.2366 45.75 56.6865 45.75 57.1556V58.9245C45.75 59.3937 45.5623 59.8436 45.2283 60.1753C44.8942 60.507 44.4411 60.6934 43.9687 60.6934Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M43.9687 66C40.7981 66 37.6986 65.0663 35.0623 63.317C32.4259 61.5677 30.3712 59.0814 29.1578 56.1724C27.9444 53.2634 27.627 50.0625 28.2455 46.9744C28.8641 43.8862 30.3909 41.0496 32.6329 38.8232C34.8749 36.5967 37.7314 35.0805 40.8412 34.4662C43.951 33.852 47.1743 34.1672 50.1036 35.3722C53.033 36.5771 55.5367 38.6176 57.2982 41.2356C59.0598 43.8536 60 46.9315 60 50.0802C60 52.1708 59.5853 54.2409 58.7797 56.1724C57.974 58.1039 56.7932 59.8589 55.3045 61.3372C53.8159 62.8155 52.0486 63.9881 50.1036 64.7882C48.1586 65.5882 46.074 66 43.9687 66ZM43.9687 37.6981C41.5027 37.6981 39.092 38.4243 37.0415 39.7848C34.991 41.1454 33.3928 43.0792 32.4491 45.3417C31.5054 47.6043 31.2585 50.0939 31.7396 52.4958C32.2207 54.8977 33.4082 57.1039 35.152 58.8356C36.8958 60.5673 39.1175 61.7466 41.5362 62.2243C43.9549 62.7021 46.462 62.4569 48.7403 61.5197C51.0187 60.5825 52.966 58.9955 54.3361 56.9593C55.7062 54.9231 56.4375 52.5291 56.4375 50.0802C56.4312 46.7981 55.1155 43.6523 52.7785 41.3316C50.4416 39.0109 47.2737 37.7043 43.9687 37.6981Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M22.5937 48.3113H11.9062C11.4338 48.3113 10.9807 48.125 10.6467 47.7932C10.3127 47.4615 10.125 47.0116 10.125 46.5425V25.316C10.125 24.8469 10.3127 24.397 10.6467 24.0653C10.9807 23.7335 11.4338 23.5472 11.9062 23.5472C12.3787 23.5472 12.8317 23.7335 13.1658 24.0653C13.4998 24.397 13.6875 24.8469 13.6875 25.316V44.7736H22.5937C23.0662 44.7736 23.5192 44.96 23.8533 45.2917C24.1873 45.6234 24.375 46.0733 24.375 46.5425C24.375 47.0116 24.1873 47.4615 23.8533 47.7932C23.5192 48.125 23.0662 48.3113 22.5937 48.3113Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M11.9062 41.2359C11.6722 41.237 11.4403 41.1917 11.2242 41.1026C11.008 41.0135 10.8119 40.8824 10.6475 40.717C10.3139 40.3854 10.1266 39.9358 10.1266 39.467C10.1266 38.9983 10.3139 38.5487 10.6475 38.217L17.0362 31.8727C18.0528 30.9068 19.4055 30.3677 20.8125 30.3677C22.2194 30.3677 23.5721 30.9068 24.5887 31.8727L25.9662 33.2406C26.1569 33.4341 26.3898 33.5816 26.6469 33.6717C26.904 33.7617 27.1785 33.792 27.4493 33.7601C27.72 33.7282 27.9798 33.635 28.2085 33.4877C28.4373 33.3404 28.629 33.1429 28.7687 32.9104L29.6 31.4953C29.8425 31.0919 30.2365 30.8006 30.6952 30.6856C31.154 30.5706 31.64 30.6413 32.0462 30.8821C32.4525 31.123 32.7458 31.5142 32.8616 31.9698C32.9774 32.4253 32.9062 32.9079 32.6637 33.3114L31.8087 34.7265C31.3934 35.421 30.8233 36.0116 30.1421 36.4531C29.461 36.8945 28.687 37.175 27.8796 37.273C27.0722 37.3709 26.253 37.2837 25.4849 37.0181C24.7168 36.7524 24.0202 36.3154 23.4487 35.7406L22 34.3727C21.6602 34.0525 21.2096 33.874 20.7412 33.874C20.2728 33.874 19.8223 34.0525 19.4825 34.3727L13.165 40.717C13.0005 40.8824 12.8045 41.0135 12.5883 41.1026C12.3722 41.1917 12.1403 41.237 11.9062 41.2359Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M20.8125 58.9245H8.34372C6.92647 58.9245 5.56727 58.3655 4.56512 57.3703C3.56297 56.3751 2.99997 55.0253 2.99997 53.6179L2.99997 14.7028C2.99997 13.2954 3.56297 11.9457 4.56512 10.9505C5.56727 9.95533 6.92647 9.39624 8.34372 9.39624H33.59C35.0057 9.4026 36.3621 9.96172 37.3662 10.9528L44.1825 17.7217C44.682 18.2116 45.078 18.7957 45.3472 19.4397C45.6163 20.0836 45.7533 20.7745 45.75 21.4717V27.0849C45.75 27.5541 45.5623 28.004 45.2283 28.3357C44.8942 28.6674 44.4411 28.8538 43.9687 28.8538C43.4963 28.8538 43.0432 28.6674 42.7092 28.3357C42.3751 28.004 42.1875 27.5541 42.1875 27.0849V21.4717C42.182 21.0038 41.9948 20.556 41.665 20.2217L34.8487 13.4528C34.515 13.121 34.0622 12.9344 33.59 12.934H8.34372C7.87322 12.9401 7.42371 13.1284 7.09099 13.4588C6.75826 13.7892 6.56862 14.2356 6.56247 14.7028V53.6179C6.56247 54.0871 6.75014 54.537 7.08419 54.8687C7.41823 55.2004 7.8713 55.3868 8.34372 55.3868H20.8125C21.2849 55.3868 21.738 55.5732 22.072 55.9049C22.4061 56.2366 22.5937 56.6865 22.5937 57.1557C22.5937 57.6248 22.4061 58.0747 22.072 58.4065C21.738 58.7382 21.2849 58.9245 20.8125 58.9245Z",fill:"#1A4A71"}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"slide-services__title"},"Planejamento Financeiro"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"slide-services__text"},"Qual \xE9 o seu objetivo de vida hoje? O que voc\xEA deseja alcan\xE7ar? Seja o que for, o nosso time desenvolve todas as etapas necess\xE1rias para voc\xEA conseguir conquistar o que voc\xEA quer. Sabemos, por\xE9m, que essa trajet\xF3ria envolve a possibilidade de imprevistos. Eles s\xE3o aquela parte turbulenta do sonho. E como resolv\xEA-los? A BeCapital existe para planejar, executar e transformar os seus sonhos em conquistas concretas."),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://maquinadossonhos.be.capital/",target:"_blank",rel:"noopener noreferrer",className:"slide-services__link"},"saiba mais")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"section section__logos"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"section__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"logos__items"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_itau_consorcio_1x.png",alt:"Logo Ita\xFA Consorcio",__imageData:__webpack_require__(1061)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_porto_seguro_1x.png",alt:"Logo Porto Seguro",__imageData:__webpack_require__(6927)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_caixa_1x.png",alt:"Logo Caixa",__imageData:__webpack_require__(8779)})))))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"slide-services__custom-item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("article",{className:"slide-services__article"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",{className:"slide-services__icon"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("svg",{width:"47",height:"39",viewBox:"0 0 47 39",fill:"none",xmlns:"http://www.w3.org/2000/svg"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("g",{"clip-path":"url(#clip0)"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M42.979 0.0328369H10.5095C8.44042 0.0328369 6.76306 1.71634 6.76306 3.79305V28.8611C6.76306 30.9378 8.44042 32.6213 10.5095 32.6213H42.979C45.0481 32.6213 46.7255 30.9378 46.7255 28.8611V3.79305C46.7255 1.71634 45.0481 0.0328369 42.979 0.0328369Z",fill:"#F69F92"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M4.2654 38.8883C3.27177 38.8883 2.31884 38.4922 1.61624 37.787C0.913638 37.0818 0.518921 36.1254 0.518921 35.1281L0.518921 10.0601C0.518921 9.06281 0.913638 8.10638 1.61624 7.40121C2.31884 6.69603 3.27177 6.29987 4.2654 6.29987H36.7348C37.7285 6.29987 38.6814 6.69603 39.384 7.40121C40.0866 8.10638 40.4813 9.06281 40.4813 10.0601V35.1281C40.4813 36.1254 40.0866 37.0818 39.384 37.787C38.6814 38.4922 37.7285 38.8883 36.7348 38.8883H4.2654ZM3.01657 35.1281C3.02088 35.4592 3.15384 35.7755 3.38711 36.0096C3.62038 36.2438 3.93553 36.3772 4.2654 36.3815H36.7348C37.0647 36.3772 37.3799 36.2438 37.6131 36.0096C37.8464 35.7755 37.9794 35.4592 37.9837 35.1281V16.3271H3.01657V35.1281ZM37.9837 13.8203V10.0601C37.9794 9.729 37.8464 9.4127 37.6131 9.17857C37.3799 8.94444 37.0647 8.811 36.7348 8.80667H4.2654C3.93553 8.811 3.62038 8.94444 3.38711 9.17857C3.15384 9.4127 3.02088 9.729 3.01657 10.0601V13.8203H37.9837Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M24.2466 23.8474C23.9154 23.8474 23.5977 23.7154 23.3635 23.4803C23.1293 23.2453 22.9977 22.9265 22.9977 22.594C22.9977 22.2616 23.1293 21.9428 23.3635 21.7078C23.5977 21.4727 23.9154 21.3406 24.2466 21.3406H34.2372C34.5684 21.3406 34.886 21.4727 35.1202 21.7078C35.3544 21.9428 35.486 22.2616 35.486 22.594C35.486 22.9265 35.3544 23.2453 35.1202 23.4803C34.886 23.7154 34.5684 23.8474 34.2372 23.8474H24.2466Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M24.2466 31.3679C23.9154 31.3679 23.5977 31.2358 23.3635 31.0008C23.1293 30.7657 22.9977 30.4469 22.9977 30.1145C22.9977 29.7821 23.1293 29.4633 23.3635 29.2282C23.5977 28.9931 23.9154 28.8611 24.2466 28.8611H29.2419C29.5731 28.8611 29.8907 28.9931 30.1249 29.2282C30.3591 29.4633 30.4907 29.7821 30.4907 30.1145C30.4907 30.4469 30.3591 30.7657 30.1249 31.0008C29.8907 31.2358 29.5731 31.3679 29.2419 31.3679H24.2466Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M13.0072 32.6214C12.6773 32.617 12.3622 32.4836 12.1289 32.2495C11.8956 32.0153 11.7627 31.699 11.7584 31.368V27.6078H8.01189C7.68068 27.6078 7.36303 27.4757 7.12883 27.2406C6.89463 27.0056 6.76306 26.6868 6.76306 26.3544C6.76306 26.0219 6.89463 25.7031 7.12883 25.4681C7.36303 25.233 7.68068 25.101 8.01189 25.101H11.7584V21.3407C11.7584 21.0083 11.8899 20.6895 12.1241 20.4545C12.3583 20.2194 12.676 20.0873 13.0072 20.0873C13.3384 20.0873 13.656 20.2194 13.8902 20.4545C14.1244 20.6895 14.256 21.0083 14.256 21.3407V25.101H18.0025C18.3337 25.101 18.6513 25.233 18.8855 25.4681C19.1197 25.7031 19.2513 26.0219 19.2513 26.3544C19.2513 26.6868 19.1197 27.0056 18.8855 27.2406C18.6513 27.4757 18.3337 27.6078 18.0025 27.6078H14.256V31.368C14.2517 31.699 14.1187 32.0153 13.8855 32.2495C13.6522 32.4836 13.3371 32.617 13.0072 32.6214Z",fill:"#1A4A71"})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("defs",null,/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("clipPath",{id:"clip0"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("rect",{width:"46.2065",height:"38.8555",fill:"white",transform:"translate(0.518921 0.0328369)"}))))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"slide-services__title"},"Plano de Sa\xFAde"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"slide-services__text"},"Ter um plano de sa\xFAde \xE9 a alternativa mais eficaz na redu\xE7\xE3o dos seus custos. Voc\xEA n\xE3o vai desembolsar toda vez que precisar fazer um exame, uma consulta ou at\xE9 uma cirurgia mais complexa. Nossos planos apresentam diferentes coberturas para te atender de acordo com as suas necessidades. E o melhor: trabalhamos com as principais empresas do mercado."),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/plano-de-saude/",className:"slide-services__link"},"saiba mais")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"section section__logos"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"section__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"logos__items"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_amil.png",alt:"Logo Amil",__imageData:__webpack_require__(1153)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_bradesco-saude.png",alt:"Logo Bradesco Sa\xFAde",__imageData:__webpack_require__(8710)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_goldencross.png",alt:"Logo Golden Cross",__imageData:__webpack_require__(5556)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_notredame.png",alt:"Logo Notredame",__imageData:__webpack_require__(5844)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_sulamerica_saude.png",alt:"Logo Sulamerica Sa\xFAde",__imageData:__webpack_require__(9031)})))))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"slide-services__custom-item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("article",{className:"slide-services__article"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",{className:"slide-services__icon"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("svg",{width:"54",height:"50",viewBox:"0 0 54 50",fill:"none",xmlns:"http://www.w3.org/2000/svg"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M8.37329 22.7681C8.37329 16.7977 10.7457 11.0719 14.9686 6.85015C19.1915 2.62845 24.919 0.256714 30.891 0.256714C36.8631 0.256714 42.5906 2.62845 46.8135 6.85015C51.0364 11.0719 53.4088 16.7977 53.4088 22.7681",fill:"#F69F92"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M19.936 49.6071C18.8031 49.6071 17.7165 49.1572 16.9153 48.3563C16.1142 47.5554 15.6641 46.4691 15.6641 45.3364C15.6641 44.9589 15.8142 44.5968 16.0812 44.3298C16.3483 44.0628 16.7104 43.9129 17.0881 43.9129C17.4658 43.9129 17.828 44.0628 18.095 44.3298C18.362 44.5968 18.5121 44.9589 18.5121 45.3364C18.5121 45.714 18.6621 46.0761 18.9291 46.343C19.1962 46.61 19.5584 46.76 19.936 46.76C20.3137 46.76 20.6759 46.61 20.9429 46.343C21.21 46.0761 21.36 45.714 21.36 45.3364V28.2536C19.5804 28.5389 17.9379 29.3832 16.6704 30.6642C16.4036 30.9312 16.0417 31.0814 15.6641 31.0817C15.456 31.0877 15.2489 31.0503 15.0561 30.9718C14.8632 30.8934 14.6888 30.7757 14.5439 30.6262V30.5123C13.9154 29.7531 13.1416 29.1269 12.2679 28.6706C11.3941 28.2143 10.438 27.937 9.45562 27.855C9.22186 27.8355 8.98688 27.8355 8.75312 27.855C6.95283 27.7889 5.19046 28.383 3.7977 29.5253L2.25981 30.797C2.0056 31.0144 1.68296 31.1353 1.34847 31.1387C1.13942 31.1328 0.933327 31.0877 0.740909 31.0058C0.511822 30.8782 0.321838 30.6907 0.191376 30.4633C0.0609138 30.2359 -0.00509486 29.9772 0.000444087 29.7151C-0.0109018 23.913 2.19306 18.3252 6.1625 14.0924C10.1319 9.85948 15.5676 7.30059 21.36 6.93796V5.51439C21.36 5.13684 21.51 4.77475 21.7771 4.50777C22.0441 4.2408 22.4063 4.09082 22.784 4.09082C23.1617 4.09082 23.5238 4.2408 23.7909 4.50777C24.0579 4.77475 24.208 5.13684 24.208 5.51439V6.97592C29.9938 7.33815 35.424 9.8917 39.3925 14.1165C43.3609 18.3413 45.5692 23.9195 45.5675 29.7151C45.5659 29.9851 45.4885 30.2491 45.3442 30.4773C45.1999 30.7055 44.9944 30.8886 44.7511 31.0058C44.5587 31.0877 44.3526 31.1328 44.1436 31.1387C43.8091 31.1353 43.4864 31.0144 43.2322 30.797L41.5614 29.4114C40.0054 28.1732 38.0211 27.6036 36.045 27.8278C34.0689 28.0521 32.2629 29.0518 31.024 30.6072C30.8881 30.7681 30.7198 30.8987 30.5301 30.9902C30.3403 31.0818 30.1334 31.1324 29.9228 31.1387C29.727 31.1376 29.5334 31.0966 29.3538 31.0183C29.1743 30.94 29.0126 30.8259 28.8786 30.6831C27.6079 29.4239 25.9746 28.5941 24.208 28.3105V45.3934C24.193 46.5161 23.7363 47.5878 22.9368 48.3765C22.1373 49.1651 21.0592 49.6072 19.936 49.6071ZM22.784 25.3305C25.3246 25.3358 27.7931 26.1762 29.8089 27.7221C31.4914 26.1505 33.6493 25.1835 35.9424 24.9739C38.2355 24.7642 40.5331 25.3238 42.4728 26.5643C41.7284 21.8791 39.3367 17.6131 35.7278 14.533C32.1188 11.4529 27.5292 9.76071 22.784 9.76071C18.0388 9.76071 13.4492 11.4529 9.84021 14.533C6.23124 17.6131 3.8396 21.8791 3.09521 26.5643C4.75695 25.4879 6.69715 24.9205 8.67718 24.9319H9.62649C11.9267 25.1447 14.0877 26.1279 15.7591 27.7221C17.7736 26.1737 20.2429 25.333 22.784 25.3305Z",fill:"#1A4A71"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M35.5617 49.6072C35.227 49.6052 34.8962 49.5352 34.5894 49.4014C34.2825 49.2676 34.0062 49.0729 33.777 48.829L27.1128 42.0148C26.1614 41.0249 25.63 39.7053 25.63 38.3325C25.63 36.9597 26.1614 35.6401 27.1128 34.6502L27.2837 34.4793C28.2491 33.5628 29.5385 33.0662 30.8694 33.0982C32.2004 33.1302 33.4644 33.6883 34.3846 34.6502L35.5997 35.8839L36.8148 34.6312L36.9857 34.4793C37.9391 33.5779 39.205 33.0813 40.5171 33.0937C41.1803 33.1017 41.8351 33.2437 42.442 33.5111C43.0489 33.7786 43.5954 34.1661 44.0486 34.6502C44.9988 35.6369 45.5296 36.9533 45.5296 38.323C45.5296 39.6927 44.9988 41.0091 44.0486 41.9958L37.3844 48.9049L37.2895 48.9998C36.8224 49.4404 36.2039 49.685 35.5617 49.6831V49.6072ZM30.7392 35.865C30.1832 35.8665 29.648 36.0765 29.2393 36.4534C28.8014 36.9182 28.5575 37.5326 28.5575 38.1711C28.5575 38.8097 28.8014 39.4241 29.2393 39.8889L35.6756 46.5512L42.112 39.8889C42.5499 39.4241 42.7937 38.8097 42.7937 38.1711C42.7937 37.5326 42.5499 36.9182 42.112 36.4534C41.7046 36.0414 41.1534 35.8033 40.5741 35.789C40.0301 35.7945 39.5082 36.0046 39.1121 36.3774L36.8718 38.6931C36.5999 38.9665 36.2321 39.1232 35.8465 39.1297C35.6552 39.1285 35.466 39.0893 35.29 39.0143C35.114 38.9394 34.9547 38.8302 34.8212 38.6931L32.2771 36.5862C31.8751 36.1639 31.3221 35.9182 30.7392 35.9029V35.865Z",fill:"#1A4A71"}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"slide-services__title"},"Seguro de Vida"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"slide-services__text"},"O seguro de vida \xE9 a sua blindagem patrimonial, ou seja, qualquer dano que aconte\xE7a com voc\xEA, em sua vida, o seguro estar\xE1 l\xE1 para proteger o que voc\xEA conquistou e o que mais importa."),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/seguro-de-vida/",className:"slide-services__link"},"saiba mais")),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"section section__logos"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"section__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"logos__items"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_icatu.png",alt:"Logo Icatu",__imageData:__webpack_require__(8174)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_mapfre.png",alt:"Logo Mapfre",__imageData:__webpack_require__(5544)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_centauro-on.png",alt:"Logo Centauro on",__imageData:__webpack_require__(5339)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_metlife.png",alt:"Logo Metlife",__imageData:__webpack_require__(4027)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_mongeral_aegon.png",alt:"Logo Mogeral aegon",__imageData:__webpack_require__(9653)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_omint.png",alt:"Logo Omint",__imageData:__webpack_require__(3651)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/logo_prudential.png",alt:"Logo Prudential",__imageData:__webpack_require__(8998)}))))))))));}}
-;// CONCATENATED MODULE: ./src/components/SectionMidia/index.js
-function SectionMidia(){return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"section section__midia"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"section__title"},"Na m\xEDdia"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"section__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"logos__items"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://forbes.com.br/forbes-money/2021/07/ipos-impulsionam-flippers-conheca-estrategias-e-riscos-da-pratica/",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/logo_forbes_1x.png",alt:"Logo Forbes",__imageData:__webpack_require__(6156)}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://virtz.r7.com/criancas-com-deficiencia-ganham-festa-do-hamburguer-em-ong-08062021",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/logo_r7_1x.png",alt:"Logo portal R7",__imageData:__webpack_require__(6057)}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://economia.estadao.com.br/noticias/geral,o-dilema-do-mundo-imobiliario,70003817015",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/logo_estadao_1x.png",alt:"Logo Estad\xE3o",__imageData:__webpack_require__(2426)}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"http://revistapress.com.br/advertising/becapital-lanca-campanha-digital-que-incentiva-as-pessoas-a-realizarem-seus-sonhos/",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/logo_press_1x.png",alt:"Logo revista press",__imageData:__webpack_require__(5331)}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{className:"logos__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://www.abcdacomunicacao.com.br/becapital-lanca-campanha-digital-que-incentiva-as-pessoas-a-realizarem-seus-sonhos/",target:"_blank",rel:"noopener noreferrer"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../images/logo_abc_1x.png",alt:"Logo ABC da Comunica\xE7\xE3o",__imageData:__webpack_require__(2459)}))))));}
-// EXTERNAL MODULE: ./node_modules/html-react-parser/index.mjs
-var html_react_parser = __webpack_require__(5935);
-;// CONCATENATED MODULE: ./src/components/Cards/CardBlog/index.js
-function CardBlog(){return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.StaticQuery,{query:"1976188318",render:data=>/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"section section__posts--more"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"section__title"},"Blog"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"section__content posts posts--grid"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"posts__items"},data.allWpPost.nodes.map(article=>{const{uri,title,featuredImage,excerpt}=article;const image=(0,gatsby_image_module/* getImage */.gJ)(featuredImage.node.localFile);return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{key:uri,className:"posts__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:uri},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("article",{className:"posts__article"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* GatsbyImage */.HN,{image:image,alt:title,as:"figure",className:"posts__figure",imgClassName:"posts__image"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"posts__title"},(0,html_react_parser/* default */.ZP)(title)),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"posts__excerpt"},(0,html_react_parser/* default */.ZP)(excerpt)),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:uri,className:"button button__primary"},"LER ARTIGO"))));}))))});}
-;// CONCATENATED MODULE: ./src/components/Slides/SlideTestimony/index.js
-function SlideTestimony_SampleNextArrow(props){const{className,onClick}=props;return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:className,onClick:onClick,onKeyDown:onClick,role:"button",tabIndex:"0"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("svg",{width:"30",height:"71",viewBox:"0 0 41 71",fill:"none",xmlns:"http://www.w3.org/2000/svg"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M39.0628 38.7462C40.9083 36.9007 40.9083 33.9086 39.0628 32.0631L8.98884 1.98915C7.14335 0.143661 4.15122 0.143661 2.30573 1.98915C0.460247 3.83464 0.460247 6.82676 2.30573 8.67225L29.0381 35.4047L2.30573 62.1371C0.460247 63.9826 0.460247 66.9747 2.30573 68.8202C4.15122 70.6657 7.14335 70.6657 8.98884 68.8202L39.0628 38.7462ZM29.9454 40.1303H35.7213V30.679H29.9454V40.1303Z",fill:"#1A4A73"})));}function SlideTestimony_SamplePrevArrow(props){const{className,onClick}=props;return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:className,onClick:onClick,onKeyDown:onClick,role:"button",tabIndex:"0"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("svg",{width:"30",height:"71",viewBox:"0 0 41 71",fill:"none",xmlns:"http://www.w3.org/2000/svg"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("path",{d:"M2.32855 32.0631C0.483066 33.9086 0.483066 36.9007 2.32855 38.7462L32.4025 68.8202C34.248 70.6657 37.2401 70.6657 39.0856 68.8202C40.9311 66.9747 40.9311 63.9826 39.0856 62.1371L12.3532 35.4047L39.0856 8.67225C40.9311 6.82676 40.9311 3.83464 39.0856 1.98915C37.2401 0.143661 34.248 0.143661 32.4025 1.98915L2.32855 32.0631ZM13.0211 30.679H5.6701V40.1303H13.0211V30.679Z",fill:"#1A4A73"})));}class SlideTestimony extends external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_.Component{render(){const settings={infinite:true,touchMove:true,centerPadding:30,slidesToShow:1,slidesToScroll:1,speed:500,dots:true,arrows:true,nextArrow:/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(SlideTestimony_SampleNextArrow,null),prevArrow:/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(SlideTestimony_SamplePrevArrow,null)};return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_browser_entry.StaticQuery,{query:"417994374",render:data=>/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"section section__testimonies"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"section__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"section__title"},"Quem j\xE1 soma"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("ul",{className:"testimonies__items"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(lib/* default */.Z,settings,data.allWpDepoimento.nodes.map(testimony=>{const{id,title,content,featuredImage}=testimony;const img=(0,gatsby_image_module/* getImage */.gJ)(featuredImage===null||featuredImage===void 0?void 0:featuredImage.node.localFile);return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("li",{key:id,className:"testimonies__item"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("article",{className:"testimonies__card"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("header",{className:"testimonies__header"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"testimonies__header--sub"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* GatsbyImage */.HN,{image:img,alt:title,as:"figure",className:"testimonies__figure",imgClassName:"testimonies__image"}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("span",null,/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h2",{className:"testimonies__name"},(0,html_react_parser/* default */.ZP)(title)),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("small",{className:"testimonies__description"},"Cliente BeCapital"))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(gatsby_image_module/* StaticImage */.Jv,{src:"../../../images/icon_bullets_menu.png",alt:"icone de menu",__imageData:__webpack_require__(7948)})),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"testimonies__text"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"testimonies__text--site"},"Como \xE9 investir na BeCapital?"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"testimonies__text--client"},(0,html_react_parser/* default */.ZP)(content)))));}))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"button__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://conteudo.be.capital/quero-investir-becapital",className:"button button__secondary",target:"_blank",rel:"noopener noreferrer"},"Quero Investir"))))});}}
-// EXTERNAL MODULE: ./src/components/seo.js
-var seo = __webpack_require__(9357);
-;// CONCATENATED MODULE: ./src/images/banner-home_1.webp
-/* harmony default export */ const banner_home_1 = (__webpack_require__.p + "static/banner-home_1-bc429da9feeef20048b0aafcb862fbf5.webp");
-;// CONCATENATED MODULE: ./src/pages/index.js
-const styleBackgroundImage={backgroundImage:`url(${banner_home_1})`};const Home=()=>{return/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(layout/* default */.Z,null,/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(seo/* default */.Z,{title:" ",description:"Uma nova maneira de pensar e agir no mercado de capitais. Acreditamos que investir \xE9 para todos."}),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("section",{className:"banner banner__primary",style:styleBackgroundImage},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"banner__content"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"banner__primary-description"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("h1",{className:"banner__title"},"Fa\xE7a seu planejamento financeiro agora"),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("p",{className:"banner__subtitle"},"Nosso orientador financeiro te ajudar\xE1 a encontrar o t\xEDtulo mais adequado para voc\xEA atingir seu objetivo. "),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("div",{className:"button__container"},/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement("a",{href:"https://api.whatsapp.com/send?phone=5521965431886",target:"_blank",rel:"noopener noreferrer",className:"button button__secondary"},"Simule seu investimento"))))),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(CenterMode,null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(SlideTestimony,null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(SectionMidia,null),/*#__PURE__*/external_C_Users_home_Desktop_WORKSPACE_FREELANCER_BeCapital_becapital_node_modules_react_index_js_default().createElement(CardBlog,null));};/* harmony default export */ const pages = (Home);
+
+
+
+
+
+
+const styleBackgroundImage = {
+  backgroundImage: `url(${_images_banner_home_1_webp__WEBPACK_IMPORTED_MODULE_7__["default"]})`
+};
+
+const Home = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_seo__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    title: " ",
+    description: "Uma nova maneira de pensar e agir no mercado de capitais. Acreditamos que investir \xE9 para todos."
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: "banner banner__primary",
+    style: styleBackgroundImage
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "banner__content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "banner__primary-description"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: "banner__title"
+  }, "Fa\xE7a seu planejamento financeiro agora"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "banner__subtitle"
+  }, "Nosso orientador financeiro te ajudar\xE1 a encontrar o t\xEDtulo mais adequado para voc\xEA atingir seu objetivo. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "button__container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://api.whatsapp.com/send?phone=5521965431886",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "button button__secondary"
+  }, "Simule seu investimento"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Slides_SlidesServices__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Slides_SlideTestimony__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_SectionMidia__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Cards_CardBlog__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
 
 /***/ }),
 
-/***/ 9404:
+/***/ "./node_modules/html-dom-parser/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/html-dom-parser/index.js ***!
+  \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 /**
@@ -1306,18 +3301,21 @@ const styleBackgroundImage={backgroundImage:`url(${banner_home_1})`};const Home=
  *
  * @see {@link https://github.com/substack/node-browserify#browser-field}
  */
-module.exports = __webpack_require__(2720);
+module.exports = __webpack_require__(/*! ./lib/server/html-to-dom */ "./node_modules/html-dom-parser/lib/server/html-to-dom.js");
 
 
 /***/ }),
 
-/***/ 2720:
+/***/ "./node_modules/html-dom-parser/lib/server/html-to-dom.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/html-dom-parser/lib/server/html-to-dom.js ***!
+  \****************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var Parser = (__webpack_require__(2408).Parser);
-var DomHandler = (__webpack_require__(7915).DomHandler);
+var Parser = (__webpack_require__(/*! htmlparser2/lib/Parser */ "./node_modules/html-dom-parser/node_modules/htmlparser2/lib/Parser.js").Parser);
+var DomHandler = (__webpack_require__(/*! domhandler */ "./node_modules/domhandler/lib/index.js").DomHandler);
 
-var unsetRootParent = (__webpack_require__(3576).unsetRootParent);
+var unsetRootParent = (__webpack_require__(/*! ./utilities */ "./node_modules/html-dom-parser/lib/server/utilities.js").unsetRootParent);
 
 /**
  * Parses HTML string to DOM nodes in Node.js.
@@ -1348,7 +3346,10 @@ module.exports = HTMLDOMParser;
 
 /***/ }),
 
-/***/ 3576:
+/***/ "./node_modules/html-dom-parser/lib/server/utilities.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/html-dom-parser/lib/server/utilities.js ***!
+  \**************************************************************/
 /***/ ((module) => {
 
 /**
@@ -1372,7 +3373,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8285:
+/***/ "./node_modules/html-dom-parser/node_modules/entities/lib/decode.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/html-dom-parser/node_modules/entities/lib/decode.js ***!
+  \**************************************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -1382,11 +3386,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.decodeXML = exports.decodeHTMLStrict = exports.decodeHTML = exports.determineBranch = exports.JUMP_OFFSET_BASE = exports.BinTrieFlags = exports.xmlDecodeTree = exports.htmlDecodeTree = void 0;
-var decode_data_html_1 = __importDefault(__webpack_require__(1716));
+var decode_data_html_1 = __importDefault(__webpack_require__(/*! ./generated/decode-data-html */ "./node_modules/html-dom-parser/node_modules/entities/lib/generated/decode-data-html.js"));
 exports.htmlDecodeTree = decode_data_html_1.default;
-var decode_data_xml_1 = __importDefault(__webpack_require__(7857));
+var decode_data_xml_1 = __importDefault(__webpack_require__(/*! ./generated/decode-data-xml */ "./node_modules/html-dom-parser/node_modules/entities/lib/generated/decode-data-xml.js"));
 exports.xmlDecodeTree = decode_data_xml_1.default;
-var decode_codepoint_1 = __importDefault(__webpack_require__(6459));
+var decode_codepoint_1 = __importDefault(__webpack_require__(/*! ./decode_codepoint */ "./node_modules/html-dom-parser/node_modules/entities/lib/decode_codepoint.js"));
 var BinTrieFlags;
 (function (BinTrieFlags) {
     BinTrieFlags[BinTrieFlags["HAS_VALUE"] = 32768] = "HAS_VALUE";
@@ -1525,7 +3529,10 @@ exports.decodeXML = decodeXML;
 
 /***/ }),
 
-/***/ 6459:
+/***/ "./node_modules/html-dom-parser/node_modules/entities/lib/decode_codepoint.js":
+/*!************************************************************************************!*\
+  !*** ./node_modules/html-dom-parser/node_modules/entities/lib/decode_codepoint.js ***!
+  \************************************************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -1587,7 +3594,10 @@ exports["default"] = decodeCodePoint;
 
 /***/ }),
 
-/***/ 1716:
+/***/ "./node_modules/html-dom-parser/node_modules/entities/lib/generated/decode-data-html.js":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/html-dom-parser/node_modules/entities/lib/generated/decode-data-html.js ***!
+  \**********************************************************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -1600,7 +3610,10 @@ exports["default"] = new Uint16Array([14866, 60, 237, 340, 721, 1312, 1562, 1654
 
 /***/ }),
 
-/***/ 7857:
+/***/ "./node_modules/html-dom-parser/node_modules/entities/lib/generated/decode-data-xml.js":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/html-dom-parser/node_modules/entities/lib/generated/decode-data-xml.js ***!
+  \*********************************************************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -1613,7 +3626,10 @@ exports["default"] = new Uint16Array([1024, 97, 103, 108, 113, 9, 23, 27, 31, 10
 
 /***/ }),
 
-/***/ 2408:
+/***/ "./node_modules/html-dom-parser/node_modules/htmlparser2/lib/Parser.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/html-dom-parser/node_modules/htmlparser2/lib/Parser.js ***!
+  \*****************************************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -1623,7 +3639,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Parser = void 0;
-var Tokenizer_1 = __importDefault(__webpack_require__(3827));
+var Tokenizer_1 = __importDefault(__webpack_require__(/*! ./Tokenizer */ "./node_modules/html-dom-parser/node_modules/htmlparser2/lib/Tokenizer.js"));
 var formTags = new Set([
     "input",
     "option",
@@ -2045,7 +4061,10 @@ exports.Parser = Parser;
 
 /***/ }),
 
-/***/ 3827:
+/***/ "./node_modules/html-dom-parser/node_modules/htmlparser2/lib/Tokenizer.js":
+/*!********************************************************************************!*\
+  !*** ./node_modules/html-dom-parser/node_modules/htmlparser2/lib/Tokenizer.js ***!
+  \********************************************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -2054,8 +4073,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-var decode_codepoint_1 = __importDefault(__webpack_require__(6459));
-var decode_1 = __webpack_require__(8285);
+var decode_codepoint_1 = __importDefault(__webpack_require__(/*! entities/lib/decode_codepoint */ "./node_modules/html-dom-parser/node_modules/entities/lib/decode_codepoint.js"));
+var decode_1 = __webpack_require__(/*! entities/lib/decode */ "./node_modules/html-dom-parser/node_modules/entities/lib/decode.js");
 function isWhitespace(c) {
     return (c === 32 /* Space */ ||
         c === 10 /* NewLine */ ||
@@ -2874,12 +4893,15 @@ exports["default"] = Tokenizer;
 
 /***/ }),
 
-/***/ 488:
+/***/ "./node_modules/html-react-parser/index.js":
+/*!*************************************************!*\
+  !*** ./node_modules/html-react-parser/index.js ***!
+  \*************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var domToReact = __webpack_require__(3670);
-var attributesToProps = __webpack_require__(484);
-var htmlToDOM = __webpack_require__(9404);
+var domToReact = __webpack_require__(/*! ./lib/dom-to-react */ "./node_modules/html-react-parser/lib/dom-to-react.js");
+var attributesToProps = __webpack_require__(/*! ./lib/attributes-to-props */ "./node_modules/html-react-parser/lib/attributes-to-props.js");
+var htmlToDOM = __webpack_require__(/*! html-dom-parser */ "./node_modules/html-dom-parser/index.js");
 
 // support backwards compatibility for ES Module
 htmlToDOM =
@@ -2915,7 +4937,7 @@ function HTMLReactParser(html, options) {
 HTMLReactParser.domToReact = domToReact;
 HTMLReactParser.htmlToDOM = htmlToDOM;
 HTMLReactParser.attributesToProps = attributesToProps;
-HTMLReactParser.Element = (__webpack_require__(7790).Element);
+HTMLReactParser.Element = (__webpack_require__(/*! domhandler/lib/node */ "./node_modules/domhandler/lib/node.js").Element);
 
 // support CommonJS and ES Modules
 module.exports = HTMLReactParser;
@@ -2924,11 +4946,14 @@ module.exports["default"] = HTMLReactParser;
 
 /***/ }),
 
-/***/ 484:
+/***/ "./node_modules/html-react-parser/lib/attributes-to-props.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/html-react-parser/lib/attributes-to-props.js ***!
+  \*******************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var reactProperty = __webpack_require__(5726);
-var utilities = __webpack_require__(4606);
+var reactProperty = __webpack_require__(/*! react-property */ "./node_modules/react-property/lib/index.js");
+var utilities = __webpack_require__(/*! ./utilities */ "./node_modules/html-react-parser/lib/utilities.js");
 
 /**
  * Converts HTML/SVG DOM attributes to React props.
@@ -3017,12 +5042,15 @@ function getPropName(attributeName) {
 
 /***/ }),
 
-/***/ 3670:
+/***/ "./node_modules/html-react-parser/lib/dom-to-react.js":
+/*!************************************************************!*\
+  !*** ./node_modules/html-react-parser/lib/dom-to-react.js ***!
+  \************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var React = __webpack_require__(1051);
-var attributesToProps = __webpack_require__(484);
-var utilities = __webpack_require__(4606);
+var React = __webpack_require__(/*! react */ "react");
+var attributesToProps = __webpack_require__(/*! ./attributes-to-props */ "./node_modules/html-react-parser/lib/attributes-to-props.js");
+var utilities = __webpack_require__(/*! ./utilities */ "./node_modules/html-react-parser/lib/utilities.js");
 
 var setStyleProp = utilities.setStyleProp;
 var canTextBeChildOfNode = utilities.canTextBeChildOfNode;
@@ -3163,11 +5191,14 @@ module.exports = domToReact;
 
 /***/ }),
 
-/***/ 4606:
+/***/ "./node_modules/html-react-parser/lib/utilities.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/html-react-parser/lib/utilities.js ***!
+  \*********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var React = __webpack_require__(1051);
-var styleToJS = (__webpack_require__(1476)["default"]);
+var React = __webpack_require__(/*! react */ "react");
+var styleToJS = (__webpack_require__(/*! style-to-js */ "./node_modules/style-to-js/cjs/index.js")["default"]);
 
 /**
  * Swap key with value in an object.
@@ -3300,7 +5331,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8139:
+/***/ "./node_modules/inline-style-parser/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/inline-style-parser/index.js ***!
+  \***************************************************/
 /***/ ((module) => {
 
 // http://www.w3.org/TR/CSS21/grammar.html
@@ -3568,10 +5602,13 @@ function trim(str) {
 
 /***/ }),
 
-/***/ 973:
+/***/ "./node_modules/json2mq/index.js":
+/*!***************************************!*\
+  !*** ./node_modules/json2mq/index.js ***!
+  \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var camel2hyphen = __webpack_require__(1169);
+var camel2hyphen = __webpack_require__(/*! string-convert/camel2hyphen */ "./node_modules/string-convert/camel2hyphen.js");
 
 var isDimension = function (feature) {
   var re = /[height|width]$/;
@@ -3625,7 +5662,10 @@ module.exports = json2mq;
 
 /***/ }),
 
-/***/ 1296:
+/***/ "./node_modules/lodash.debounce/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/lodash.debounce/index.js ***!
+  \***********************************************/
 /***/ ((module) => {
 
 /**
@@ -4009,7 +6049,10 @@ module.exports = debounce;
 
 /***/ }),
 
-/***/ 5726:
+/***/ "./node_modules/react-property/lib/index.js":
+/*!**************************************************!*\
+  !*** ./node_modules/react-property/lib/index.js ***!
+  \**************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4288,7 +6331,7 @@ false);
   true);
 });
 
-var _require = __webpack_require__(8229),
+var _require = __webpack_require__(/*! ../lib/possibleStandardNamesOptimized */ "./node_modules/react-property/lib/possibleStandardNamesOptimized.js"),
     CAMELCASE = _require.CAMELCASE,
     SAME = _require.SAME,
     possibleStandardNamesOptimized = _require.possibleStandardNames;
@@ -4334,7 +6377,10 @@ exports.possibleStandardNames = possibleStandardNames;
 
 /***/ }),
 
-/***/ 8229:
+/***/ "./node_modules/react-property/lib/possibleStandardNamesOptimized.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/react-property/lib/possibleStandardNamesOptimized.js ***!
+  \***************************************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
 // An attribute in which the DOM/SVG standard name is the same as the React prop name (e.g., 'accept').
@@ -4834,7 +6880,10 @@ exports.possibleStandardNames = {
 
 /***/ }),
 
-/***/ 8205:
+/***/ "./node_modules/react-slick/lib/arrows.js":
+/*!************************************************!*\
+  !*** ./node_modules/react-slick/lib/arrows.js ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4845,11 +6894,11 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.NextArrow = exports.PrevArrow = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(1051));
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
-var _classnames = _interopRequireDefault(__webpack_require__(4184));
+var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
 
-var _innerSliderUtils = __webpack_require__(5518);
+var _innerSliderUtils = __webpack_require__(/*! ./utils/innerSliderUtils */ "./node_modules/react-slick/lib/utils/innerSliderUtils.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -5023,7 +7072,10 @@ exports.NextArrow = NextArrow;
 
 /***/ }),
 
-/***/ 3492:
+/***/ "./node_modules/react-slick/lib/default-props.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/react-slick/lib/default-props.js ***!
+  \*******************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5034,7 +7086,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(1051));
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -5103,7 +7155,10 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ 6329:
+/***/ "./node_modules/react-slick/lib/dots.js":
+/*!**********************************************!*\
+  !*** ./node_modules/react-slick/lib/dots.js ***!
+  \**********************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5114,11 +7169,11 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.Dots = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(1051));
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
-var _classnames = _interopRequireDefault(__webpack_require__(4184));
+var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
 
-var _innerSliderUtils = __webpack_require__(5518);
+var _innerSliderUtils = __webpack_require__(/*! ./utils/innerSliderUtils */ "./node_modules/react-slick/lib/utils/innerSliderUtils.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -5245,28 +7300,33 @@ exports.Dots = Dots;
 
 /***/ }),
 
-/***/ 6066:
+/***/ "./node_modules/react-slick/lib/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/react-slick/lib/index.js ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-var __webpack_unused_export__;
 
 
-__webpack_unused_export__ = ({
+Object.defineProperty(exports, "__esModule", ({
   value: true
-});
-exports.Z = void 0;
+}));
+exports["default"] = void 0;
 
-var _slider = _interopRequireDefault(__webpack_require__(5798));
+var _slider = _interopRequireDefault(__webpack_require__(/*! ./slider */ "./node_modules/react-slick/lib/slider.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var _default = _slider["default"];
-exports.Z = _default;
+exports["default"] = _default;
 
 /***/ }),
 
-/***/ 6948:
+/***/ "./node_modules/react-slick/lib/initial-state.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/react-slick/lib/initial-state.js ***!
+  \*******************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -5312,7 +7372,10 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ 8517:
+/***/ "./node_modules/react-slick/lib/inner-slider.js":
+/*!******************************************************!*\
+  !*** ./node_modules/react-slick/lib/inner-slider.js ***!
+  \******************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5323,23 +7386,23 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.InnerSlider = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(1051));
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
-var _initialState = _interopRequireDefault(__webpack_require__(6948));
+var _initialState = _interopRequireDefault(__webpack_require__(/*! ./initial-state */ "./node_modules/react-slick/lib/initial-state.js"));
 
-var _lodash = _interopRequireDefault(__webpack_require__(1296));
+var _lodash = _interopRequireDefault(__webpack_require__(/*! lodash.debounce */ "./node_modules/lodash.debounce/index.js"));
 
-var _classnames = _interopRequireDefault(__webpack_require__(4184));
+var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
 
-var _innerSliderUtils = __webpack_require__(5518);
+var _innerSliderUtils = __webpack_require__(/*! ./utils/innerSliderUtils */ "./node_modules/react-slick/lib/utils/innerSliderUtils.js");
 
-var _track = __webpack_require__(4740);
+var _track = __webpack_require__(/*! ./track */ "./node_modules/react-slick/lib/track.js");
 
-var _dots = __webpack_require__(6329);
+var _dots = __webpack_require__(/*! ./dots */ "./node_modules/react-slick/lib/dots.js");
 
-var _arrows = __webpack_require__(8205);
+var _arrows = __webpack_require__(/*! ./arrows */ "./node_modules/react-slick/lib/arrows.js");
 
-var _resizeObserverPolyfill = _interopRequireDefault(__webpack_require__(1033));
+var _resizeObserverPolyfill = _interopRequireDefault(__webpack_require__(/*! resize-observer-polyfill */ "./node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -6193,7 +8256,10 @@ exports.InnerSlider = InnerSlider;
 
 /***/ }),
 
-/***/ 5798:
+/***/ "./node_modules/react-slick/lib/slider.js":
+/*!************************************************!*\
+  !*** ./node_modules/react-slick/lib/slider.js ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -6204,15 +8270,15 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(1051));
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
-var _innerSlider = __webpack_require__(8517);
+var _innerSlider = __webpack_require__(/*! ./inner-slider */ "./node_modules/react-slick/lib/inner-slider.js");
 
-var _json2mq = _interopRequireDefault(__webpack_require__(973));
+var _json2mq = _interopRequireDefault(__webpack_require__(/*! json2mq */ "./node_modules/json2mq/index.js"));
 
-var _defaultProps = _interopRequireDefault(__webpack_require__(3492));
+var _defaultProps = _interopRequireDefault(__webpack_require__(/*! ./default-props */ "./node_modules/react-slick/lib/default-props.js"));
 
-var _innerSliderUtils = __webpack_require__(5518);
+var _innerSliderUtils = __webpack_require__(/*! ./utils/innerSliderUtils */ "./node_modules/react-slick/lib/utils/innerSliderUtils.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -6246,7 +8312,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var enquire = (0, _innerSliderUtils.canUseDOM)() && __webpack_require__(4974);
+var enquire = (0, _innerSliderUtils.canUseDOM)() && __webpack_require__(/*! enquire.js */ "./node_modules/enquire.js/src/index.js");
 
 var Slider = /*#__PURE__*/function (_React$Component) {
   _inherits(Slider, _React$Component);
@@ -6383,16 +8449,22 @@ var Slider = /*#__PURE__*/function (_React$Component) {
 
 
       if (settings.centerMode) {
-        if (settings.slidesToScroll > 1 && "production" !== "production") {}
+        if (settings.slidesToScroll > 1 && "development" !== "production") {
+          console.warn("slidesToScroll should be equal to 1 in centerMode, you are using ".concat(settings.slidesToScroll));
+        }
 
         settings.slidesToScroll = 1;
       } // force showing one slide and scrolling by one if the fade mode is on
 
 
       if (settings.fade) {
-        if (settings.slidesToShow > 1 && "production" !== "production") {}
+        if (settings.slidesToShow > 1 && "development" !== "production") {
+          console.warn("slidesToShow should be equal to 1 when fade is true, you're using ".concat(settings.slidesToShow));
+        }
 
-        if (settings.slidesToScroll > 1 && "production" !== "production") {}
+        if (settings.slidesToScroll > 1 && "development" !== "production") {
+          console.warn("slidesToScroll should be equal to 1 when fade is true, you're using ".concat(settings.slidesToScroll));
+        }
 
         settings.slidesToShow = 1;
         settings.slidesToScroll = 1;
@@ -6483,7 +8555,10 @@ exports["default"] = Slider;
 
 /***/ }),
 
-/***/ 4740:
+/***/ "./node_modules/react-slick/lib/track.js":
+/*!***********************************************!*\
+  !*** ./node_modules/react-slick/lib/track.js ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -6494,11 +8569,11 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.Track = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(1051));
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
-var _classnames = _interopRequireDefault(__webpack_require__(4184));
+var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
 
-var _innerSliderUtils = __webpack_require__(5518);
+var _innerSliderUtils = __webpack_require__(/*! ./utils/innerSliderUtils */ "./node_modules/react-slick/lib/utils/innerSliderUtils.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -6778,7 +8853,10 @@ exports.Track = Track;
 
 /***/ }),
 
-/***/ 5518:
+/***/ "./node_modules/react-slick/lib/utils/innerSliderUtils.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/react-slick/lib/utils/innerSliderUtils.js ***!
+  \****************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -6790,7 +8868,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports.clamp = clamp;
 exports.canUseDOM = exports.slidesOnLeft = exports.slidesOnRight = exports.siblingDirection = exports.getTotalSlides = exports.getPostClones = exports.getPreClones = exports.getTrackLeft = exports.getTrackAnimateCSS = exports.getTrackCSS = exports.checkSpecKeys = exports.getSlideCount = exports.checkNavigable = exports.getNavigableIndexes = exports.swipeEnd = exports.swipeMove = exports.swipeStart = exports.keyHandler = exports.changeSlide = exports.slideHandler = exports.initializedState = exports.extractObject = exports.canGoNext = exports.getSwipeDirection = exports.getHeight = exports.getWidth = exports.lazySlidesOnRight = exports.lazySlidesOnLeft = exports.lazyEndIndex = exports.lazyStartIndex = exports.getRequiredLazySlides = exports.getOnDemandLazySlides = exports.safePreventDefault = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(1051));
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -7738,7 +9816,10 @@ exports.canUseDOM = canUseDOM;
 
 /***/ }),
 
-/***/ 1033:
+/***/ "./node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js ***!
+  \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -8678,7 +10759,10 @@ var index = (function () {
 
 /***/ }),
 
-/***/ 1169:
+/***/ "./node_modules/string-convert/camel2hyphen.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/string-convert/camel2hyphen.js ***!
+  \*****************************************************/
 /***/ ((module) => {
 
 var camel2hyphen = function (str) {
@@ -8693,7 +10777,10 @@ module.exports = camel2hyphen;
 
 /***/ }),
 
-/***/ 1476:
+/***/ "./node_modules/style-to-js/cjs/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/style-to-js/cjs/index.js ***!
+  \***********************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -8702,8 +10789,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 exports.__esModule = true;
-var style_to_object_1 = __importDefault(__webpack_require__(7848));
-var utilities_1 = __webpack_require__(6678);
+var style_to_object_1 = __importDefault(__webpack_require__(/*! style-to-object */ "./node_modules/style-to-object/index.js"));
+var utilities_1 = __webpack_require__(/*! ./utilities */ "./node_modules/style-to-js/cjs/utilities.js");
 function StyleToJS(style, options) {
     var output = {};
     if (!style || typeof style !== 'string') {
@@ -8721,7 +10808,10 @@ exports["default"] = StyleToJS;
 
 /***/ }),
 
-/***/ 6678:
+/***/ "./node_modules/style-to-js/cjs/utilities.js":
+/*!***************************************************!*\
+  !*** ./node_modules/style-to-js/cjs/utilities.js ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -8757,10 +10847,13 @@ exports.camelCase = camelCase;
 
 /***/ }),
 
-/***/ 7848:
+/***/ "./node_modules/style-to-object/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/style-to-object/index.js ***!
+  \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var parse = __webpack_require__(8139);
+var parse = __webpack_require__(/*! inline-style-parser */ "./node_modules/inline-style-parser/index.js");
 
 /**
  * Parses inline style to object.
@@ -8806,15 +10899,37 @@ module.exports = StyleToObject;
 
 /***/ }),
 
-/***/ 5935:
+/***/ "./src/images/banner-home_1.webp":
+/*!***************************************!*\
+  !*** ./src/images/banner-home_1.webp ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "static/banner-home_1-bc429da9feeef20048b0aafcb862fbf5.webp");
+
+/***/ }),
+
+/***/ "./node_modules/html-react-parser/index.mjs":
+/*!**************************************************!*\
+  !*** ./node_modules/html-react-parser/index.mjs ***!
+  \**************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ZP": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "Element": () => (/* binding */ Element),
+/* harmony export */   "attributesToProps": () => (/* binding */ attributesToProps),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "domToReact": () => (/* binding */ domToReact),
+/* harmony export */   "htmlToDOM": () => (/* binding */ htmlToDOM)
 /* harmony export */ });
-/* unused harmony exports domToReact, htmlToDOM, attributesToProps, Element */
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(488);
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/html-react-parser/index.js");
 
 
 var domToReact = _index_js__WEBPACK_IMPORTED_MODULE_0__.domToReact;
@@ -8827,7 +10942,10 @@ var Element = _index_js__WEBPACK_IMPORTED_MODULE_0__.Element;
 
 /***/ }),
 
-/***/ 5544:
+/***/ "./.cache/caches/gatsby-plugin-image/1252155912.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/1252155912.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8835,7 +10953,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ 3651:
+/***/ "./.cache/caches/gatsby-plugin-image/1449662315.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/1449662315.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8843,7 +10964,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8"
 
 /***/ }),
 
-/***/ 5331:
+/***/ "./.cache/caches/gatsby-plugin-image/1506710174.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/1506710174.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8851,7 +10975,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ 1734:
+/***/ "./.cache/caches/gatsby-plugin-image/1537072282.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/1537072282.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8859,7 +10986,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ 7948:
+/***/ "./.cache/caches/gatsby-plugin-image/1594855364.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/1594855364.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8867,7 +10997,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8"
 
 /***/ }),
 
-/***/ 5339:
+/***/ "./.cache/caches/gatsby-plugin-image/1832934863.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/1832934863.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8875,7 +11008,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ 4027:
+/***/ "./.cache/caches/gatsby-plugin-image/2071622543.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/2071622543.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8883,7 +11019,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ 936:
+/***/ "./.cache/caches/gatsby-plugin-image/2095264300.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/2095264300.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8891,7 +11030,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#e85848"
 
 /***/ }),
 
-/***/ 8779:
+/***/ "./.cache/caches/gatsby-plugin-image/210781606.json":
+/*!**********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/210781606.json ***!
+  \**********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8899,7 +11041,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#0868a8"
 
 /***/ }),
 
-/***/ 1153:
+/***/ "./.cache/caches/gatsby-plugin-image/2140057490.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/2140057490.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8907,7 +11052,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ 642:
+/***/ "./.cache/caches/gatsby-plugin-image/2154065702.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/2154065702.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8915,7 +11063,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#e85848"
 
 /***/ }),
 
-/***/ 6057:
+/***/ "./.cache/caches/gatsby-plugin-image/2226104660.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/2226104660.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8923,7 +11074,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#b8b8b8"
 
 /***/ }),
 
-/***/ 4594:
+/***/ "./.cache/caches/gatsby-plugin-image/2354360796.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/2354360796.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8931,7 +11085,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8"
 
 /***/ }),
 
-/***/ 1061:
+/***/ "./.cache/caches/gatsby-plugin-image/2484953849.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/2484953849.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8939,7 +11096,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#e87808"
 
 /***/ }),
 
-/***/ 5556:
+/***/ "./.cache/caches/gatsby-plugin-image/2745591126.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/2745591126.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8947,7 +11107,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ 7985:
+/***/ "./.cache/caches/gatsby-plugin-image/2896147533.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/2896147533.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8955,7 +11118,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ 1088:
+/***/ "./.cache/caches/gatsby-plugin-image/3182300424.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/3182300424.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8963,7 +11129,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#e85848"
 
 /***/ }),
 
-/***/ 9653:
+/***/ "./.cache/caches/gatsby-plugin-image/3218449267.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/3218449267.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8971,7 +11140,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8"
 
 /***/ }),
 
-/***/ 7766:
+/***/ "./.cache/caches/gatsby-plugin-image/3255117786.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/3255117786.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8979,7 +11151,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#e85848"
 
 /***/ }),
 
-/***/ 3701:
+/***/ "./.cache/caches/gatsby-plugin-image/3726475015.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/3726475015.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8987,7 +11162,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8"
 
 /***/ }),
 
-/***/ 8710:
+/***/ "./.cache/caches/gatsby-plugin-image/3767496472.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/3767496472.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -8995,7 +11173,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ 8998:
+/***/ "./.cache/caches/gatsby-plugin-image/4137960355.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/4137960355.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -9003,7 +11184,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8"
 
 /***/ }),
 
-/***/ 6927:
+/***/ "./.cache/caches/gatsby-plugin-image/4141864532.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/4141864532.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -9011,7 +11195,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8"
 
 /***/ }),
 
-/***/ 2459:
+/***/ "./.cache/caches/gatsby-plugin-image/495007391.json":
+/*!**********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/495007391.json ***!
+  \**********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -9019,7 +11206,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ 4539:
+/***/ "./.cache/caches/gatsby-plugin-image/535489621.json":
+/*!**********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/535489621.json ***!
+  \**********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -9027,7 +11217,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f86848"
 
 /***/ }),
 
-/***/ 8174:
+/***/ "./.cache/caches/gatsby-plugin-image/547625751.json":
+/*!**********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/547625751.json ***!
+  \**********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -9035,7 +11228,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8"
 
 /***/ }),
 
-/***/ 6156:
+/***/ "./.cache/caches/gatsby-plugin-image/560468053.json":
+/*!**********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/560468053.json ***!
+  \**********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -9043,7 +11239,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ 2426:
+/***/ "./.cache/caches/gatsby-plugin-image/562964066.json":
+/*!**********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/562964066.json ***!
+  \**********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -9051,7 +11250,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#b8b8b8"
 
 /***/ }),
 
-/***/ 5844:
+/***/ "./.cache/caches/gatsby-plugin-image/594671516.json":
+/*!**********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/594671516.json ***!
+  \**********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -9059,11 +11261,58 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ 9031:
+/***/ "./.cache/caches/gatsby-plugin-image/693349198.json":
+/*!**********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/693349198.json ***!
+  \**********************************************************/
 /***/ ((module) => {
 
 "use strict";
 module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808","images":{"fallback":{"src":"/static/50a9a41032eb09e75b83a2fb3c210462/41e6a/logo_sulamerica_saude.png","srcSet":"/static/50a9a41032eb09e75b83a2fb3c210462/6d4aa/logo_sulamerica_saude.png 32w,\\n/static/50a9a41032eb09e75b83a2fb3c210462/ba7b2/logo_sulamerica_saude.png 65w,\\n/static/50a9a41032eb09e75b83a2fb3c210462/41e6a/logo_sulamerica_saude.png 129w","sizes":"(min-width: 129px) 129px, 100vw"},"sources":[{"srcSet":"/static/50a9a41032eb09e75b83a2fb3c210462/114e5/logo_sulamerica_saude.webp 32w,\\n/static/50a9a41032eb09e75b83a2fb3c210462/cc748/logo_sulamerica_saude.webp 65w,\\n/static/50a9a41032eb09e75b83a2fb3c210462/4db7f/logo_sulamerica_saude.webp 129w","type":"image/webp","sizes":"(min-width: 129px) 129px, 100vw"}]},"width":129,"height":49}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/1976188318.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/1976188318.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allWpPost":{"nodes":[{"uri":"/renda-fixa-e-renda-variavel/","title":"Renda Fixa x Renda Variável","excerpt":"<p>Conheça as principais diferenças entre os investimentos de Renda Fixa e de Renda Variável. Entenda qual o melhor para a sua Carteira de Investimentosn</p>\\n","featuredImage":{"node":{"localFile":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#383828","images":{"fallback":{"src":"/static/5315c203f37abcde1f6d5a7a470bed22/eae78/renda-fixa-e-renda-variavel.webp","srcSet":"/static/5315c203f37abcde1f6d5a7a470bed22/a5fb7/renda-fixa-e-renda-variavel.webp 292w,\\n/static/5315c203f37abcde1f6d5a7a470bed22/e58db/renda-fixa-e-renda-variavel.webp 583w,\\n/static/5315c203f37abcde1f6d5a7a470bed22/eae78/renda-fixa-e-renda-variavel.webp 1166w","sizes":"(min-width: 1166px) 1166px, 100vw"},"sources":[]},"width":1166,"height":336}}}}}},{"uri":"/cinco-dicas-para-controlar-gastos/","title":"5 dicas para controlar gastos","excerpt":"<p>Veja as melhores dicas para acabar com o vício do consumo. Descubra como você pode encontrar o equilíbrio financeiro</p>\\n","featuredImage":{"node":{"localFile":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#788888","images":{"fallback":{"src":"/static/cd96addd5f434474fee035fff228c95a/eae78/cinco-dicas-para-controlar-gastos.webp","srcSet":"/static/cd96addd5f434474fee035fff228c95a/a5fb7/cinco-dicas-para-controlar-gastos.webp 292w,\\n/static/cd96addd5f434474fee035fff228c95a/e58db/cinco-dicas-para-controlar-gastos.webp 583w,\\n/static/cd96addd5f434474fee035fff228c95a/eae78/cinco-dicas-para-controlar-gastos.webp 1166w","sizes":"(min-width: 1166px) 1166px, 100vw"},"sources":[]},"width":1166,"height":336}}}}}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/417994374.json":
+/*!**********************************************!*\
+  !*** ./public/page-data/sq/d/417994374.json ***!
+  \**********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allWpDepoimento":{"nodes":[{"id":"cG9zdDo1MA==","title":"Patrick Ribeiro","content":"<p>Depois de conhecer a BeCapital e seus produtos, a rentabilidade das minhas aplicações com a orientação deles está sendo muito melhor.</p>\\n<p>O atendimento personalizado traz toda segurança e esclarecimento para investir sem medo!</p>\\n","featuredImage":{"node":{"localFile":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#d8c8a8","images":{"fallback":{"src":"/static/e22d3aeacc2828d837c9ff22ced9d1ae/dc1df/Patrick-Ribeiro-1.webp","srcSet":"/static/e22d3aeacc2828d837c9ff22ced9d1ae/064db/Patrick-Ribeiro-1.webp 18w,\\n/static/e22d3aeacc2828d837c9ff22ced9d1ae/5edbd/Patrick-Ribeiro-1.webp 36w,\\n/static/e22d3aeacc2828d837c9ff22ced9d1ae/dc1df/Patrick-Ribeiro-1.webp 72w","sizes":"(min-width: 72px) 72px, 100vw"},"sources":[]},"width":72,"height":69}}}}}},{"id":"cG9zdDo0OA==","title":"Raquel Boaventura","content":"<p>Eu investia meu dinheiro em poupança, pois sempre tive muito medo de investir fora dos bancos tradicionais. Na BeCapital, eu consigo ter uma excelente rentabilidade com segurança através de um atendimento diferenciado e totalmente personalizado.&nbsp;</p>\\n<p>Consigo acompanhar o crescimento dos meus investimentos através da plataforma da empresa a qualquer momento!</p>\\n","featuredImage":{"node":{"localFile":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#080808","images":{"fallback":{"src":"/static/e125112edf4ec2a2f94dd62e9909133b/de323/Raquel-Boaventura-2.webp","srcSet":"/static/e125112edf4ec2a2f94dd62e9909133b/4f7ad/Raquel-Boaventura-2.webp 18w,\\n/static/e125112edf4ec2a2f94dd62e9909133b/9a807/Raquel-Boaventura-2.webp 36w,\\n/static/e125112edf4ec2a2f94dd62e9909133b/de323/Raquel-Boaventura-2.webp 72w","sizes":"(min-width: 72px) 72px, 100vw"},"sources":[]},"width":72,"height":72}}}}}},{"id":"cG9zdDo0Ng==","title":"Ana Paula Stersi","content":"<p>Sem sombra de dúvidas, depois de conhecer o produto financeiro da BeCapital, a rentabilidade das minhas aplicações foi muito vantajosa.</p>\\n<p>Me senti segura e tenho um feedback mensal, através de balancetes e acesso enorme à empresa.</p>\\n","featuredImage":{"node":{"localFile":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#080808","images":{"fallback":{"src":"/static/274ed884d1280e93199cf3e533d84f64/de323/Ana-Paula-Sterzi-2.webp","srcSet":"/static/274ed884d1280e93199cf3e533d84f64/4f7ad/Ana-Paula-Sterzi-2.webp 18w,\\n/static/274ed884d1280e93199cf3e533d84f64/9a807/Ana-Paula-Sterzi-2.webp 36w,\\n/static/274ed884d1280e93199cf3e533d84f64/de323/Ana-Paula-Sterzi-2.webp 72w","sizes":"(min-width: 72px) 72px, 100vw"},"sources":[]},"width":72,"height":72}}}}}},{"id":"cG9zdDo0NA==","title":"Carla Zobaran","content":"<p>Sou uma pessoa conservadora quando se fala em investimento, por isso, só investia na poupança e LCI. Mas com a orientação e o relatório mensal da BeCapital, vejo mais rentabilidade e me sinto mais segura.&nbsp;</p>\\n<p>Certamente o atendimento e assessoria que me dão são o grande diferencial para essa minha escolha. Estou muito satisfeita!</p>\\n","featuredImage":{"node":{"localFile":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#e8e8d8","images":{"fallback":{"src":"/static/955359a003f91128bcf93f58f751ce26/de323/Carla-Zobaran-2-1.webp","srcSet":"/static/955359a003f91128bcf93f58f751ce26/4f7ad/Carla-Zobaran-2-1.webp 18w,\\n/static/955359a003f91128bcf93f58f751ce26/9a807/Carla-Zobaran-2-1.webp 36w,\\n/static/955359a003f91128bcf93f58f751ce26/de323/Carla-Zobaran-2-1.webp 72w","sizes":"(min-width: 72px) 72px, 100vw"},"sources":[]},"width":72,"height":72}}}}}},{"id":"cG9zdDo0Mg==","title":"Ana Grillo","content":"<p>Na BeCapital, há uma assertividade nas recomendações de carteira, garantindo bons resultados com as opções de investimentos.</p>\\n<p>O atendimento nos dá tranquilidade para que possamos ter segurança em relação ao nosso patrimônio. O time de especialistas é composto de gente muito capacitada e com expertise, o que diferencia a empresa das outras do setor.</p>\\n","featuredImage":{"node":{"localFile":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#483828","images":{"fallback":{"src":"/static/ba9dbca0a3d54607ef8f1c2a04051fe6/de323/Ana-Grillo-1.webp","srcSet":"/static/ba9dbca0a3d54607ef8f1c2a04051fe6/4f7ad/Ana-Grillo-1.webp 18w,\\n/static/ba9dbca0a3d54607ef8f1c2a04051fe6/9a807/Ana-Grillo-1.webp 36w,\\n/static/ba9dbca0a3d54607ef8f1c2a04051fe6/de323/Ana-Grillo-1.webp 72w","sizes":"(min-width: 72px) 72px, 100vw"},"sources":[]},"width":72,"height":72}}}}}},{"id":"cG9zdDo0MA==","title":"Daltro Carvalho","content":"<p>Comecei a investir no mercado financeiro em 2016 em renda variável, renda fixa, fundos imobiliários, e continuo até hoje. Em 2017, conheci o Paulo Paiva, CEO da BeCapital. Ele montou a minha primeira carteira, trazendo resultados muito bons. A partir daí temos feito alguns trabalhos juntos, sempre com ele me orientando na aplicação no mercado financeiro e sempre trazendo resultados muito bons.</p>\\n","featuredImage":{"node":{"localFile":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#080808","images":{"fallback":{"src":"/static/7f453088b79a3723238f1f1f9d792be6/de323/Quem-ja-soma_DALTRO_cor.webp","srcSet":"/static/7f453088b79a3723238f1f1f9d792be6/4f7ad/Quem-ja-soma_DALTRO_cor.webp 18w,\\n/static/7f453088b79a3723238f1f1f9d792be6/9a807/Quem-ja-soma_DALTRO_cor.webp 36w,\\n/static/7f453088b79a3723238f1f1f9d792be6/de323/Quem-ja-soma_DALTRO_cor.webp 72w","sizes":"(min-width: 72px) 72px, 100vw"},"sources":[]},"width":72,"height":72}}}}}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/848497233.json":
+/*!**********************************************!*\
+  !*** ./public/page-data/sq/d/848497233.json ***!
+  \**********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"wp":{"generalSettings":{"title":"BeCapital","description":"Só mais um site WordPress"}},"wpUser":{"twitter":"aurelio.campos"}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/956638909.json":
+/*!**********************************************!*\
+  !*** ./public/page-data/sq/d/956638909.json ***!
+  \**********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allWpServico":{"edges":[{"node":{"id":"cG9zdDozOA==","title":"Plano de Saúde","slug":"plano-de-saude"}},{"node":{"id":"cG9zdDozNg==","title":"Seguro de Vida","slug":"seguro-de-vida"}},{"node":{"id":"cG9zdDozNA==","title":"Consórcios","slug":"consorcios"}},{"node":{"id":"cG9zdDozMQ==","title":"Câmbio","slug":"cambio"}}]}}}');
 
 /***/ })
 

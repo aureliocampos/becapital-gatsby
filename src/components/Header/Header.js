@@ -68,9 +68,6 @@ const Header = () => {
               <li className="header__menu_item">
                 <Link to="/carreiras/" className="header__menu_link" getProps={isCurrent}>Carreiras</Link>
               </li>
-              <li className="header__menu_item">
-                <a href="https://becapitalresearch.com/" target="_blank" rel="noopener noreferrer" className="header__menu_link header__menu_link--italic">Research</a>
-              </li>
             </ul>
           </nav>
           <div className="button__container header__button_cta">
